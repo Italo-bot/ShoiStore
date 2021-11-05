@@ -535,7 +535,7 @@ CREATE TABLE `payment_settings` (
 --
 
 INSERT INTO `payment_settings` (`id`, `commission_percentage`, `minimum_withdraw_limit`, `days_before_withdraw`, `enable_paypal`, `paypal_email`, `paypal_sandbox`, `paypal_currency_code`, `paypal_app_client_id`, `paypal_app_client_secret`, `enable_stripe`, `stripe_secret_key`, `stripe_publishable_key`, `stripe_currency_code`) VALUES
-(1, 10, 10, 2, 'yes', 'sad.ahmed22224@gmail.com', 'on', 'USD', 'AQzJGGDi4KZrbX318v6yXzSVQRLesCslKVzNKuGkA1UMAHwBArHr0onrVEZtSAtOi_LbunG2ymrmd45_', 'EFTT61XQPRNeUbai0KMcEwyvRBEqwBUv3z2mgPq-zXjgVmpbMfJNVHfLSY_CBXdIH3G3M5rzuPvme4N_', 'yes', 'sk_test_RtRMOCdX6IIK2f9Q94CilE5k', 'pk_test_NcOLIMZPgVJid1099xnjs1Ka', 'CAD');
+(1, 10, 10, 2, 'yes', 'shoistore@gmail.com', 'on', 'CLP', 'AQzJGGDi4KZrbX318v6yXzSVQRLesCslKVzNKuGkA1UMAHwBArHr0onrVEZtSAtOi_LbunG2ymrmd45_', 'EFTT61XQPRNeUbai0KMcEwyvRBEqwBUv3z2mgPq-zXjgVmpbMfJNVHfLSY_CBXdIH3G3M5rzuPvme4N_', 'yes', 'sk_test_RtRMOCdX6IIK2f9Q94CilE5k', 'pk_test_NcOLIMZPgVJid1099xnjs1Ka', 'CLP');
 
 -- --------------------------------------------------------
 
@@ -593,122 +593,6 @@ CREATE TABLE `products_stock` (
   `allow_backorders` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `products_stock`
---
-
-INSERT INTO `products_stock` (`stock_id`, `product_id`, `variation_id`, `stock_status`, `enable_stock`, `stock_quantity`, `allow_backorders`) VALUES
-(34, 2, 0, 'onbackorder', 'yes', '-4', 'notify'),
-(35, 18, 0, 'instock', 'yes', '2', 'no'),
-(36, 11, 0, 'instock', 'yes', '17', 'no'),
-(37, 39, 345, 'instock', 'yes', '6', 'no'),
-(38, 39, 344, 'onbackorder', 'yes', '0', 'yes'),
-(39, 39, 343, 'outofstock', 'yes', '0', 'no'),
-(40, 39, 342, 'outofstock', 'yes', '0', 'no'),
-(41, 34, 332, 'instock', 'yes', '4', 'no'),
-(42, 34, 331, 'instock', 'no', '0', 'no'),
-(43, 34, 330, 'onbackorder', 'yes', '-2', 'yes'),
-(44, 34, 89, 'onbackorder', 'yes', '-4', 'notify'),
-(45, 34, 88, 'instock', 'no', '0', 'no'),
-(46, 34, 87, 'instock', 'no', '0', 'no'),
-(47, 34, 86, 'instock', 'yes', '12', 'no'),
-(48, 34, 85, 'instock', 'yes', '19', 'no'),
-(49, 3, 0, 'instock', 'yes', '3', 'no'),
-(50, 4, 0, 'instock', 'yes', '4', 'no'),
-(51, 5, 0, 'instock', 'yes', '5', 'no'),
-(52, 6, 0, 'instock', 'yes', '17', 'yes'),
-(53, 7, 0, 'outofstock', 'no', '0', 'no'),
-(54, 8, 0, 'onbackorder', 'yes', '1', 'yes'),
-(55, 9, 2, 'instock', 'yes', '1', 'no'),
-(56, 14, 0, 'instock', 'yes', '2', 'no'),
-(57, 15, 0, 'instock', 'yes', '2', 'no'),
-(58, 16, 0, 'onbackorder', 'yes', '-3', 'notify'),
-(59, 17, 0, 'onbackorder', 'yes', '-3', 'notify'),
-(60, 20, 0, 'instock', 'no', '0', 'yes'),
-(61, 40, 347, 'instock', 'no', '0', 'no'),
-(62, 40, 359, 'instock', 'no', '0', 'no'),
-(63, 40, 358, 'instock', 'no', '0', 'no'),
-(64, 40, 357, 'instock', 'no', '0', 'no'),
-(65, 40, 356, 'instock', 'no', '0', 'no'),
-(66, 40, 355, 'instock', 'yes', '1', 'no'),
-(67, 40, 354, 'instock', 'yes', '3', 'notify'),
-(68, 40, 352, 'instock', 'no', '0', 'no'),
-(69, 40, 351, 'instock', 'no', '0', 'no'),
-(70, 40, 348, 'instock', 'yes', '3', 'no'),
-(71, 40, 360, 'instock', 'yes', '99', 'no'),
-(72, 40, 361, 'instock', 'no', '0', 'no'),
-(73, 31, 283, 'instock', 'no', '0', 'no'),
-(74, 31, 282, 'instock', 'no', '0', 'no'),
-(75, 31, 281, 'instock', 'no', '0', 'no'),
-(76, 31, 280, 'instock', 'no', '0', 'no'),
-(77, 31, 279, 'instock', 'no', '0', 'no'),
-(78, 31, 278, 'instock', 'no', '0', 'no'),
-(79, 31, 277, 'instock', 'no', '0', 'no'),
-(80, 31, 276, 'instock', 'yes', '1', 'no'),
-(81, 31, 275, 'instock', 'no', '0', 'no'),
-(82, 31, 274, 'instock', 'no', '0', 'no'),
-(83, 31, 273, 'instock', 'no', '0', 'no'),
-(84, 31, 272, 'instock', 'no', '0', 'no'),
-(85, 31, 271, 'instock', 'no', '0', 'no'),
-(86, 31, 270, 'instock', 'no', '0', 'no'),
-(87, 31, 269, 'instock', 'no', '0', 'no'),
-(88, 31, 268, 'instock', 'no', '0', 'no'),
-(89, 31, 267, 'instock', 'no', '0', 'no'),
-(90, 31, 266, 'instock', 'no', '0', 'no'),
-(93, 41, 453, 'instock', 'no', '0', 'no'),
-(94, 41, 452, 'instock', 'no', '0', 'no'),
-(95, 41, 451, 'instock', 'no', '0', 'no'),
-(96, 41, 450, 'instock', 'no', '0', 'no'),
-(97, 41, 449, 'instock', 'no', '0', 'no'),
-(98, 41, 448, 'instock', 'no', '0', 'no'),
-(99, 41, 447, 'instock', 'no', '0', 'no'),
-(100, 41, 446, 'instock', 'no', '0', 'no'),
-(101, 41, 445, 'instock', 'no', '0', 'no'),
-(102, 41, 444, 'instock', 'no', '0', 'no'),
-(103, 41, 443, 'instock', 'no', '0', 'no'),
-(104, 41, 442, 'instock', 'no', '0', 'no'),
-(105, 41, 441, 'instock', 'no', '0', 'no'),
-(106, 41, 440, 'instock', 'no', '0', 'no'),
-(107, 41, 439, 'instock', 'no', '0', 'no'),
-(108, 41, 438, 'instock', 'no', '0', 'no'),
-(109, 41, 454, 'instock', 'no', '0', 'no'),
-(110, 41, 458, 'onbackorder', 'yes', '0', 'notify'),
-(115, 3, 476, 'instock', 'yes', '2', 'no'),
-(116, 3, 475, 'instock', 'no', '0', 'no'),
-(117, 3, 474, 'instock', 'no', '0', 'no'),
-(118, 3, 473, 'instock', 'no', '0', 'no'),
-(119, 3, 472, 'instock', 'no', '0', 'no'),
-(120, 3, 471, 'instock', 'no', '0', 'no'),
-(121, 3, 470, 'instock', 'no', '0', 'no'),
-(122, 3, 469, 'instock', 'no', '0', 'no'),
-(123, 3, 468, 'instock', 'no', '0', 'no'),
-(124, 38, 478, 'outofstock', 'yes', '-3', 'no'),
-(125, 38, 479, 'outofstock', 'yes', '0', 'no'),
-(126, 16, 481, 'instock', 'yes', '1', 'no'),
-(128, 16, 483, 'outofstock', 'yes', '0', 'no'),
-(130, 16, 485, 'instock', 'yes', '3', 'no'),
-(131, 16, 486, 'instock', 'no', '8', 'no'),
-(132, 17, 488, 'instock', 'yes', '1', 'no'),
-(133, 17, 489, 'instock', 'yes', '2', 'no'),
-(134, 16, 490, 'instock', 'no', '0', 'no'),
-(135, 17, 491, 'instock', 'yes', '3', 'no'),
-(136, 41, 492, 'outofstock', 'yes', '0', 'no'),
-(140, 46, 494, 'instock', 'yes', '53', 'no'),
-(141, 46, 495, 'instock', 'yes', '12', 'no'),
-(142, 46, 496, 'instock', 'yes', '4', 'no'),
-(191, 30, 503, 'instock', 'yes', '8', 'no'),
-(193, 30, 504, 'instock', 'yes', '5', 'no'),
-(194, 30, 505, 'instock', 'yes', '7', 'no'),
-(195, 30, 506, 'instock', 'yes', '3', 'no'),
-(196, 48, 0, 'instock', 'yes', '6', 'no'),
-(202, 10, 0, 'instock', 'yes', '8', 'no'),
-(207, 8828, 607, 'instock', 'no', '0', 'no'),
-(208, 8828, 606, 'instock', 'no', '0', 'no'),
-(209, 8828, 605, 'instock', 'no', '0', 'no'),
-(210, 8828, 604, 'instock', 'no', '0', 'no'),
-(211, 8828, 603, 'instock', 'no', '0', 'no'),
-(212, 8828, 608, 'instock', 'no', '0', 'no'),
-(213, 51, 0, 'instock', 'yes', '17', 'yes');
 
 -- --------------------------------------------------------
 
@@ -723,22 +607,6 @@ CREATE TABLE `product_attributes` (
   `attribute_values` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `product_attributes`
---
-
-INSERT INTO `product_attributes` (`attribute_id`, `product_id`, `attribute_name`, `attribute_values`) VALUES
-(90, 0, '', ''),
-(91, 3, 'Color', 'Red|Blue|Yellow'),
-(92, 3, 'Size', '12|14|16'),
-(95, 38, 'Memory', '8 GB|12 GB|16 GB'),
-(96, 38, 'Processor', 'i3 7en|i5 7en|i7 7en'),
-(97, 16, 'Os', 'Windows|Mac-Os'),
-(98, 16, 'Edition', 'Ultra|Delux|Ultimate'),
-(99, 17, 'Operating System', 'Windows|MacOS|linux Os'),
-(110, 8828, 'Memory', '4 GB|8 GB|12 GB|16 GB|32 GB'),
-(112, 8828, 'Processor', 'i3 7th-generation|i5 7th-generation|i7 7th-generation'),
-(113, 8828, 'Storage', '128 GB SSD|256 GB SSD|512GB SSD|1TB SSD|2TB SSD');
 
 -- --------------------------------------------------------
 
@@ -872,10 +740,10 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`slide_id`, `slide_name`, `slide_image`, `slide_url`) VALUES
-(8, 'ShoisTORE', 'hjjh.gif', 'http://localhost/updated_ecom_store/index.php'),
-(10, 'fgmbxjfgs', 'Mira los pro.gif', 'http://localhost/updated_ecom_store/shop.php'),
-(11, 'asdkja', 'Marcass.gif', 'http://localhost/updated_ecom_store/shop.php'),
-(12, 'tyiyutik', 'Reg.gif', 'http://localhost/updated_ecom_store/customer_register.php');
+(8, 'ShoisTORE', 'hjjh.gif', 'http://localhost/shoistore/index.php'),
+(10, 'fgmbxjfgs', 'Mira los pro.gif', 'http://localhost/shoistore/shop.php'),
+(11, 'asdkja', 'Marcass.gif', 'http://localhost/shoistore/shop.php'),
+(12, 'tyiyutik', 'Reg.gif', 'http://localhost/shoistore/customer_register.php');
 
 -- --------------------------------------------------------
 
