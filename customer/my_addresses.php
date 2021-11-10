@@ -58,7 +58,7 @@ $shipping_state = $row_addresses["shipping_state"];
 
 ?>
 
-<h2> Dirección de Envio </h2>
+<h2> Dirección de Envío 1 </h2>
 
 <form method="post" enctype="multipart/form-data"><!--- form Starts -->
 
@@ -190,7 +190,7 @@ if($billing_country == $country_id){ echo "selected"; }
 
 </form>
 
-<h2> Dirección de envío </h2>
+<h2> Dirección de envío 2 </h2>
 
 <form method="post" enctype="multipart/form-data"><!--- form Starts -->
 

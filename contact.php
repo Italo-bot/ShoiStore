@@ -158,8 +158,8 @@ echo "<a href='logout.php'> Cerrar Sesión </a>";
 
 <a class="navbar-brand home" href="index.php" ><!--- navbar navbar-brand home Starts -->
 
-<img src="images/logo.png" alt="computerfever logo" class="hidden-xs" >
-<img src="images/logo-small.png" alt="computerfever logo" class="visible-xs" >
+<img src="images/ShoiStoree.png" alt="ShoiStore logo" class="hidden-xs" >
+<img src="images/ShoiStoree.png" alt="ShoiStore logo" class="visible-xs" >
 
 </a><!--- navbar navbar-brand home Ends -->
 

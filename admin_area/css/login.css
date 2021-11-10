@@ -2,7 +2,7 @@
 body{
 
 padding-top:10%;
-background-color: teal;
+background-color: rgb(175, 130, 94);
 }
 
 .form-login {
@@ -16,7 +16,7 @@ margin:0 auto;
 
 
 .form-login .form-login-heading{
-color:#337ab7;
+color:#5b6670;
 text-align:center;
 
 }
