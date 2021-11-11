@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['while_0',['while',['../cart_8php.html#adcb49b5d0181d24d840b0cd9a6aa62e4',1,'while():&#160;cart.php'],['../cart__summary__body_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5',1,'while():&#160;cart_summary_body.php'],['../checkout__tbody_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5',1,'while():&#160;checkout_tbody.php'],['../details_8php.html#a0e95d13565f42c97123493bf7c3239f1',1,'while():&#160;details.php'],['../order__received_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5',1,'while():&#160;order_received.php'],['../review__order_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5',1,'while():&#160;review_order.php'],['../services_8php.html#af64c980f100b460c3d1d1ec27a88b782',1,'while():&#160;services.php'],['../terms_8php.html#ad7503f02507d6a8a73ad00cdfa7b1c7a',1,'while():&#160;terms.php']]]
+];

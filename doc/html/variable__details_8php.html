@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo variable_details.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Tienda online con multivendedores</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo variable_details.php</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a929ee4a8ca2a38940d0d3cc232f59acc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a929ee4a8ca2a38940d0d3cc232f59acc">$get_product</a> = &quot;select * from products where product_id='34'&quot;</td></tr>
+<tr class="separator:a929ee4a8ca2a38940d0d3cc232f59acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41615550f6d3d2405f661eac6fb31b7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a41615550f6d3d2405f661eac6fb31b7d">$run_product</a> = mysqli_query($con,$get_product)</td></tr>
+<tr class="separator:a41615550f6d3d2405f661eac6fb31b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9b00875701d241a6ea3c392e05a331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a4a9b00875701d241a6ea3c392e05a331">$check_product</a> = mysqli_num_rows($run_product)</td></tr>
+<tr class="separator:a4a9b00875701d241a6ea3c392e05a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9db30b3f0bc9a32fd52439bb91259b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="variable__details_8php.html#af522643bc642c39f83c4f12d853583a6">if</a>($check_product==0)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a7b9db30b3f0bc9a32fd52439bb91259b">else</a></td></tr>
+<tr class="separator:a7b9db30b3f0bc9a32fd52439bb91259b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bcdd5df0170bb9c3fcf0b027a148d26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a5bcdd5df0170bb9c3fcf0b027a148d26">$p_cat_id</a> = $row_product['p_cat_id']</td></tr>
+<tr class="separator:a5bcdd5df0170bb9c3fcf0b027a148d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b644a7104ec4bc074ad7b1baa69e946"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a2b644a7104ec4bc074ad7b1baa69e946">$pro_id</a> = $row_product['product_id']</td></tr>
+<tr class="separator:a2b644a7104ec4bc074ad7b1baa69e946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730b2d635b174f20307e83a96bac5ccc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a730b2d635b174f20307e83a96bac5ccc">$pro_title</a> = $row_product['product_title']</td></tr>
+<tr class="separator:a730b2d635b174f20307e83a96bac5ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23b206de80a579ba41a4250a6d5a5ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#ae23b206de80a579ba41a4250a6d5a5ef">$pro_price</a> = $row_product['product_price']</td></tr>
+<tr class="separator:ae23b206de80a579ba41a4250a6d5a5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85123f0d04156bdb18a3f56a01a2d39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#ab85123f0d04156bdb18a3f56a01a2d39">$pro_desc</a> = $row_product['product_desc']</td></tr>
+<tr class="separator:ab85123f0d04156bdb18a3f56a01a2d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d47fc96e484e9889cc101d006f18e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a87d47fc96e484e9889cc101d006f18e7">$pro_img1</a> = $row_product['product_img1']</td></tr>
+<tr class="separator:a87d47fc96e484e9889cc101d006f18e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327c452db6da78997a520510a789cb67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a327c452db6da78997a520510a789cb67">$pro_img2</a> = $row_product['product_img2']</td></tr>
+<tr class="separator:a327c452db6da78997a520510a789cb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0fe9fe869c981d1b9c458d52a84573"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#add0fe9fe869c981d1b9c458d52a84573">$pro_img3</a> = $row_product['product_img3']</td></tr>
+<tr class="separator:add0fe9fe869c981d1b9c458d52a84573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e47f233e4b9f42436b77752637ccc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a28e47f233e4b9f42436b77752637ccc3">$pro_label</a> = $row_product['product_label']</td></tr>
+<tr class="separator:a28e47f233e4b9f42436b77752637ccc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0844612d11453eeb296d9c722c374747"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a0844612d11453eeb296d9c722c374747">$pro_psp_price</a> = $row_product['product_psp_price']</td></tr>
+<tr class="separator:a0844612d11453eeb296d9c722c374747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7791849d3c0066d7e4de28105adce073"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a7791849d3c0066d7e4de28105adce073">$pro_features</a> = $row_product['product_features']</td></tr>
+<tr class="separator:a7791849d3c0066d7e4de28105adce073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9750b253306c10e5b37e03b911148548"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a9750b253306c10e5b37e03b911148548">$pro_video</a> = $row_product['product_video']</td></tr>
+<tr class="separator:a9750b253306c10e5b37e03b911148548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58391ea75f2d29d5d708d7050b641c33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a58391ea75f2d29d5d708d7050b641c33">$status</a> = $row_product['status']</td></tr>
+<tr class="separator:a58391ea75f2d29d5d708d7050b641c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa73755212d16475a74c2d73979d4431"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#afa73755212d16475a74c2d73979d4431">$pro_url</a> = $row_product['product_url']</td></tr>
+<tr class="separator:afa73755212d16475a74c2d73979d4431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2029aa8f57241bdf2fc60529c1ae14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a7c2029aa8f57241bdf2fc60529c1ae14">$pro_type</a> = $row_product['product_type']</td></tr>
+<tr class="separator:a7c2029aa8f57241bdf2fc60529c1ae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5eff1333eaae03fa3e019dc24c1082"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a2d5eff1333eaae03fa3e019dc24c1082">$pro_keywords</a> = $row_product['product_keywords']</td></tr>
+<tr class="separator:a2d5eff1333eaae03fa3e019dc24c1082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9479f88e0e9487c39c3c8ea686c7e24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#ab9479f88e0e9487c39c3c8ea686c7e24">$pro_seo_desc</a> = $row_product['product_seo_desc']</td></tr>
+<tr class="separator:ab9479f88e0e9487c39c3c8ea686c7e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858fa84f74fbf87aeb4851b01ae903f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a858fa84f74fbf87aeb4851b01ae903f2">$vendor_id</a> = $row_product['vendor_id']</td></tr>
+<tr class="separator:a858fa84f74fbf87aeb4851b01ae903f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a15d79ded58394930c703ba4ef7f9d7dc">$run_customer</a> = mysqli_query($con,$select_customer)</td></tr>
+<tr class="separator:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28035cb2628d043f24523cf85ac3e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#ae28035cb2628d043f24523cf85ac3e9f">$row_customer</a> = mysqli_fetch_array($run_customer)</td></tr>
+<tr class="separator:ae28035cb2628d043f24523cf85ac3e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf2558919489d89dab0d0396e3c9cc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a8cf2558919489d89dab0d0396e3c9cc5">$vendor_name</a> = $row_customer['customer_name']</td></tr>
+<tr class="separator:a8cf2558919489d89dab0d0396e3c9cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3e6ee0cf94d94903bddbc8fbcc8404"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a3f3e6ee0cf94d94903bddbc8fbcc8404">$get_p_cat</a> = &quot;select * from product_categories where p_cat_id='$p_cat_id'&quot;</td></tr>
+<tr class="separator:a3f3e6ee0cf94d94903bddbc8fbcc8404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1408fccf3bab377b555d86a2f86569ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a1408fccf3bab377b555d86a2f86569ae">$run_p_cat</a> = mysqli_query($con,$get_p_cat)</td></tr>
+<tr class="separator:a1408fccf3bab377b555d86a2f86569ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840e31972d7a67a839bba08309f5f866"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a840e31972d7a67a839bba08309f5f866">$row_p_cat</a> = mysqli_fetch_array($run_p_cat)</td></tr>
+<tr class="separator:a840e31972d7a67a839bba08309f5f866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc6b2a047db1d3a347f884dd9435b7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#a4dc6b2a047db1d3a347f884dd9435b7b">$p_cat_title</a> = $row_p_cat['p_cat_title']</td></tr>
+<tr class="separator:a4dc6b2a047db1d3a347f884dd9435b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af522643bc642c39f83c4f12d853583a6"><td class="memItemLeft" align="right" valign="top">if( $pro_type==&quot;variable_product&quot;) if($status==&quot;product&quot;) elseif( $status==&quot;bundle&quot;) if($pro_type==&quot;physical_product&quot; or $pro_type==&quot;digital_product&quot;) elseif( $pro_type==&quot;variable_product&quot;) if($pro_type==&quot;variable_product&quot;) if(isset( $_POST[ 'add_cart']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="variable__details_8php.html#af522643bc642c39f83c4f12d853583a6">if</a> (isset( $_POST[ 'add_wishlist']))</td></tr>
+<tr class="separator:af522643bc642c39f83c4f12d853583a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a4a9b00875701d241a6ea3c392e05a331" name="a4a9b00875701d241a6ea3c392e05a331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9b00875701d241a6ea3c392e05a331">&#9670;&nbsp;</a></span>$check_product</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$check_product = mysqli_num_rows($run_product)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f3e6ee0cf94d94903bddbc8fbcc8404" name="a3f3e6ee0cf94d94903bddbc8fbcc8404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3e6ee0cf94d94903bddbc8fbcc8404">&#9670;&nbsp;</a></span>$get_p_cat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_p_cat = &quot;select * from product_categories where p_cat_id='$p_cat_id'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a929ee4a8ca2a38940d0d3cc232f59acc" name="a929ee4a8ca2a38940d0d3cc232f59acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929ee4a8ca2a38940d0d3cc232f59acc">&#9670;&nbsp;</a></span>$get_product</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_product = &quot;select * from products where product_id='34'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bcdd5df0170bb9c3fcf0b027a148d26" name="a5bcdd5df0170bb9c3fcf0b027a148d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bcdd5df0170bb9c3fcf0b027a148d26">&#9670;&nbsp;</a></span>$p_cat_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$p_cat_id = $row_product['p_cat_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4dc6b2a047db1d3a347f884dd9435b7b" name="a4dc6b2a047db1d3a347f884dd9435b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc6b2a047db1d3a347f884dd9435b7b">&#9670;&nbsp;</a></span>$p_cat_title</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$p_cat_title = $row_p_cat['p_cat_title']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab85123f0d04156bdb18a3f56a01a2d39" name="ab85123f0d04156bdb18a3f56a01a2d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85123f0d04156bdb18a3f56a01a2d39">&#9670;&nbsp;</a></span>$pro_desc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_desc = $row_product['product_desc']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7791849d3c0066d7e4de28105adce073" name="a7791849d3c0066d7e4de28105adce073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7791849d3c0066d7e4de28105adce073">&#9670;&nbsp;</a></span>$pro_features</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_features = $row_product['product_features']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b644a7104ec4bc074ad7b1baa69e946" name="a2b644a7104ec4bc074ad7b1baa69e946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b644a7104ec4bc074ad7b1baa69e946">&#9670;&nbsp;</a></span>$pro_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_id = $row_product['product_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87d47fc96e484e9889cc101d006f18e7" name="a87d47fc96e484e9889cc101d006f18e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d47fc96e484e9889cc101d006f18e7">&#9670;&nbsp;</a></span>$pro_img1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_img1 = $row_product['product_img1']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a327c452db6da78997a520510a789cb67" name="a327c452db6da78997a520510a789cb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327c452db6da78997a520510a789cb67">&#9670;&nbsp;</a></span>$pro_img2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_img2 = $row_product['product_img2']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add0fe9fe869c981d1b9c458d52a84573" name="add0fe9fe869c981d1b9c458d52a84573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0fe9fe869c981d1b9c458d52a84573">&#9670;&nbsp;</a></span>$pro_img3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_img3 = $row_product['product_img3']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d5eff1333eaae03fa3e019dc24c1082" name="a2d5eff1333eaae03fa3e019dc24c1082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5eff1333eaae03fa3e019dc24c1082">&#9670;&nbsp;</a></span>$pro_keywords</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_keywords = $row_product['product_keywords']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28e47f233e4b9f42436b77752637ccc3" name="a28e47f233e4b9f42436b77752637ccc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e47f233e4b9f42436b77752637ccc3">&#9670;&nbsp;</a></span>$pro_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_label = $row_product['product_label']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae23b206de80a579ba41a4250a6d5a5ef" name="ae23b206de80a579ba41a4250a6d5a5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23b206de80a579ba41a4250a6d5a5ef">&#9670;&nbsp;</a></span>$pro_price</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_price = $row_product['product_price']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0844612d11453eeb296d9c722c374747" name="a0844612d11453eeb296d9c722c374747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0844612d11453eeb296d9c722c374747">&#9670;&nbsp;</a></span>$pro_psp_price</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_psp_price = $row_product['product_psp_price']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9479f88e0e9487c39c3c8ea686c7e24" name="ab9479f88e0e9487c39c3c8ea686c7e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9479f88e0e9487c39c3c8ea686c7e24">&#9670;&nbsp;</a></span>$pro_seo_desc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_seo_desc = $row_product['product_seo_desc']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a730b2d635b174f20307e83a96bac5ccc" name="a730b2d635b174f20307e83a96bac5ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730b2d635b174f20307e83a96bac5ccc">&#9670;&nbsp;</a></span>$pro_title</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_title = $row_product['product_title']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c2029aa8f57241bdf2fc60529c1ae14" name="a7c2029aa8f57241bdf2fc60529c1ae14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c2029aa8f57241bdf2fc60529c1ae14">&#9670;&nbsp;</a></span>$pro_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_type = $row_product['product_type']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa73755212d16475a74c2d73979d4431" name="afa73755212d16475a74c2d73979d4431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa73755212d16475a74c2d73979d4431">&#9670;&nbsp;</a></span>$pro_url</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_url = $row_product['product_url']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9750b253306c10e5b37e03b911148548" name="a9750b253306c10e5b37e03b911148548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9750b253306c10e5b37e03b911148548">&#9670;&nbsp;</a></span>$pro_video</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pro_video = $row_product['product_video']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae28035cb2628d043f24523cf85ac3e9f" name="ae28035cb2628d043f24523cf85ac3e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28035cb2628d043f24523cf85ac3e9f">&#9670;&nbsp;</a></span>$row_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_customer = mysqli_fetch_array($run_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a840e31972d7a67a839bba08309f5f866" name="a840e31972d7a67a839bba08309f5f866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840e31972d7a67a839bba08309f5f866">&#9670;&nbsp;</a></span>$row_p_cat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_p_cat = mysqli_fetch_array($run_p_cat)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15d79ded58394930c703ba4ef7f9d7dc" name="a15d79ded58394930c703ba4ef7f9d7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d79ded58394930c703ba4ef7f9d7dc">&#9670;&nbsp;</a></span>$run_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_customer = mysqli_query($con,$select_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1408fccf3bab377b555d86a2f86569ae" name="a1408fccf3bab377b555d86a2f86569ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1408fccf3bab377b555d86a2f86569ae">&#9670;&nbsp;</a></span>$run_p_cat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_p_cat = mysqli_query($con,$get_p_cat)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41615550f6d3d2405f661eac6fb31b7d" name="a41615550f6d3d2405f661eac6fb31b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41615550f6d3d2405f661eac6fb31b7d">&#9670;&nbsp;</a></span>$run_product</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_product = mysqli_query($con,$get_product)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58391ea75f2d29d5d708d7050b641c33" name="a58391ea75f2d29d5d708d7050b641c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58391ea75f2d29d5d708d7050b641c33">&#9670;&nbsp;</a></span>$status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$status = $row_product['status']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a858fa84f74fbf87aeb4851b01ae903f2" name="a858fa84f74fbf87aeb4851b01ae903f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858fa84f74fbf87aeb4851b01ae903f2">&#9670;&nbsp;</a></span>$vendor_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$vendor_id = $row_product['vendor_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cf2558919489d89dab0d0396e3c9cc5" name="a8cf2558919489d89dab0d0396e3c9cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf2558919489d89dab0d0396e3c9cc5">&#9670;&nbsp;</a></span>$vendor_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$vendor_name = $row_customer['customer_name']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b9db30b3f0bc9a32fd52439bb91259b" name="a7b9db30b3f0bc9a32fd52439bb91259b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b9db30b3f0bc9a32fd52439bb91259b">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="variable__details_8php.html#af522643bc642c39f83c4f12d853583a6">if</a> (strpos( $vendor_id, &quot;admin_&quot;) !==false) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line">$row_product = mysqli_fetch_array(<a class="code hl_variable" href="variable__details_8php.html#a41615550f6d3d2405f661eac6fb31b7d">$run_product</a>)</div>
+<div class="ttc" id="avariable__details_8php_html_a41615550f6d3d2405f661eac6fb31b7d"><div class="ttname"><a href="variable__details_8php.html#a41615550f6d3d2405f661eac6fb31b7d">$run_product</a></div><div class="ttdeci">$run_product</div><div class="ttdef"><b>Definition:</b> variable_details.php:15</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af522643bc642c39f83c4f12d853583a6" name="af522643bc642c39f83c4f12d853583a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af522643bc642c39f83c4f12d853583a6">&#9670;&nbsp;</a></span>if</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if($pro_type==&quot;variable_product&quot;) if( $status==&quot;product&quot;) elseif($status==&quot;bundle&quot;) if( $pro_type==&quot;physical_product&quot; or $pro_type==&quot;digital_product&quot;) elseif($pro_type==&quot;variable_product&quot;) if( $pro_type==&quot;variable_product&quot;) if(isset($_POST['add_cart'])) if(isset($_POST['add_wishlist'])) </td>
+          <td>(</td>
+          <td class="paramtype">isset( $_POST[ 'add_wishlist'])&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

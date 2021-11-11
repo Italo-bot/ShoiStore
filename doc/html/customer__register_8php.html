@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo customer_register.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Tienda online con multivendedores</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo customer_register.php</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abd2b37f8a7f588b0f355957cb2e4742a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="variable__details_8php.html#af522643bc642c39f83c4f12d853583a6">if</a>(isset($_SESSION['customer_email']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#abd2b37f8a7f588b0f355957cb2e4742a">$select_general_settings</a> = &quot;select * from general_settings&quot;</td></tr>
+<tr class="separator:abd2b37f8a7f588b0f355957cb2e4742a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ff09c86cee080650afe56bde706f7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#a39ff09c86cee080650afe56bde706f7e">$run_general_settings</a> = mysqli_query($con,$select_general_settings)</td></tr>
+<tr class="separator:a39ff09c86cee080650afe56bde706f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f268d0ff65a57813bb3307c2fa398ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#a5f268d0ff65a57813bb3307c2fa398ec">$row_general_settings</a> = mysqli_fetch_array($run_general_settings)</td></tr>
+<tr class="separator:a5f268d0ff65a57813bb3307c2fa398ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7871bd0dbb62b5be04de7eec5139e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#aeb7871bd0dbb62b5be04de7eec5139e0">$enable_vendor</a> = $row_general_settings[&quot;enable_vendor&quot;]</td></tr>
+<tr class="separator:aeb7871bd0dbb62b5be04de7eec5139e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3360f6d4f1cea0a3eb616410bc1a35b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="variable__details_8php.html#af522643bc642c39f83c4f12d853583a6">if</a>(!isset($_SESSION['customer_email']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#a3360f6d4f1cea0a3eb616410bc1a35b7">else</a></td></tr>
+<tr class="separator:a3360f6d4f1cea0a3eb616410bc1a35b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89194200b59b48deba5a2fc626dc42ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#a89194200b59b48deba5a2fc626dc42ae">$select_customer</a> = &quot;select * from customers where customer_email='$customer_email'&quot;</td></tr>
+<tr class="separator:a89194200b59b48deba5a2fc626dc42ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#a15d79ded58394930c703ba4ef7f9d7dc">$run_customer</a> = mysqli_query($con,$select_customer)</td></tr>
+<tr class="separator:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28035cb2628d043f24523cf85ac3e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#ae28035cb2628d043f24523cf85ac3e9f">$row_customer</a> = mysqli_fetch_array($run_customer)</td></tr>
+<tr class="separator:ae28035cb2628d043f24523cf85ac3e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab30222ba0d16aea0839b346aa3a491"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#aeab30222ba0d16aea0839b346aa3a491">$customer_role</a> = $row_customer['customer_role']</td></tr>
+<tr class="separator:aeab30222ba0d16aea0839b346aa3a491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35c97e7199099ecc6a4780086dba0a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="variable__details_8php.html#af522643bc642c39f83c4f12d853583a6">if</a>( $enable_vendor==&quot;yes&quot;)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customer__register_8php.html#aa35c97e7199099ecc6a4780086dba0a6">elseif</a> ( $enable_vendor==&quot;no&quot;)</td></tr>
+<tr class="separator:aa35c97e7199099ecc6a4780086dba0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="aeab30222ba0d16aea0839b346aa3a491" name="aeab30222ba0d16aea0839b346aa3a491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab30222ba0d16aea0839b346aa3a491">&#9670;&nbsp;</a></span>$customer_role</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$customer_role = $row_customer['customer_role']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb7871bd0dbb62b5be04de7eec5139e0" name="aeb7871bd0dbb62b5be04de7eec5139e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb7871bd0dbb62b5be04de7eec5139e0">&#9670;&nbsp;</a></span>$enable_vendor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$enable_vendor = $row_general_settings[&quot;enable_vendor&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae28035cb2628d043f24523cf85ac3e9f" name="ae28035cb2628d043f24523cf85ac3e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28035cb2628d043f24523cf85ac3e9f">&#9670;&nbsp;</a></span>$row_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_customer = mysqli_fetch_array($run_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f268d0ff65a57813bb3307c2fa398ec" name="a5f268d0ff65a57813bb3307c2fa398ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f268d0ff65a57813bb3307c2fa398ec">&#9670;&nbsp;</a></span>$row_general_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_general_settings = mysqli_fetch_array($run_general_settings)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15d79ded58394930c703ba4ef7f9d7dc" name="a15d79ded58394930c703ba4ef7f9d7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d79ded58394930c703ba4ef7f9d7dc">&#9670;&nbsp;</a></span>$run_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_customer = mysqli_query($con,$select_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39ff09c86cee080650afe56bde706f7e" name="a39ff09c86cee080650afe56bde706f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ff09c86cee080650afe56bde706f7e">&#9670;&nbsp;</a></span>$run_general_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_general_settings = mysqli_query($con,$select_general_settings)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89194200b59b48deba5a2fc626dc42ae" name="a89194200b59b48deba5a2fc626dc42ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89194200b59b48deba5a2fc626dc42ae">&#9670;&nbsp;</a></span>$select_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_customer = &quot;select * from customers where customer_email='$customer_email'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd2b37f8a7f588b0f355957cb2e4742a" name="abd2b37f8a7f588b0f355957cb2e4742a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2b37f8a7f588b0f355957cb2e4742a">&#9670;&nbsp;</a></span>$select_general_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="variable__details_8php.html#af522643bc642c39f83c4f12d853583a6">if</a> (isset( $_SESSION[ 'customer_email'])) $select_general_settings = &quot;select * from general_settings&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3360f6d4f1cea0a3eb616410bc1a35b7" name="a3360f6d4f1cea0a3eb616410bc1a35b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3360f6d4f1cea0a3eb616410bc1a35b7">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="variable__details_8php.html#af522643bc642c39f83c4f12d853583a6">if</a> (!isset( $_SESSION[ 'customer_email'])) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line">echo <span class="stringliteral">&quot;Bienvenid@ : &quot;</span> . <a class="code hl_variable" href="change__checkout__shipping_8php.html#ad43c7b1bce87484aaa497a270cec3f4a">$_SESSION</a>[<span class="stringliteral">&#39;customer_email&#39;</span>] . <span class="stringliteral">&quot;&quot;</span></div>
+<div class="ttc" id="achange__checkout__shipping_8php_html_ad43c7b1bce87484aaa497a270cec3f4a"><div class="ttname"><a href="change__checkout__shipping_8php.html#ad43c7b1bce87484aaa497a270cec3f4a">$_SESSION</a></div><div class="ttdeci">$_SESSION[&quot;shipping_types&quot;]</div><div class="ttdef"><b>Definition:</b> change_checkout_shipping.php:97</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa35c97e7199099ecc6a4780086dba0a6" name="aa35c97e7199099ecc6a4780086dba0a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35c97e7199099ecc6a4780086dba0a6">&#9670;&nbsp;</a></span>elseif</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="variable__details_8php.html#af522643bc642c39f83c4f12d853583a6">if</a>($enable_vendor==&quot;yes&quot;) elseif($enable_vendor==&quot;no&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$enable_vendor</em> = <code>=&#160;&quot;no&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

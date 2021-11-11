@@ -939,7 +939,7 @@ $total_cart_price = $total + $total_shipping_cost;
 
 <?php } ?>
 
-<input type="submit" id="offline-submit" name="submit" value="Place Order" class="btn btn-success btn-lg" style="border-radius:0px;">
+<input type="submit" id="offline-submit" name="submit" value="Realizar pedido" class="btn btn-success btn-lg" style="border-radius:0px;">
 
 </form><!-- offline Payment form Starts -->
 
@@ -972,7 +972,7 @@ include("stripe_config.php");
 type="submit" 
 id="stripe-submit"
 class="btn btn-success btn-lg"
-value="Procced With Stripe"
+value="Pagar con Stripe"
 style="border-radius:0px;"
 data-name="ShoiStore.com"
 data-description="Pagar con T. Crédito"
