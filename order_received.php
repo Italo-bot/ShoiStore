@@ -138,7 +138,7 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 <li>
 <a href="cart.php">
-Go to Cart
+Ir al Carrito
 </a>
 </li>
 
