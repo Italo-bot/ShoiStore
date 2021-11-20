@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo index.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore
+   </div>
+   <div id="projectbrief">Funciones administrador</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo index.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="index_8php_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa54b5a0b3519963867bfa1a35b89b213"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a>(!isset($_SESSION['admin_email']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#aa54b5a0b3519963867bfa1a35b89b213">else</a></td></tr>
+<tr class="separator:aa54b5a0b3519963867bfa1a35b89b213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e810567ce38cb6a60ee40579e063939"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a1e810567ce38cb6a60ee40579e063939">$get_admin</a> = &quot;select * from admins where admin_email='$admin_session'&quot;</td></tr>
+<tr class="separator:a1e810567ce38cb6a60ee40579e063939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addeb8e63806d700c18316c024f7d0c9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#addeb8e63806d700c18316c024f7d0c9d">$run_admin</a> = mysqli_query($con,$get_admin)</td></tr>
+<tr class="separator:addeb8e63806d700c18316c024f7d0c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef6ce796aea516ea7803b73de98ebe1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a8ef6ce796aea516ea7803b73de98ebe1">$row_admin</a> = mysqli_fetch_array($run_admin)</td></tr>
+<tr class="separator:a8ef6ce796aea516ea7803b73de98ebe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394fd1cd3bae869c4bc7388dd54d76dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a394fd1cd3bae869c4bc7388dd54d76dd">$admin_id</a> = $row_admin['admin_id']</td></tr>
+<tr class="separator:a394fd1cd3bae869c4bc7388dd54d76dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75adbb04f5fc07855188c31c9bd3f3d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a75adbb04f5fc07855188c31c9bd3f3d1">$admin_name</a> = $row_admin['admin_name']</td></tr>
+<tr class="separator:a75adbb04f5fc07855188c31c9bd3f3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7d620452c6832018f7caccac4c3240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a2c7d620452c6832018f7caccac4c3240">$admin_email</a> = $row_admin['admin_email']</td></tr>
+<tr class="separator:a2c7d620452c6832018f7caccac4c3240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ffc51de2506ba2ba809f550fe226e12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a7ffc51de2506ba2ba809f550fe226e12">$admin_image</a> = $row_admin['admin_image']</td></tr>
+<tr class="separator:a7ffc51de2506ba2ba809f550fe226e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d3647a07325b6675923f70cdc72e96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a82d3647a07325b6675923f70cdc72e96">$admin_country</a> = $row_admin['admin_country']</td></tr>
+<tr class="separator:a82d3647a07325b6675923f70cdc72e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d11f254ae94338da8ace750406b233"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#ae9d11f254ae94338da8ace750406b233">$admin_job</a> = $row_admin['admin_job']</td></tr>
+<tr class="separator:ae9d11f254ae94338da8ace750406b233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d8c2cd103c60b5421b305f05de0102"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a82d8c2cd103c60b5421b305f05de0102">$admin_contact</a> = $row_admin['admin_contact']</td></tr>
+<tr class="separator:a82d8c2cd103c60b5421b305f05de0102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761d85ce1d614942128f0f95d5f10abf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a761d85ce1d614942128f0f95d5f10abf">$admin_about</a> = $row_admin['admin_about']</td></tr>
+<tr class="separator:a761d85ce1d614942128f0f95d5f10abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4de3017d55617a490f251596c05a86a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#ab4de3017d55617a490f251596c05a86a">$get_products</a> = &quot;select * from products where product_vendor_status='pending'&quot;</td></tr>
+<tr class="separator:ab4de3017d55617a490f251596c05a86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fef6cd9a1e3b9977a74a5e90a7823c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a4fef6cd9a1e3b9977a74a5e90a7823c0">$run_products</a> = mysqli_query($con,$get_products)</td></tr>
+<tr class="separator:a4fef6cd9a1e3b9977a74a5e90a7823c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63f34c037982fc5b54511ebca9a3af1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#ac63f34c037982fc5b54511ebca9a3af1">$count_products</a> = mysqli_num_rows($run_products)</td></tr>
+<tr class="separator:ac63f34c037982fc5b54511ebca9a3af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2437c1b4e01611f4d146c0006bfde8d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a2437c1b4e01611f4d146c0006bfde8d2">$get_customers</a> = &quot;select * from customers&quot;</td></tr>
+<tr class="separator:a2437c1b4e01611f4d146c0006bfde8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af708522d5b005ea3db097c04aba0a8e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#af708522d5b005ea3db097c04aba0a8e5">$run_customers</a> = mysqli_query($con,$get_customers)</td></tr>
+<tr class="separator:af708522d5b005ea3db097c04aba0a8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53aa10ab73a936415d2a9ceab66e5335"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a53aa10ab73a936415d2a9ceab66e5335">$count_customers</a> = mysqli_num_rows($run_customers)</td></tr>
+<tr class="separator:a53aa10ab73a936415d2a9ceab66e5335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09de2a9068b463e8655ecd1eddf9fda0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a09de2a9068b463e8655ecd1eddf9fda0">$get_p_categories</a> = &quot;select * from product_categories&quot;</td></tr>
+<tr class="separator:a09de2a9068b463e8655ecd1eddf9fda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e99e42edab590a4a7d4beeffc1700c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#ac0e99e42edab590a4a7d4beeffc1700c">$run_p_categories</a> = mysqli_query($con,$get_p_categories)</td></tr>
+<tr class="separator:ac0e99e42edab590a4a7d4beeffc1700c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730f7b3f5f521859c80083ac114f839f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a730f7b3f5f521859c80083ac114f839f">$count_p_categories</a> = mysqli_num_rows($run_p_categories)</td></tr>
+<tr class="separator:a730f7b3f5f521859c80083ac114f839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a199b175d06c2963e8fc38f400573d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#ad3a199b175d06c2963e8fc38f400573d">$get_pending_orders</a> = &quot;select * from orders&quot;</td></tr>
+<tr class="separator:ad3a199b175d06c2963e8fc38f400573d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333cb111970037954bcdb892b89ef793"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#a333cb111970037954bcdb892b89ef793">$run_pending_orders</a> = mysqli_query($con,$get_pending_orders)</td></tr>
+<tr class="separator:a333cb111970037954bcdb892b89ef793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74e71edc639e932821959445ae0f86a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8php.html#ae74e71edc639e932821959445ae0f86a">$count_pending_orders</a> = mysqli_num_rows($run_pending_orders)</td></tr>
+<tr class="separator:ae74e71edc639e932821959445ae0f86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a761d85ce1d614942128f0f95d5f10abf" name="a761d85ce1d614942128f0f95d5f10abf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a761d85ce1d614942128f0f95d5f10abf">&#9670;&nbsp;</a></span>$admin_about</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$admin_about = $row_admin['admin_about']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00037">37</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a82d8c2cd103c60b5421b305f05de0102" name="a82d8c2cd103c60b5421b305f05de0102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d8c2cd103c60b5421b305f05de0102">&#9670;&nbsp;</a></span>$admin_contact</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$admin_contact = $row_admin['admin_contact']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00035">35</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a82d3647a07325b6675923f70cdc72e96" name="a82d3647a07325b6675923f70cdc72e96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d3647a07325b6675923f70cdc72e96">&#9670;&nbsp;</a></span>$admin_country</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$admin_country = $row_admin['admin_country']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00031">31</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a2c7d620452c6832018f7caccac4c3240" name="a2c7d620452c6832018f7caccac4c3240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7d620452c6832018f7caccac4c3240">&#9670;&nbsp;</a></span>$admin_email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$admin_email = $row_admin['admin_email']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00027">27</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a394fd1cd3bae869c4bc7388dd54d76dd" name="a394fd1cd3bae869c4bc7388dd54d76dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a394fd1cd3bae869c4bc7388dd54d76dd">&#9670;&nbsp;</a></span>$admin_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$admin_id = $row_admin['admin_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00023">23</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a7ffc51de2506ba2ba809f550fe226e12" name="a7ffc51de2506ba2ba809f550fe226e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ffc51de2506ba2ba809f550fe226e12">&#9670;&nbsp;</a></span>$admin_image</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$admin_image = $row_admin['admin_image']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00029">29</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="ae9d11f254ae94338da8ace750406b233" name="ae9d11f254ae94338da8ace750406b233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d11f254ae94338da8ace750406b233">&#9670;&nbsp;</a></span>$admin_job</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$admin_job = $row_admin['admin_job']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00033">33</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a75adbb04f5fc07855188c31c9bd3f3d1" name="a75adbb04f5fc07855188c31c9bd3f3d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75adbb04f5fc07855188c31c9bd3f3d1">&#9670;&nbsp;</a></span>$admin_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$admin_name = $row_admin['admin_name']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00025">25</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a53aa10ab73a936415d2a9ceab66e5335" name="a53aa10ab73a936415d2a9ceab66e5335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53aa10ab73a936415d2a9ceab66e5335">&#9670;&nbsp;</a></span>$count_customers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$count_customers = mysqli_num_rows($run_customers)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00048">48</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a730f7b3f5f521859c80083ac114f839f" name="a730f7b3f5f521859c80083ac114f839f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730f7b3f5f521859c80083ac114f839f">&#9670;&nbsp;</a></span>$count_p_categories</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$count_p_categories = mysqli_num_rows($run_p_categories)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00052">52</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="ae74e71edc639e932821959445ae0f86a" name="ae74e71edc639e932821959445ae0f86a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae74e71edc639e932821959445ae0f86a">&#9670;&nbsp;</a></span>$count_pending_orders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$count_pending_orders = mysqli_num_rows($run_pending_orders)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00059">59</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="ac63f34c037982fc5b54511ebca9a3af1" name="ac63f34c037982fc5b54511ebca9a3af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63f34c037982fc5b54511ebca9a3af1">&#9670;&nbsp;</a></span>$count_products</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$count_products = mysqli_num_rows($run_products)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00044">44</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a1e810567ce38cb6a60ee40579e063939" name="a1e810567ce38cb6a60ee40579e063939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e810567ce38cb6a60ee40579e063939">&#9670;&nbsp;</a></span>$get_admin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_admin = &quot;select * from admins where admin_email='$admin_session'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00017">17</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a2437c1b4e01611f4d146c0006bfde8d2" name="a2437c1b4e01611f4d146c0006bfde8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2437c1b4e01611f4d146c0006bfde8d2">&#9670;&nbsp;</a></span>$get_customers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_customers = &quot;select * from customers&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00046">46</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a09de2a9068b463e8655ecd1eddf9fda0" name="a09de2a9068b463e8655ecd1eddf9fda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09de2a9068b463e8655ecd1eddf9fda0">&#9670;&nbsp;</a></span>$get_p_categories</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_p_categories = &quot;select * from product_categories&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00050">50</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="ad3a199b175d06c2963e8fc38f400573d" name="ad3a199b175d06c2963e8fc38f400573d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a199b175d06c2963e8fc38f400573d">&#9670;&nbsp;</a></span>$get_pending_orders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_pending_orders = &quot;select * from orders&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00055">55</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="ab4de3017d55617a490f251596c05a86a" name="ab4de3017d55617a490f251596c05a86a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4de3017d55617a490f251596c05a86a">&#9670;&nbsp;</a></span>$get_products</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_products = &quot;select * from products where product_vendor_status='pending'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00040">40</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a8ef6ce796aea516ea7803b73de98ebe1" name="a8ef6ce796aea516ea7803b73de98ebe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef6ce796aea516ea7803b73de98ebe1">&#9670;&nbsp;</a></span>$row_admin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_admin = mysqli_fetch_array($run_admin)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00021">21</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="addeb8e63806d700c18316c024f7d0c9d" name="addeb8e63806d700c18316c024f7d0c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addeb8e63806d700c18316c024f7d0c9d">&#9670;&nbsp;</a></span>$run_admin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_admin = mysqli_query($con,$get_admin)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00019">19</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="af708522d5b005ea3db097c04aba0a8e5" name="af708522d5b005ea3db097c04aba0a8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af708522d5b005ea3db097c04aba0a8e5">&#9670;&nbsp;</a></span>$run_customers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_customers = mysqli_query($con,$get_customers)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00047">47</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="ac0e99e42edab590a4a7d4beeffc1700c" name="ac0e99e42edab590a4a7d4beeffc1700c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e99e42edab590a4a7d4beeffc1700c">&#9670;&nbsp;</a></span>$run_p_categories</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_p_categories = mysqli_query($con,$get_p_categories)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00051">51</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a333cb111970037954bcdb892b89ef793" name="a333cb111970037954bcdb892b89ef793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333cb111970037954bcdb892b89ef793">&#9670;&nbsp;</a></span>$run_pending_orders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_pending_orders = mysqli_query($con,$get_pending_orders)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00057">57</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="a4fef6cd9a1e3b9977a74a5e90a7823c0" name="a4fef6cd9a1e3b9977a74a5e90a7823c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fef6cd9a1e3b9977a74a5e90a7823c0">&#9670;&nbsp;</a></span>$run_products</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_products = mysqli_query($con,$get_products)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00042">42</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+<a id="aa54b5a0b3519963867bfa1a35b89b213" name="aa54b5a0b3519963867bfa1a35b89b213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54b5a0b3519963867bfa1a35b89b213">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a> (isset( $_GET[ 'insert_review']) or isset( $_GET[ 'edit_review'])) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line">$admin_session = <a class="code hl_variable" href="insert__product_8php.html#a41710f7997216348b130787b482fbbea">$_SESSION</a>[<span class="stringliteral">&#39;admin_email&#39;</span>]</div>
+<div class="ttc" id="ainsert__product_8php_html_a41710f7997216348b130787b482fbbea"><div class="ttname"><a href="insert__product_8php.html#a41710f7997216348b130787b482fbbea">$_SESSION</a></div><div class="ttdeci">$_SESSION['random_id']</div><div class="ttdef"><b>Definition:</b> <a href="insert__product_8php_source.html#l00021">insert_product.php:21</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="index_8php_source.html#l00013">13</a> del archivo <a class="el" href="index_8php_source.html">index.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

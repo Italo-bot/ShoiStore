@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['dashboard_2ephp_0',['dashboard.php',['../dashboard_8php.html',1,'']]],
+  ['delete_5fbox_2ephp_1',['delete_box.php',['../delete__box_8php.html',1,'']]],
+  ['delete_5fbundle_2ephp_2',['delete_bundle.php',['../delete__bundle_8php.html',1,'']]],
+  ['delete_5fcat_2ephp_3',['delete_cat.php',['../delete__cat_8php.html',1,'']]],
+  ['delete_5fcommission_2ephp_4',['delete_commission.php',['../delete__commission_8php.html',1,'']]],
+  ['delete_5fcountry_2ephp_5',['delete_country.php',['../delete__country_8php.html',1,'']]],
+  ['delete_5fcoupon_2ephp_6',['delete_coupon.php',['../delete__coupon_8php.html',1,'']]],
+  ['delete_5fdownload_2ephp_7',['delete_download.php',['../delete__download_8php.html',1,'']]],
+  ['delete_5fenquiry_2ephp_8',['delete_enquiry.php',['../delete__enquiry_8php.html',1,'']]],
+  ['delete_5ficon_2ephp_9',['delete_icon.php',['../delete__icon_8php.html',1,'']]],
+  ['delete_5fmanufacturer_2ephp_10',['delete_manufacturer.php',['../delete__manufacturer_8php.html',1,'']]],
+  ['delete_5fnote_2ephp_11',['delete_note.php',['../delete__note_8php.html',1,'']]],
+  ['delete_5fp_5fcat_2ephp_12',['delete_p_cat.php',['../delete__p__cat_8php.html',1,'']]],
+  ['delete_5fproduct_2ephp_13',['delete_product.php',['../delete__product_8php.html',1,'']]],
+  ['delete_5frel_2ephp_14',['delete_rel.php',['../delete__rel_8php.html',1,'']]],
+  ['delete_5freview_2ephp_15',['delete_review.php',['../delete__review_8php.html',1,'']]],
+  ['delete_5fservice_2ephp_16',['delete_service.php',['../delete__service_8php.html',1,'']]],
+  ['delete_5fshipping_5frate_2ephp_17',['delete_shipping_rate.php',['../delete__shipping__rate_8php.html',1,'']]],
+  ['delete_5fshipping_5ftype_2ephp_18',['delete_shipping_type.php',['../delete__shipping__type_8php.html',1,'']]],
+  ['delete_5fshipping_5fzone_2ephp_19',['delete_shipping_zone.php',['../delete__shipping__zone_8php.html',1,'']]],
+  ['delete_5fslide_2ephp_20',['delete_slide.php',['../delete__slide_8php.html',1,'']]],
+  ['delete_5fterm_2ephp_21',['delete_term.php',['../delete__term_8php.html',1,'']]]
+];

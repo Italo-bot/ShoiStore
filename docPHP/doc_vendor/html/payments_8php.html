@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo payments.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore
+   </div>
+   <div id="projectbrief">Funciones Vendedor</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo payments.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="payments_8php_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae09d92553cf1ade52ced54c1e713d0ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a>(!isset($_SESSION['customer_email']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#ae09d92553cf1ade52ced54c1e713d0ca">$customer_email</a> = $_SESSION['customer_email']</td></tr>
+<tr class="separator:ae09d92553cf1ade52ced54c1e713d0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89194200b59b48deba5a2fc626dc42ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a89194200b59b48deba5a2fc626dc42ae">$select_customer</a> = &quot;select * from customers where customer_email='$customer_email'&quot;</td></tr>
+<tr class="separator:a89194200b59b48deba5a2fc626dc42ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a15d79ded58394930c703ba4ef7f9d7dc">$run_customer</a> = mysqli_query($con,$select_customer)</td></tr>
+<tr class="separator:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28035cb2628d043f24523cf85ac3e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#ae28035cb2628d043f24523cf85ac3e9f">$row_customer</a> = mysqli_fetch_array($run_customer)</td></tr>
+<tr class="separator:ae28035cb2628d043f24523cf85ac3e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925664b50ada2b2be76765b3bc7af1d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a925664b50ada2b2be76765b3bc7af1d0">$customer_id</a> = $row_customer['customer_id']</td></tr>
+<tr class="separator:a925664b50ada2b2be76765b3bc7af1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2bc56f72832efcaf849161986a5678"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a5c2bc56f72832efcaf849161986a5678">$select_payment_settings</a> = &quot;select * from payment_settings&quot;</td></tr>
+<tr class="separator:a5c2bc56f72832efcaf849161986a5678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf845292a644063c0696604841a2768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a8bf845292a644063c0696604841a2768">$run_payment_setttings</a> = mysqli_query($con,$select_payment_settings)</td></tr>
+<tr class="separator:a8bf845292a644063c0696604841a2768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade105c33e562b9a523c67794bb51bf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#aade105c33e562b9a523c67794bb51bf8">$row_payment_settings</a> = mysqli_fetch_array($run_payment_setttings)</td></tr>
+<tr class="separator:aade105c33e562b9a523c67794bb51bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5364262dcea5fc810b39cd0dccb2568b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a5364262dcea5fc810b39cd0dccb2568b">$minimum_withdraw_limit</a> = $row_payment_settings['minimum_withdraw_limit']</td></tr>
+<tr class="separator:a5364262dcea5fc810b39cd0dccb2568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac06d4f8be8afe436f93fe0327bc08a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#aac06d4f8be8afe436f93fe0327bc08a6">$days_before_withdraw</a> = $row_payment_settings['days_before_withdraw']</td></tr>
+<tr class="separator:aac06d4f8be8afe436f93fe0327bc08a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1827bf014f4fb174920a53dfba8fd81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#ad1827bf014f4fb174920a53dfba8fd81">$select_vendor_account</a> = &quot;select * from vendor_accounts where vendor_id='$customer_id'&quot;</td></tr>
+<tr class="separator:ad1827bf014f4fb174920a53dfba8fd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64094e6afa0e6d3838f95458c4dfa21e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a64094e6afa0e6d3838f95458c4dfa21e">$run_vendor_account</a> = mysqli_query($con, $select_vendor_account)</td></tr>
+<tr class="separator:a64094e6afa0e6d3838f95458c4dfa21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a285987aa38ed27ff9cad86c903fcc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a2a285987aa38ed27ff9cad86c903fcc1">$row_vendor_account</a> = mysqli_fetch_array($run_vendor_account)</td></tr>
+<tr class="separator:a2a285987aa38ed27ff9cad86c903fcc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d7308049b3257bf754b570c888ffd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#ac6d7308049b3257bf754b570c888ffd6">$current_balance</a> = $row_vendor_account['current_balance']</td></tr>
+<tr class="separator:ac6d7308049b3257bf754b570c888ffd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa64e4bf8f19c1f87c0d16e5d5ca58af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#afa64e4bf8f19c1f87c0d16e5d5ca58af">$pending_clearance</a> = $row_vendor_account['pending_clearance']</td></tr>
+<tr class="separator:afa64e4bf8f19c1f87c0d16e5d5ca58af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa42b78effe31abbb2bddb2e5b3d7f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a7fa42b78effe31abbb2bddb2e5b3d7f5">$withdrawals</a> = $row_vendor_account['withdrawals']</td></tr>
+<tr class="separator:a7fa42b78effe31abbb2bddb2e5b3d7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503af3e3463261700bbd658447b86f68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a503af3e3463261700bbd658447b86f68">$month_earnings</a> = $row_vendor_account['month_earnings']</td></tr>
+<tr class="separator:a503af3e3463261700bbd658447b86f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0545be678a963e1168de22312cd91b7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a0545be678a963e1168de22312cd91b7c">$select_store_settings</a> = &quot;select * from store_settings where vendor_id='$customer_id'&quot;</td></tr>
+<tr class="separator:a0545be678a963e1168de22312cd91b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b91e86f7f9cede65a1839f21ac1de53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a1b91e86f7f9cede65a1839f21ac1de53">$run_store_settings</a> = mysqli_query($con,$select_store_settings)</td></tr>
+<tr class="separator:a1b91e86f7f9cede65a1839f21ac1de53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a6eed6d56c858508e32218e05cb1d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a12a6eed6d56c858508e32218e05cb1d4">$row_store_settings</a> = mysqli_fetch_array($run_store_settings)</td></tr>
+<tr class="separator:a12a6eed6d56c858508e32218e05cb1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105aca4e4c7ed6c1d5813038dba56134"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a105aca4e4c7ed6c1d5813038dba56134">$paypal_email</a> = $row_store_settings[&quot;paypal_email&quot;]</td></tr>
+<tr class="separator:a105aca4e4c7ed6c1d5813038dba56134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1bb927c855db148eae8cd4548003ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a>($current_balance &gt;=$minimum_withdraw_limit)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a3d1bb927c855db148eae8cd4548003ce">else</a> {</td></tr>
+<tr class="separator:a3d1bb927c855db148eae8cd4548003ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83018d9153d17d91fbcf3bc10158d34f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0</td></tr>
+<tr class="separator:a83018d9153d17d91fbcf3bc10158d34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d24d190d35395c7195f6a82f40e9464"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a1d24d190d35395c7195f6a82f40e9464">$select_vendor_commissions</a> = &quot;select * from vendor_commissions where vendor_id='$vendor_id' order by 1 desc&quot;</td></tr>
+<tr class="separator:a1d24d190d35395c7195f6a82f40e9464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cf67820f06ba9489b2786862497e5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="payments_8php.html#a86cf67820f06ba9489b2786862497e5d">$run_vendor_commissions</a> = mysqli_query($con,$select_vendor_commissions)</td></tr>
+<tr class="separator:a86cf67820f06ba9489b2786862497e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="ac6d7308049b3257bf754b570c888ffd6" name="ac6d7308049b3257bf754b570c888ffd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d7308049b3257bf754b570c888ffd6">&#9670;&nbsp;</a></span>$current_balance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$current_balance = $row_vendor_account['current_balance']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00035">35</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="ae09d92553cf1ade52ced54c1e713d0ca" name="ae09d92553cf1ade52ced54c1e713d0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09d92553cf1ade52ced54c1e713d0ca">&#9670;&nbsp;</a></span>$customer_email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a> (!isset( $_SESSION[ 'customer_email'])) $customer_email = $_SESSION['customer_email']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00009">9</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a925664b50ada2b2be76765b3bc7af1d0" name="a925664b50ada2b2be76765b3bc7af1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925664b50ada2b2be76765b3bc7af1d0">&#9670;&nbsp;</a></span>$customer_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$customer_id = $row_customer['customer_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00017">17</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="aac06d4f8be8afe436f93fe0327bc08a6" name="aac06d4f8be8afe436f93fe0327bc08a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac06d4f8be8afe436f93fe0327bc08a6">&#9670;&nbsp;</a></span>$days_before_withdraw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$days_before_withdraw = $row_payment_settings['days_before_withdraw']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00027">27</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a83018d9153d17d91fbcf3bc10158d34f" name="a83018d9153d17d91fbcf3bc10158d34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83018d9153d17d91fbcf3bc10158d34f">&#9670;&nbsp;</a></span>$i</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$i = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00209">209</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a5364262dcea5fc810b39cd0dccb2568b" name="a5364262dcea5fc810b39cd0dccb2568b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5364262dcea5fc810b39cd0dccb2568b">&#9670;&nbsp;</a></span>$minimum_withdraw_limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$minimum_withdraw_limit = $row_payment_settings['minimum_withdraw_limit']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00025">25</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a503af3e3463261700bbd658447b86f68" name="a503af3e3463261700bbd658447b86f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503af3e3463261700bbd658447b86f68">&#9670;&nbsp;</a></span>$month_earnings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$month_earnings = $row_vendor_account['month_earnings']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00041">41</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a105aca4e4c7ed6c1d5813038dba56134" name="a105aca4e4c7ed6c1d5813038dba56134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105aca4e4c7ed6c1d5813038dba56134">&#9670;&nbsp;</a></span>$paypal_email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$paypal_email = $row_store_settings[&quot;paypal_email&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00049">49</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="afa64e4bf8f19c1f87c0d16e5d5ca58af" name="afa64e4bf8f19c1f87c0d16e5d5ca58af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa64e4bf8f19c1f87c0d16e5d5ca58af">&#9670;&nbsp;</a></span>$pending_clearance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pending_clearance = $row_vendor_account['pending_clearance']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00037">37</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="ae28035cb2628d043f24523cf85ac3e9f" name="ae28035cb2628d043f24523cf85ac3e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28035cb2628d043f24523cf85ac3e9f">&#9670;&nbsp;</a></span>$row_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_customer = mysqli_fetch_array($run_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00015">15</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="aade105c33e562b9a523c67794bb51bf8" name="aade105c33e562b9a523c67794bb51bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade105c33e562b9a523c67794bb51bf8">&#9670;&nbsp;</a></span>$row_payment_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_payment_settings = mysqli_fetch_array($run_payment_setttings)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00023">23</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a12a6eed6d56c858508e32218e05cb1d4" name="a12a6eed6d56c858508e32218e05cb1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a6eed6d56c858508e32218e05cb1d4">&#9670;&nbsp;</a></span>$row_store_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_store_settings = mysqli_fetch_array($run_store_settings)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00047">47</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a2a285987aa38ed27ff9cad86c903fcc1" name="a2a285987aa38ed27ff9cad86c903fcc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a285987aa38ed27ff9cad86c903fcc1">&#9670;&nbsp;</a></span>$row_vendor_account</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_vendor_account = mysqli_fetch_array($run_vendor_account)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00033">33</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a15d79ded58394930c703ba4ef7f9d7dc" name="a15d79ded58394930c703ba4ef7f9d7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d79ded58394930c703ba4ef7f9d7dc">&#9670;&nbsp;</a></span>$run_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_customer = mysqli_query($con,$select_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00013">13</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a8bf845292a644063c0696604841a2768" name="a8bf845292a644063c0696604841a2768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf845292a644063c0696604841a2768">&#9670;&nbsp;</a></span>$run_payment_setttings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_payment_setttings = mysqli_query($con,$select_payment_settings)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00021">21</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a1b91e86f7f9cede65a1839f21ac1de53" name="a1b91e86f7f9cede65a1839f21ac1de53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b91e86f7f9cede65a1839f21ac1de53">&#9670;&nbsp;</a></span>$run_store_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_store_settings = mysqli_query($con,$select_store_settings)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00045">45</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a64094e6afa0e6d3838f95458c4dfa21e" name="a64094e6afa0e6d3838f95458c4dfa21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64094e6afa0e6d3838f95458c4dfa21e">&#9670;&nbsp;</a></span>$run_vendor_account</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_vendor_account = mysqli_query($con, $select_vendor_account)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00031">31</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a86cf67820f06ba9489b2786862497e5d" name="a86cf67820f06ba9489b2786862497e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86cf67820f06ba9489b2786862497e5d">&#9670;&nbsp;</a></span>$run_vendor_commissions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_vendor_commissions = mysqli_query($con,$select_vendor_commissions)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00213">213</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a89194200b59b48deba5a2fc626dc42ae" name="a89194200b59b48deba5a2fc626dc42ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89194200b59b48deba5a2fc626dc42ae">&#9670;&nbsp;</a></span>$select_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_customer = &quot;select * from customers where customer_email='$customer_email'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00011">11</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a5c2bc56f72832efcaf849161986a5678" name="a5c2bc56f72832efcaf849161986a5678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2bc56f72832efcaf849161986a5678">&#9670;&nbsp;</a></span>$select_payment_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_payment_settings = &quot;select * from payment_settings&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00019">19</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a0545be678a963e1168de22312cd91b7c" name="a0545be678a963e1168de22312cd91b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0545be678a963e1168de22312cd91b7c">&#9670;&nbsp;</a></span>$select_store_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_store_settings = &quot;select * from store_settings where vendor_id='$customer_id'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00043">43</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="ad1827bf014f4fb174920a53dfba8fd81" name="ad1827bf014f4fb174920a53dfba8fd81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1827bf014f4fb174920a53dfba8fd81">&#9670;&nbsp;</a></span>$select_vendor_account</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_vendor_account = &quot;select * from vendor_accounts where vendor_id='$customer_id'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00029">29</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a1d24d190d35395c7195f6a82f40e9464" name="a1d24d190d35395c7195f6a82f40e9464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d24d190d35395c7195f6a82f40e9464">&#9670;&nbsp;</a></span>$select_vendor_commissions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_vendor_commissions = &quot;select * from vendor_commissions where vendor_id='$vendor_id' order by 1 desc&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00211">211</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a7fa42b78effe31abbb2bddb2e5b3d7f5" name="a7fa42b78effe31abbb2bddb2e5b3d7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa42b78effe31abbb2bddb2e5b3d7f5">&#9670;&nbsp;</a></span>$withdrawals</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$withdrawals = $row_vendor_account['withdrawals']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00039">39</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+<a id="a3d1bb927c855db148eae8cd4548003ce" name="a3d1bb927c855db148eae8cd4548003ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1bb927c855db148eae8cd4548003ce">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a>($row_vendor_commissions=mysqli_fetch_array($run_vendor_commissions)) <a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a> (empty( $paypal_email)) else {</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="payments_8php_source.html#l00155">155</a> del archivo <a class="el" href="payments_8php_source.html">payments.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo insert_review.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore
+   </div>
+   <div id="projectbrief">Funciones administrador</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo insert_review.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="insert__review_8php_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5c4b58c866141a91c912b74270ce1aa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a>(!isset($_SESSION['admin_email'])) <a class="el" href="view__reviews_8php.html#a7468d5c63db0370c41ef2c532ce3d437">else</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__review_8php.html#a5c4b58c866141a91c912b74270ce1aa3">$select_customers</a> = &quot;select * from customers&quot;</td></tr>
+<tr class="separator:a5c4b58c866141a91c912b74270ce1aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af708522d5b005ea3db097c04aba0a8e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__review_8php.html#af708522d5b005ea3db097c04aba0a8e5">$run_customers</a> = mysqli_query($con,$select_customers)</td></tr>
+<tr class="separator:af708522d5b005ea3db097c04aba0a8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23f1f5900cad6b9edf5c361efc42692"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a>($row_customers=mysqli_fetch_array($run_customers))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__review_8php.html#aa23f1f5900cad6b9edf5c361efc42692">$select_products</a> = &quot;select * from products where status='product'&quot;</td></tr>
+<tr class="separator:aa23f1f5900cad6b9edf5c361efc42692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fef6cd9a1e3b9977a74a5e90a7823c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__review_8php.html#a4fef6cd9a1e3b9977a74a5e90a7823c0">$run_products</a> = mysqli_query($con,$select_products)</td></tr>
+<tr class="separator:a4fef6cd9a1e3b9977a74a5e90a7823c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd1f1b7b0826e1b91a7fb0aa5147e32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a>($row_products=mysqli_fetch_array($run_products))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__review_8php.html#a4cd1f1b7b0826e1b91a7fb0aa5147e32">$select_bundles</a> = &quot;select * from products where status='bundle'&quot;</td></tr>
+<tr class="separator:a4cd1f1b7b0826e1b91a7fb0aa5147e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafe89cbcd86d3317fb4d8de1fad93bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__review_8php.html#adafe89cbcd86d3317fb4d8de1fad93bb">$run_bundles</a> = mysqli_query($con,$select_bundles)</td></tr>
+<tr class="separator:adafe89cbcd86d3317fb4d8de1fad93bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="adafe89cbcd86d3317fb4d8de1fad93bb" name="adafe89cbcd86d3317fb4d8de1fad93bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adafe89cbcd86d3317fb4d8de1fad93bb">&#9670;&nbsp;</a></span>$run_bundles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_bundles = mysqli_query($con,$select_bundles)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__review_8php_source.html#l00126">126</a> del archivo <a class="el" href="insert__review_8php_source.html">insert_review.php</a>.</p>
+
+</div>
+</div>
+<a id="af708522d5b005ea3db097c04aba0a8e5" name="af708522d5b005ea3db097c04aba0a8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af708522d5b005ea3db097c04aba0a8e5">&#9670;&nbsp;</a></span>$run_customers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_customers = mysqli_query($con,$select_customers)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__review_8php_source.html#l00068">68</a> del archivo <a class="el" href="insert__review_8php_source.html">insert_review.php</a>.</p>
+
+</div>
+</div>
+<a id="a4fef6cd9a1e3b9977a74a5e90a7823c0" name="a4fef6cd9a1e3b9977a74a5e90a7823c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fef6cd9a1e3b9977a74a5e90a7823c0">&#9670;&nbsp;</a></span>$run_products</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_products = mysqli_query($con,$select_products)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__review_8php_source.html#l00104">104</a> del archivo <a class="el" href="insert__review_8php_source.html">insert_review.php</a>.</p>
+
+</div>
+</div>
+<a id="a4cd1f1b7b0826e1b91a7fb0aa5147e32" name="a4cd1f1b7b0826e1b91a7fb0aa5147e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd1f1b7b0826e1b91a7fb0aa5147e32">&#9670;&nbsp;</a></span>$select_bundles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a> ( $row_products=mysqli_fetch_array( $run_products)) $select_bundles = &quot;select * from products where status='bundle'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__review_8php_source.html#l00124">124</a> del archivo <a class="el" href="insert__review_8php_source.html">insert_review.php</a>.</p>
+
+</div>
+</div>
+<a id="a5c4b58c866141a91c912b74270ce1aa3" name="a5c4b58c866141a91c912b74270ce1aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4b58c866141a91c912b74270ce1aa3">&#9670;&nbsp;</a></span>$select_customers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a> (!isset( $_SESSION[ 'admin_email'])) <a class="el" href="view__reviews_8php.html#a7468d5c63db0370c41ef2c532ce3d437">else</a> $select_customers = &quot;select * from customers&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__review_8php_source.html#l00066">66</a> del archivo <a class="el" href="insert__review_8php_source.html">insert_review.php</a>.</p>
+
+</div>
+</div>
+<a id="aa23f1f5900cad6b9edf5c361efc42692" name="aa23f1f5900cad6b9edf5c361efc42692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23f1f5900cad6b9edf5c361efc42692">&#9670;&nbsp;</a></span>$select_products</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a> ( $row_customers=mysqli_fetch_array( $run_customers)) $select_products = &quot;select * from products where status='product'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__review_8php_source.html#l00102">102</a> del archivo <a class="el" href="insert__review_8php_source.html">insert_review.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

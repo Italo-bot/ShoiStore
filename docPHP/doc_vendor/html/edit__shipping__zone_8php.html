@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo edit_shipping_zone.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore
+   </div>
+   <div id="projectbrief">Funciones Vendedor</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo edit_shipping_zone.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="edit__shipping__zone_8php_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae09d92553cf1ade52ced54c1e713d0ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a>(!isset($_SESSION['customer_email']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#ae09d92553cf1ade52ced54c1e713d0ca">$customer_email</a> = $_SESSION['customer_email']</td></tr>
+<tr class="separator:ae09d92553cf1ade52ced54c1e713d0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89194200b59b48deba5a2fc626dc42ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#a89194200b59b48deba5a2fc626dc42ae">$select_customer</a> = &quot;select * from customers where customer_email='$customer_email'&quot;</td></tr>
+<tr class="separator:a89194200b59b48deba5a2fc626dc42ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#a15d79ded58394930c703ba4ef7f9d7dc">$run_customer</a> = mysqli_query($con,$select_customer)</td></tr>
+<tr class="separator:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28035cb2628d043f24523cf85ac3e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#ae28035cb2628d043f24523cf85ac3e9f">$row_customer</a> = mysqli_fetch_array($run_customer)</td></tr>
+<tr class="separator:ae28035cb2628d043f24523cf85ac3e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925664b50ada2b2be76765b3bc7af1d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#a925664b50ada2b2be76765b3bc7af1d0">$customer_id</a> = $row_customer['customer_id']</td></tr>
+<tr class="separator:a925664b50ada2b2be76765b3bc7af1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc54b3f3350130484fad6ab719d0526"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#adbc54b3f3350130484fad6ab719d0526">$edit_zone_id</a> = $_GET['edit_shipping_zone']</td></tr>
+<tr class="separator:adbc54b3f3350130484fad6ab719d0526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68603a9581c3347bdedb7fea633a0e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#ac68603a9581c3347bdedb7fea633a0e2">$select_zone</a> = &quot;select * from zones where zone_id='$edit_zone_id'&quot;</td></tr>
+<tr class="separator:ac68603a9581c3347bdedb7fea633a0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d730d20e953e1ce02f2891f0b926b2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#a4d730d20e953e1ce02f2891f0b926b2d">$run_zone</a> = mysqli_query($con,$select_zone)</td></tr>
+<tr class="separator:a4d730d20e953e1ce02f2891f0b926b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a52f57e3e5fa09c53c516308ebcf89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#af2a52f57e3e5fa09c53c516308ebcf89">$row_zone</a> = mysqli_fetch_array($run_zone)</td></tr>
+<tr class="separator:af2a52f57e3e5fa09c53c516308ebcf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d932333f283482e45b491011277c29f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#a1d932333f283482e45b491011277c29f">$zone_name</a> = $row_zone['zone_name']</td></tr>
+<tr class="separator:a1d932333f283482e45b491011277c29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88f53768dc8956ddae72cfc0a133106"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#aa88f53768dc8956ddae72cfc0a133106">$select_countries</a> = &quot;select * from countries&quot;</td></tr>
+<tr class="separator:aa88f53768dc8956ddae72cfc0a133106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c72f3329b642d81d07eef0de5b279b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#a4c72f3329b642d81d07eef0de5b279b7">$run_countries</a> = mysqli_query($con, $select_countries)</td></tr>
+<tr class="separator:a4c72f3329b642d81d07eef0de5b279b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac5efbd540bb9db3698290882b8eda6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a>($row_countries=mysqli_fetch_array($run_countries))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#aeac5efbd540bb9db3698290882b8eda6">$result</a> = &quot;&quot;</td></tr>
+<tr class="separator:aeac5efbd540bb9db3698290882b8eda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68052b2c8d943394768cba6a7257f3ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#a68052b2c8d943394768cba6a7257f3ad">$get_zone_locations</a> = &quot;select * from zones_locations where zone_id='$edit_zone_id' and location_type='postcode'&quot;</td></tr>
+<tr class="separator:a68052b2c8d943394768cba6a7257f3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf4ddc8d2fd4d21717f2248cf89fb52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#acaf4ddc8d2fd4d21717f2248cf89fb52">$run_zone_locations</a> = mysqli_query($con, $get_zone_locations)</td></tr>
+<tr class="separator:acaf4ddc8d2fd4d21717f2248cf89fb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd75b2acc05e762f1a9294c098f4438"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__shipping__zone_8php.html#afdd75b2acc05e762f1a9294c098f4438">while</a> ( $row_zone_locations=mysqli_fetch_array( $run_zone_locations))</td></tr>
+<tr class="separator:afdd75b2acc05e762f1a9294c098f4438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="ae09d92553cf1ade52ced54c1e713d0ca" name="ae09d92553cf1ade52ced54c1e713d0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09d92553cf1ade52ced54c1e713d0ca">&#9670;&nbsp;</a></span>$customer_email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a> (!isset( $_SESSION[ 'customer_email'])) $customer_email = $_SESSION['customer_email']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00009">9</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="a925664b50ada2b2be76765b3bc7af1d0" name="a925664b50ada2b2be76765b3bc7af1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925664b50ada2b2be76765b3bc7af1d0">&#9670;&nbsp;</a></span>$customer_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$customer_id = $row_customer['customer_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00017">17</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="adbc54b3f3350130484fad6ab719d0526" name="adbc54b3f3350130484fad6ab719d0526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc54b3f3350130484fad6ab719d0526">&#9670;&nbsp;</a></span>$edit_zone_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$edit_zone_id = $_GET['edit_shipping_zone']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00019">19</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="a68052b2c8d943394768cba6a7257f3ad" name="a68052b2c8d943394768cba6a7257f3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68052b2c8d943394768cba6a7257f3ad">&#9670;&nbsp;</a></span>$get_zone_locations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_zone_locations = &quot;select * from zones_locations where zone_id='$edit_zone_id' and location_type='postcode'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00130">130</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="aeac5efbd540bb9db3698290882b8eda6" name="aeac5efbd540bb9db3698290882b8eda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac5efbd540bb9db3698290882b8eda6">&#9670;&nbsp;</a></span>$result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a> ( $row_countries=mysqli_fetch_array( $run_countries)) $result = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00128">128</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="ae28035cb2628d043f24523cf85ac3e9f" name="ae28035cb2628d043f24523cf85ac3e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28035cb2628d043f24523cf85ac3e9f">&#9670;&nbsp;</a></span>$row_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_customer = mysqli_fetch_array($run_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00015">15</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="af2a52f57e3e5fa09c53c516308ebcf89" name="af2a52f57e3e5fa09c53c516308ebcf89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a52f57e3e5fa09c53c516308ebcf89">&#9670;&nbsp;</a></span>$row_zone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_zone = mysqli_fetch_array($run_zone)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00025">25</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="a4c72f3329b642d81d07eef0de5b279b7" name="a4c72f3329b642d81d07eef0de5b279b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c72f3329b642d81d07eef0de5b279b7">&#9670;&nbsp;</a></span>$run_countries</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_countries = mysqli_query($con, $select_countries)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00079">79</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="a15d79ded58394930c703ba4ef7f9d7dc" name="a15d79ded58394930c703ba4ef7f9d7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d79ded58394930c703ba4ef7f9d7dc">&#9670;&nbsp;</a></span>$run_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_customer = mysqli_query($con,$select_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00013">13</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="a4d730d20e953e1ce02f2891f0b926b2d" name="a4d730d20e953e1ce02f2891f0b926b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d730d20e953e1ce02f2891f0b926b2d">&#9670;&nbsp;</a></span>$run_zone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_zone = mysqli_query($con,$select_zone)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00023">23</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="acaf4ddc8d2fd4d21717f2248cf89fb52" name="acaf4ddc8d2fd4d21717f2248cf89fb52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaf4ddc8d2fd4d21717f2248cf89fb52">&#9670;&nbsp;</a></span>$run_zone_locations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_zone_locations = mysqli_query($con, $get_zone_locations)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00132">132</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="aa88f53768dc8956ddae72cfc0a133106" name="aa88f53768dc8956ddae72cfc0a133106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88f53768dc8956ddae72cfc0a133106">&#9670;&nbsp;</a></span>$select_countries</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_countries = &quot;select * from countries&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00077">77</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="a89194200b59b48deba5a2fc626dc42ae" name="a89194200b59b48deba5a2fc626dc42ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89194200b59b48deba5a2fc626dc42ae">&#9670;&nbsp;</a></span>$select_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_customer = &quot;select * from customers where customer_email='$customer_email'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00011">11</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="ac68603a9581c3347bdedb7fea633a0e2" name="ac68603a9581c3347bdedb7fea633a0e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac68603a9581c3347bdedb7fea633a0e2">&#9670;&nbsp;</a></span>$select_zone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_zone = &quot;select * from zones where zone_id='$edit_zone_id'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00021">21</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="a1d932333f283482e45b491011277c29f" name="a1d932333f283482e45b491011277c29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d932333f283482e45b491011277c29f">&#9670;&nbsp;</a></span>$zone_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$zone_name = $row_zone['zone_name']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00027">27</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+<a id="afdd75b2acc05e762f1a9294c098f4438" name="afdd75b2acc05e762f1a9294c098f4438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd75b2acc05e762f1a9294c098f4438">&#9670;&nbsp;</a></span>while</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">while($row_zone_locations=mysqli_fetch_array($run_zone_locations)) </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$row_zone_locations</em> = <code>mysqli_fetch_array($run_zone_locations)</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__shipping__zone_8php_source.html#l00134">134</a> del archivo <a class="el" href="edit__shipping__zone_8php_source.html">edit_shipping_zone.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

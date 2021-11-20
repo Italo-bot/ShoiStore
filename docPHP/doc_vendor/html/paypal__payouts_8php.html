@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo paypal_payouts.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore
+   </div>
+   <div id="projectbrief">Funciones Vendedor</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo paypal_payouts.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="paypal__payouts_8php_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae09d92553cf1ade52ced54c1e713d0ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a>(!isset($_SESSION['customer_email']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#ae09d92553cf1ade52ced54c1e713d0ca">$customer_email</a> = $_SESSION['customer_email']</td></tr>
+<tr class="separator:ae09d92553cf1ade52ced54c1e713d0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89194200b59b48deba5a2fc626dc42ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#a89194200b59b48deba5a2fc626dc42ae">$select_customer</a> = &quot;select * from customers where customer_email='$customer_email'&quot;</td></tr>
+<tr class="separator:a89194200b59b48deba5a2fc626dc42ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#a15d79ded58394930c703ba4ef7f9d7dc">$run_customer</a> = mysqli_query($con,$select_customer)</td></tr>
+<tr class="separator:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28035cb2628d043f24523cf85ac3e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#ae28035cb2628d043f24523cf85ac3e9f">$row_customer</a> = mysqli_fetch_array($run_customer)</td></tr>
+<tr class="separator:ae28035cb2628d043f24523cf85ac3e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925664b50ada2b2be76765b3bc7af1d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#a925664b50ada2b2be76765b3bc7af1d0">$customer_id</a> = $row_customer['customer_id']</td></tr>
+<tr class="separator:a925664b50ada2b2be76765b3bc7af1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2bc56f72832efcaf849161986a5678"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#a5c2bc56f72832efcaf849161986a5678">$select_payment_settings</a> = &quot;select * from payment_settings&quot;</td></tr>
+<tr class="separator:a5c2bc56f72832efcaf849161986a5678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf845292a644063c0696604841a2768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#a8bf845292a644063c0696604841a2768">$run_payment_setttings</a> = mysqli_query($con,$select_payment_settings)</td></tr>
+<tr class="separator:a8bf845292a644063c0696604841a2768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade105c33e562b9a523c67794bb51bf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#aade105c33e562b9a523c67794bb51bf8">$row_payment_settings</a> = mysqli_fetch_array($run_payment_setttings)</td></tr>
+<tr class="separator:aade105c33e562b9a523c67794bb51bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5364262dcea5fc810b39cd0dccb2568b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#a5364262dcea5fc810b39cd0dccb2568b">$minimum_withdraw_limit</a> = $row_payment_settings['minimum_withdraw_limit']</td></tr>
+<tr class="separator:a5364262dcea5fc810b39cd0dccb2568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8a06655170a921ff5d2b1318ec78b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#abd8a06655170a921ff5d2b1318ec78b8">$paypal_sandbox</a> = $row_payment_settings['paypal_sandbox']</td></tr>
+<tr class="separator:abd8a06655170a921ff5d2b1318ec78b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eabdf1d65f8525e7bdc081eb5f0f809"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#a6eabdf1d65f8525e7bdc081eb5f0f809">$paypal_currency_code</a> = $row_payment_settings['paypal_currency_code']</td></tr>
+<tr class="separator:a6eabdf1d65f8525e7bdc081eb5f0f809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a6dc49f80de1a86959441fe3c31234"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#a20a6dc49f80de1a86959441fe3c31234">$paypal_app_client_id</a> = $row_payment_settings['paypal_app_client_id']</td></tr>
+<tr class="separator:a20a6dc49f80de1a86959441fe3c31234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11f8d76d4c21253e06f5443dc066a37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#af11f8d76d4c21253e06f5443dc066a37">$paypal_app_client_secret</a> = $row_payment_settings['paypal_app_client_secret']</td></tr>
+<tr class="separator:af11f8d76d4c21253e06f5443dc066a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ae293e6b17a718c97b99bf8b8d15a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a>( $paypal_sandbox==&quot;on&quot;)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#ae0ae293e6b17a718c97b99bf8b8d15a5">elseif</a> ( $paypal_sandbox==&quot;off&quot;)</td></tr>
+<tr class="separator:ae0ae293e6b17a718c97b99bf8b8d15a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce321e6f53c241037f871b50680cf1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="paypal__payouts_8php.html#afce321e6f53c241037f871b50680cf1c">$api</a></td></tr>
+<tr class="separator:afce321e6f53c241037f871b50680cf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="afce321e6f53c241037f871b50680cf1c" name="afce321e6f53c241037f871b50680cf1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce321e6f53c241037f871b50680cf1c">&#9670;&nbsp;</a></span>$api</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$api</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ApiContext(</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">new</span> OAuthTokenCredential(</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;$paypal_app_client_id&quot;</span>,</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;$paypal_app_client_secret&quot;</span></div>
+<div class="line"> </div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">)</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00063">63</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="ae09d92553cf1ade52ced54c1e713d0ca" name="ae09d92553cf1ade52ced54c1e713d0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09d92553cf1ade52ced54c1e713d0ca">&#9670;&nbsp;</a></span>$customer_email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a> (!isset( $_SESSION[ 'customer_email'])) $customer_email = $_SESSION['customer_email']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00015">15</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="a925664b50ada2b2be76765b3bc7af1d0" name="a925664b50ada2b2be76765b3bc7af1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925664b50ada2b2be76765b3bc7af1d0">&#9670;&nbsp;</a></span>$customer_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$customer_id = $row_customer['customer_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00023">23</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="a5364262dcea5fc810b39cd0dccb2568b" name="a5364262dcea5fc810b39cd0dccb2568b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5364262dcea5fc810b39cd0dccb2568b">&#9670;&nbsp;</a></span>$minimum_withdraw_limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$minimum_withdraw_limit = $row_payment_settings['minimum_withdraw_limit']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00031">31</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="a20a6dc49f80de1a86959441fe3c31234" name="a20a6dc49f80de1a86959441fe3c31234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a6dc49f80de1a86959441fe3c31234">&#9670;&nbsp;</a></span>$paypal_app_client_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$paypal_app_client_id = $row_payment_settings['paypal_app_client_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00039">39</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="af11f8d76d4c21253e06f5443dc066a37" name="af11f8d76d4c21253e06f5443dc066a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af11f8d76d4c21253e06f5443dc066a37">&#9670;&nbsp;</a></span>$paypal_app_client_secret</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$paypal_app_client_secret = $row_payment_settings['paypal_app_client_secret']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00041">41</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="a6eabdf1d65f8525e7bdc081eb5f0f809" name="a6eabdf1d65f8525e7bdc081eb5f0f809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eabdf1d65f8525e7bdc081eb5f0f809">&#9670;&nbsp;</a></span>$paypal_currency_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$paypal_currency_code = $row_payment_settings['paypal_currency_code']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00037">37</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="abd8a06655170a921ff5d2b1318ec78b8" name="abd8a06655170a921ff5d2b1318ec78b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8a06655170a921ff5d2b1318ec78b8">&#9670;&nbsp;</a></span>$paypal_sandbox</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$paypal_sandbox = $row_payment_settings['paypal_sandbox']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00035">35</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="ae28035cb2628d043f24523cf85ac3e9f" name="ae28035cb2628d043f24523cf85ac3e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28035cb2628d043f24523cf85ac3e9f">&#9670;&nbsp;</a></span>$row_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_customer = mysqli_fetch_array($run_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00021">21</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="aade105c33e562b9a523c67794bb51bf8" name="aade105c33e562b9a523c67794bb51bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade105c33e562b9a523c67794bb51bf8">&#9670;&nbsp;</a></span>$row_payment_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_payment_settings = mysqli_fetch_array($run_payment_setttings)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00029">29</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="a15d79ded58394930c703ba4ef7f9d7dc" name="a15d79ded58394930c703ba4ef7f9d7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d79ded58394930c703ba4ef7f9d7dc">&#9670;&nbsp;</a></span>$run_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_customer = mysqli_query($con,$select_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00019">19</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="a8bf845292a644063c0696604841a2768" name="a8bf845292a644063c0696604841a2768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf845292a644063c0696604841a2768">&#9670;&nbsp;</a></span>$run_payment_setttings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_payment_setttings = mysqli_query($con,$select_payment_settings)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00027">27</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="a89194200b59b48deba5a2fc626dc42ae" name="a89194200b59b48deba5a2fc626dc42ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89194200b59b48deba5a2fc626dc42ae">&#9670;&nbsp;</a></span>$select_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_customer = &quot;select * from customers where customer_email='$customer_email'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00017">17</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="a5c2bc56f72832efcaf849161986a5678" name="a5c2bc56f72832efcaf849161986a5678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2bc56f72832efcaf849161986a5678">&#9670;&nbsp;</a></span>$select_payment_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_payment_settings = &quot;select * from payment_settings&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00025">25</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+<a id="ae0ae293e6b17a718c97b99bf8b8d15a5" name="ae0ae293e6b17a718c97b99bf8b8d15a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ae293e6b17a718c97b99bf8b8d15a5">&#9670;&nbsp;</a></span>elseif</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a>($paypal_sandbox==&quot;on&quot;) elseif($paypal_sandbox==&quot;off&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$paypal_sandbox</em> = <code>=&#160;&quot;off&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="paypal__payouts_8php_source.html#l00047">47</a> del archivo <a class="el" href="paypal__payouts_8php_source.html">paypal_payouts.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

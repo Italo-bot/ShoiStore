@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo insert_download.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore
+   </div>
+   <div id="projectbrief">Funciones Vendedor</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo insert_download.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="insert__download_8php_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae09d92553cf1ade52ced54c1e713d0ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a>(!isset($_SESSION['customer_email']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__download_8php.html#ae09d92553cf1ade52ced54c1e713d0ca">$customer_email</a> = $_SESSION['customer_email']</td></tr>
+<tr class="separator:ae09d92553cf1ade52ced54c1e713d0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89194200b59b48deba5a2fc626dc42ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__download_8php.html#a89194200b59b48deba5a2fc626dc42ae">$select_customer</a> = &quot;select * from customers where customer_email='$customer_email'&quot;</td></tr>
+<tr class="separator:a89194200b59b48deba5a2fc626dc42ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__download_8php.html#a15d79ded58394930c703ba4ef7f9d7dc">$run_customer</a> = mysqli_query($con,$select_customer)</td></tr>
+<tr class="separator:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28035cb2628d043f24523cf85ac3e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__download_8php.html#ae28035cb2628d043f24523cf85ac3e9f">$row_customer</a> = mysqli_fetch_array($run_customer)</td></tr>
+<tr class="separator:ae28035cb2628d043f24523cf85ac3e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925664b50ada2b2be76765b3bc7af1d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__download_8php.html#a925664b50ada2b2be76765b3bc7af1d0">$customer_id</a> = $row_customer['customer_id']</td></tr>
+<tr class="separator:a925664b50ada2b2be76765b3bc7af1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4de3017d55617a490f251596c05a86a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__download_8php.html#ab4de3017d55617a490f251596c05a86a">$get_products</a> = &quot;select * from products where (product_type='digital_product' or product_type='variable_product') and vendor_id='$customer_id' and status='product'&quot;</td></tr>
+<tr class="separator:ab4de3017d55617a490f251596c05a86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fef6cd9a1e3b9977a74a5e90a7823c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__download_8php.html#a4fef6cd9a1e3b9977a74a5e90a7823c0">$run_products</a> = mysqli_query($con,$get_products)</td></tr>
+<tr class="separator:a4fef6cd9a1e3b9977a74a5e90a7823c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db09a578b04c261fb6c86b86a164252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a>($row_products=mysqli_fetch_array($run_products))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__download_8php.html#a6db09a578b04c261fb6c86b86a164252">$get_bundles</a> = &quot;select * from products where (product_type='digital_product' or product_type='variable_product') and vendor_id='$customer_id' and status='bundle'&quot;</td></tr>
+<tr class="separator:a6db09a578b04c261fb6c86b86a164252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafe89cbcd86d3317fb4d8de1fad93bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__download_8php.html#adafe89cbcd86d3317fb4d8de1fad93bb">$run_bundles</a> = mysqli_query($con,$get_bundles)</td></tr>
+<tr class="separator:adafe89cbcd86d3317fb4d8de1fad93bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="ae09d92553cf1ade52ced54c1e713d0ca" name="ae09d92553cf1ade52ced54c1e713d0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09d92553cf1ade52ced54c1e713d0ca">&#9670;&nbsp;</a></span>$customer_email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44">if</a> (!isset( $_SESSION[ 'customer_email'])) $customer_email = $_SESSION['customer_email']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__download_8php_source.html#l00010">10</a> del archivo <a class="el" href="insert__download_8php_source.html">insert_download.php</a>.</p>
+
+</div>
+</div>
+<a id="a925664b50ada2b2be76765b3bc7af1d0" name="a925664b50ada2b2be76765b3bc7af1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925664b50ada2b2be76765b3bc7af1d0">&#9670;&nbsp;</a></span>$customer_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$customer_id = $row_customer['customer_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__download_8php_source.html#l00018">18</a> del archivo <a class="el" href="insert__download_8php_source.html">insert_download.php</a>.</p>
+
+</div>
+</div>
+<a id="a6db09a578b04c261fb6c86b86a164252" name="a6db09a578b04c261fb6c86b86a164252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db09a578b04c261fb6c86b86a164252">&#9670;&nbsp;</a></span>$get_bundles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a> ( $row_products=mysqli_fetch_array( $run_products)) $get_bundles = &quot;select * from products where (product_type='digital_product' or product_type='variable_product') and vendor_id='$customer_id' and status='bundle'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__download_8php_source.html#l00089">89</a> del archivo <a class="el" href="insert__download_8php_source.html">insert_download.php</a>.</p>
+
+</div>
+</div>
+<a id="ab4de3017d55617a490f251596c05a86a" name="ab4de3017d55617a490f251596c05a86a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4de3017d55617a490f251596c05a86a">&#9670;&nbsp;</a></span>$get_products</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_products = &quot;select * from products where (product_type='digital_product' or product_type='variable_product') and vendor_id='$customer_id' and status='product'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__download_8php_source.html#l00067">67</a> del archivo <a class="el" href="insert__download_8php_source.html">insert_download.php</a>.</p>
+
+</div>
+</div>
+<a id="ae28035cb2628d043f24523cf85ac3e9f" name="ae28035cb2628d043f24523cf85ac3e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28035cb2628d043f24523cf85ac3e9f">&#9670;&nbsp;</a></span>$row_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_customer = mysqli_fetch_array($run_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__download_8php_source.html#l00016">16</a> del archivo <a class="el" href="insert__download_8php_source.html">insert_download.php</a>.</p>
+
+</div>
+</div>
+<a id="adafe89cbcd86d3317fb4d8de1fad93bb" name="adafe89cbcd86d3317fb4d8de1fad93bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adafe89cbcd86d3317fb4d8de1fad93bb">&#9670;&nbsp;</a></span>$run_bundles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_bundles = mysqli_query($con,$get_bundles)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__download_8php_source.html#l00091">91</a> del archivo <a class="el" href="insert__download_8php_source.html">insert_download.php</a>.</p>
+
+</div>
+</div>
+<a id="a15d79ded58394930c703ba4ef7f9d7dc" name="a15d79ded58394930c703ba4ef7f9d7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d79ded58394930c703ba4ef7f9d7dc">&#9670;&nbsp;</a></span>$run_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_customer = mysqli_query($con,$select_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__download_8php_source.html#l00014">14</a> del archivo <a class="el" href="insert__download_8php_source.html">insert_download.php</a>.</p>
+
+</div>
+</div>
+<a id="a4fef6cd9a1e3b9977a74a5e90a7823c0" name="a4fef6cd9a1e3b9977a74a5e90a7823c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fef6cd9a1e3b9977a74a5e90a7823c0">&#9670;&nbsp;</a></span>$run_products</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_products = mysqli_query($con,$get_products)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__download_8php_source.html#l00069">69</a> del archivo <a class="el" href="insert__download_8php_source.html">insert_download.php</a>.</p>
+
+</div>
+</div>
+<a id="a89194200b59b48deba5a2fc626dc42ae" name="a89194200b59b48deba5a2fc626dc42ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89194200b59b48deba5a2fc626dc42ae">&#9670;&nbsp;</a></span>$select_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_customer = &quot;select * from customers where customer_email='$customer_email'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="insert__download_8php_source.html#l00012">12</a> del archivo <a class="el" href="insert__download_8php_source.html">insert_download.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

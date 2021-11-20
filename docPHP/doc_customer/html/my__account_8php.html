@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo my_account.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore
+   </div>
+   <div id="projectbrief">Funciones Cliente</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo my_account.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="my__account_8php_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3360f6d4f1cea0a3eb616410bc1a35b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="write__review_8php.html#a8acaee4bb223cfcb136e9240122fb19d">if</a>(!isset($_SESSION['customer_email']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__account_8php.html#a3360f6d4f1cea0a3eb616410bc1a35b7">else</a></td></tr>
+<tr class="separator:a3360f6d4f1cea0a3eb616410bc1a35b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd7c7a001aa0f44a2253d86265b85d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__account_8php.html#a2bd7c7a001aa0f44a2253d86265b85d7">$c_email</a> = $_SESSION['customer_email']</td></tr>
+<tr class="separator:a2bd7c7a001aa0f44a2253d86265b85d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8b10732804c2b98862bf07638eeb82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__account_8php.html#a3a8b10732804c2b98862bf07638eeb82">$get_customer</a> = &quot;select * from customers where customer_email='$c_email'&quot;</td></tr>
+<tr class="separator:a3a8b10732804c2b98862bf07638eeb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__account_8php.html#a15d79ded58394930c703ba4ef7f9d7dc">$run_customer</a> = mysqli_query($con,$get_customer)</td></tr>
+<tr class="separator:a15d79ded58394930c703ba4ef7f9d7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28035cb2628d043f24523cf85ac3e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__account_8php.html#ae28035cb2628d043f24523cf85ac3e9f">$row_customer</a> = mysqli_fetch_array($run_customer)</td></tr>
+<tr class="separator:ae28035cb2628d043f24523cf85ac3e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e90f67b4b12afe49934b6baf5481e03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__account_8php.html#a0e90f67b4b12afe49934b6baf5481e03">$customer_confirm_code</a> = $row_customer['customer_confirm_code']</td></tr>
+<tr class="separator:a0e90f67b4b12afe49934b6baf5481e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa7c58eb4e30aa7f32fd7b5d344e561"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__account_8php.html#a3aa7c58eb4e30aa7f32fd7b5d344e561">$c_name</a> = $row_customer['customer_name']</td></tr>
+<tr class="separator:a3aa7c58eb4e30aa7f32fd7b5d344e561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8acaee4bb223cfcb136e9240122fb19d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__account_8php.html#a8acaee4bb223cfcb136e9240122fb19d">if</a> (!empty( $customer_confirm_code))</td></tr>
+<tr class="separator:a8acaee4bb223cfcb136e9240122fb19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43b82a8f428953bf02843816e47051c"><td class="memItemLeft" align="right" valign="top">if(isset( $_GET[ $customer_confirm_code])) if(isset($_GET['send_email'])) if(isset( $_GET[ 'my_orders'])) if(isset($_GET['pay_offline'])) if(isset( $_GET[ 'edit_account'])) if(isset($_GET['change_pass'])) if(isset( $_GET[ 'delete_account'])) if(isset($_GET['my_wishlist'])) if(isset( $_GET[ 'delete_wishlist']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="my__account_8php.html#af43b82a8f428953bf02843816e47051c">if</a> (isset( $_GET[ 'my_addresses']))</td></tr>
+<tr class="separator:af43b82a8f428953bf02843816e47051c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a2bd7c7a001aa0f44a2253d86265b85d7" name="a2bd7c7a001aa0f44a2253d86265b85d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bd7c7a001aa0f44a2253d86265b85d7">&#9670;&nbsp;</a></span>$c_email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$c_email = $_SESSION['customer_email']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="my__account_8php_source.html#l00308">308</a> del archivo <a class="el" href="my__account_8php_source.html">my_account.php</a>.</p>
+
+</div>
+</div>
+<a id="a3aa7c58eb4e30aa7f32fd7b5d344e561" name="a3aa7c58eb4e30aa7f32fd7b5d344e561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa7c58eb4e30aa7f32fd7b5d344e561">&#9670;&nbsp;</a></span>$c_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$c_name = $row_customer['customer_name']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="my__account_8php_source.html#l00318">318</a> del archivo <a class="el" href="my__account_8php_source.html">my_account.php</a>.</p>
+
+</div>
+</div>
+<a id="a0e90f67b4b12afe49934b6baf5481e03" name="a0e90f67b4b12afe49934b6baf5481e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e90f67b4b12afe49934b6baf5481e03">&#9670;&nbsp;</a></span>$customer_confirm_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$customer_confirm_code = $row_customer['customer_confirm_code']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="my__account_8php_source.html#l00316">316</a> del archivo <a class="el" href="my__account_8php_source.html">my_account.php</a>.</p>
+
+</div>
+</div>
+<a id="a3a8b10732804c2b98862bf07638eeb82" name="a3a8b10732804c2b98862bf07638eeb82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a8b10732804c2b98862bf07638eeb82">&#9670;&nbsp;</a></span>$get_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_customer = &quot;select * from customers where customer_email='$c_email'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="my__account_8php_source.html#l00310">310</a> del archivo <a class="el" href="my__account_8php_source.html">my_account.php</a>.</p>
+
+</div>
+</div>
+<a id="ae28035cb2628d043f24523cf85ac3e9f" name="ae28035cb2628d043f24523cf85ac3e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28035cb2628d043f24523cf85ac3e9f">&#9670;&nbsp;</a></span>$row_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_customer = mysqli_fetch_array($run_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="my__account_8php_source.html#l00314">314</a> del archivo <a class="el" href="my__account_8php_source.html">my_account.php</a>.</p>
+
+</div>
+</div>
+<a id="a15d79ded58394930c703ba4ef7f9d7dc" name="a15d79ded58394930c703ba4ef7f9d7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d79ded58394930c703ba4ef7f9d7dc">&#9670;&nbsp;</a></span>$run_customer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_customer = mysqli_query($con,$get_customer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="my__account_8php_source.html#l00312">312</a> del archivo <a class="el" href="my__account_8php_source.html">my_account.php</a>.</p>
+
+</div>
+</div>
+<a id="a3360f6d4f1cea0a3eb616410bc1a35b7" name="a3360f6d4f1cea0a3eb616410bc1a35b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3360f6d4f1cea0a3eb616410bc1a35b7">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="write__review_8php.html#a8acaee4bb223cfcb136e9240122fb19d">if</a> (!isset( $_SESSION[ 'customer_email'])) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line">include(<span class="stringliteral">&quot;includes/db.php&quot;</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="my__account_8php_source.html#l00009">9</a> del archivo <a class="el" href="my__account_8php_source.html">my_account.php</a>.</p>
+
+</div>
+</div>
+<a id="a8acaee4bb223cfcb136e9240122fb19d" name="a8acaee4bb223cfcb136e9240122fb19d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8acaee4bb223cfcb136e9240122fb19d">&#9670;&nbsp;</a></span>if <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if(!empty($customer_confirm_code)) </td>
+          <td>(</td>
+          <td class="paramtype">!&#160;</td>
+          <td class="paramname"><em>empty</em> $customer_confirm_code</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="my__account_8php_source.html#l00320">320</a> del archivo <a class="el" href="my__account_8php_source.html">my_account.php</a>.</p>
+
+</div>
+</div>
+<a id="af43b82a8f428953bf02843816e47051c" name="af43b82a8f428953bf02843816e47051c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43b82a8f428953bf02843816e47051c">&#9670;&nbsp;</a></span>if <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if(isset($_GET[$customer_confirm_code])) if(isset( $_GET[ 'send_email'])) if(isset($_GET['my_orders'])) if(isset( $_GET[ 'pay_offline'])) if(isset($_GET['edit_account'])) if(isset( $_GET[ 'change_pass'])) if(isset($_GET['delete_account'])) if(isset( $_GET[ 'my_wishlist'])) if(isset($_GET['delete_wishlist'])) if(isset($_GET['my_addresses'])) </td>
+          <td>(</td>
+          <td class="paramtype">isset( $_GET[ 'my_addresses'])&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="my__account_8php_source.html#l00440">440</a> del archivo <a class="el" href="my__account_8php_source.html">my_account.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

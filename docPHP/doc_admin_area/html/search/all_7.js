@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['if_0',['if',['../edit__cat_8php.html#a672e981314539dc744cb14e47caa57ff',1,'if():&#160;edit_cat.php'],['../edit__coupon_8php.html#a2c4e290ccf567ccd8ded5c86d5f18430',1,'if():&#160;edit_coupon.php'],['../edit__css_8php.html#aa67063a8be77565e8568f8eee4e4e2e2',1,'if():&#160;edit_css.php'],['../edit__download_8php.html#ab6e063298d600e200bf79c0c1b369869',1,'if():&#160;edit_download.php'],['../edit__icon_8php.html#ac59a2e7b9fe40061860c196ba4ef7dce',1,'if():&#160;edit_icon.php'],['../edit__enquiry_8php.html#ad97809eaad3341eff4c575260b214526',1,'if():&#160;edit_enquiry.php'],['../edit__manufacturer_8php.html#af6b847362e5e8df95d32c183aaaa3281',1,'if():&#160;edit_manufacturer.php'],['../edit__p__cat_8php.html#a3e63f5336a586f82dc9481bfce631a94',1,'if():&#160;edit_p_cat.php'],['../edit__product_8php.html#aede6a8390e4908b5cc11e1882b717863',1,'if():&#160;edit_product.php'],['../edit__rel_8php.html#a9f552d3f264d65a038de4289cf85dca7',1,'if():&#160;edit_rel.php'],['../edit__service_8php.html#a0c69cde527bf56acc3fe021a3a323994',1,'if():&#160;edit_service.php'],['../edit__slide_8php.html#a52620f7142b59d55383ac0d7f97d2964',1,'if():&#160;edit_slide.php'],['../edit__term_8php.html#ac37e92dfc071a6d7ca4a832461ccd922',1,'if():&#160;edit_term.php'],['../payment__settings_8php.html#ad21f04559012f7a0fd924e1fd671a817',1,'if():&#160;payment_settings.php'],['../user__profile_8php.html#ab5ba78524033f3155205b0db5b26765b',1,'if():&#160;user_profile.php'],['../view__order__id_8php.html#a442f7067d8b494c48f0464a5c0eccb44',1,'if():&#160;view_order_id.php'],['../view__order__id_8php.html#a6e24e29cb161fcefaf75c8fa83ced43e',1,'if():&#160;view_order_id.php'],['../edit__bundle_8php.html#aede6a8390e4908b5cc11e1882b717863',1,'if():&#160;edit_bundle.php'],['../view__orders_8php.html#aa4fa210332761d0ccd3d1a34c062d1ba',1,'if():&#160;view_orders.php'],['../view__products_8php.html#a1dc786626cc66d414838b6bfcdfddb0a',1,'if():&#160;view_products.php'],['../view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af',1,'if():&#160;view_reviews.php'],['../edit__box_8php.html#aebbf42cb48894150c87f2ce3c4d4d333',1,'if():&#160;edit_box.php'],['../view__bundles_8php.html#a1dc786626cc66d414838b6bfcdfddb0a',1,'if():&#160;view_bundles.php']]],
+  ['index_2ephp_1',['index.php',['../index_8php.html',1,'']]],
+  ['insert_5fbox_2ephp_2',['insert_box.php',['../insert__box_8php.html',1,'']]],
+  ['insert_5fbundle_2ephp_3',['insert_bundle.php',['../insert__bundle_8php.html',1,'']]],
+  ['insert_5fcat_2ephp_4',['insert_cat.php',['../insert__cat_8php.html',1,'']]],
+  ['insert_5fcountry_2ephp_5',['insert_country.php',['../insert__country_8php.html',1,'']]],
+  ['insert_5fcoupon_2ephp_6',['insert_coupon.php',['../insert__coupon_8php.html',1,'']]],
+  ['insert_5fdownload_2ephp_7',['insert_download.php',['../insert__download_8php.html',1,'']]],
+  ['insert_5fenquiry_2ephp_8',['insert_enquiry.php',['../insert__enquiry_8php.html',1,'']]],
+  ['insert_5ficon_2ephp_9',['insert_icon.php',['../insert__icon_8php.html',1,'']]],
+  ['insert_5fmanufacturer_2ephp_10',['insert_manufacturer.php',['../insert__manufacturer_8php.html',1,'']]],
+  ['insert_5fp_5fcat_2ephp_11',['insert_p_cat.php',['../insert__p__cat_8php.html',1,'']]],
+  ['insert_5fproduct_2ephp_12',['insert_product.php',['../insert__product_8php.html',1,'']]],
+  ['insert_5frel_2ephp_13',['insert_rel.php',['../insert__rel_8php.html',1,'']]],
+  ['insert_5freview_2ephp_14',['insert_review.php',['../insert__review_8php.html',1,'']]],
+  ['insert_5fservice_2ephp_15',['insert_service.php',['../insert__service_8php.html',1,'']]],
+  ['insert_5fshipping_5frate_2ephp_16',['insert_shipping_rate.php',['../insert__shipping__rate_8php.html',1,'']]],
+  ['insert_5fshipping_5ftype_2ephp_17',['insert_shipping_type.php',['../insert__shipping__type_8php.html',1,'']]],
+  ['insert_5fshipping_5fzone_2ephp_18',['insert_shipping_zone.php',['../insert__shipping__zone_8php.html',1,'']]],
+  ['insert_5fslide_2ephp_19',['insert_slide.php',['../insert__slide_8php.html',1,'']]],
+  ['insert_5fterm_2ephp_20',['insert_term.php',['../insert__term_8php.html',1,'']]],
+  ['insert_5fuser_2ephp_21',['insert_user.php',['../insert__user_8php.html',1,'']]]
+];

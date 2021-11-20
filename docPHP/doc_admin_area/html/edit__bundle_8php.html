@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShoiStore: Referencia del Archivo edit_bundle.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ShoiStoreee.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ShoiStore
+   </div>
+   <div id="projectbrief">Funciones administrador</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo edit_bundle.php</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="edit__bundle_8php_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a00023810e4ec2bdc1f0b8996b7bfbcd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a>(!isset( $_SESSION[ 'admin_email'])) <a class="el" href="view__reviews_8php.html#a7468d5c63db0370c41ef2c532ce3d437">else</a> <a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a>(isset($_GET['edit_bundle']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a00023810e4ec2bdc1f0b8996b7bfbcd4">$get_manufacturer</a> = &quot;select * from manufacturers where manufacturer_id='$m_id'&quot;</td></tr>
+<tr class="separator:a00023810e4ec2bdc1f0b8996b7bfbcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944f1bd9018d5bc165c8d52cfe5d0382"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a944f1bd9018d5bc165c8d52cfe5d0382">$run_manufacturer</a> = mysqli_query($con,$get_manufacturer)</td></tr>
+<tr class="separator:a944f1bd9018d5bc165c8d52cfe5d0382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0600825cf397684f96458fba3adba717"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a0600825cf397684f96458fba3adba717">$row_manfacturer</a> = mysqli_fetch_array($run_manufacturer)</td></tr>
+<tr class="separator:a0600825cf397684f96458fba3adba717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711267c01053da5b35ac7fa7a34bff11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a711267c01053da5b35ac7fa7a34bff11">$manufacturer_id</a> = $row_manfacturer['manufacturer_id']</td></tr>
+<tr class="separator:a711267c01053da5b35ac7fa7a34bff11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3791dc4437ed7dbb5b6993c54582ca60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a3791dc4437ed7dbb5b6993c54582ca60">$manufacturer_title</a> = $row_manfacturer['manufacturer_title']</td></tr>
+<tr class="separator:a3791dc4437ed7dbb5b6993c54582ca60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3e6ee0cf94d94903bddbc8fbcc8404"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a3f3e6ee0cf94d94903bddbc8fbcc8404">$get_p_cat</a> = &quot;select * from product_categories where p_cat_id='$p_cat'&quot;</td></tr>
+<tr class="separator:a3f3e6ee0cf94d94903bddbc8fbcc8404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1408fccf3bab377b555d86a2f86569ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a1408fccf3bab377b555d86a2f86569ae">$run_p_cat</a> = mysqli_query($con,$get_p_cat)</td></tr>
+<tr class="separator:a1408fccf3bab377b555d86a2f86569ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840e31972d7a67a839bba08309f5f866"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a840e31972d7a67a839bba08309f5f866">$row_p_cat</a> = mysqli_fetch_array($run_p_cat)</td></tr>
+<tr class="separator:a840e31972d7a67a839bba08309f5f866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc6b2a047db1d3a347f884dd9435b7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a4dc6b2a047db1d3a347f884dd9435b7b">$p_cat_title</a> = $row_p_cat['p_cat_title']</td></tr>
+<tr class="separator:a4dc6b2a047db1d3a347f884dd9435b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5949659309c3688388ee2421c8047bd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a5949659309c3688388ee2421c8047bd5">$get_cat</a> = &quot;select * from categories where cat_id='$cat'&quot;</td></tr>
+<tr class="separator:a5949659309c3688388ee2421c8047bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd9bdb4310d6de0d93873f18ca8e515"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a2dd9bdb4310d6de0d93873f18ca8e515">$run_cat</a> = mysqli_query($con,$get_cat)</td></tr>
+<tr class="separator:a2dd9bdb4310d6de0d93873f18ca8e515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d68b9bfc2dda83fd22d6f170eb4054a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a4d68b9bfc2dda83fd22d6f170eb4054a">$row_cat</a> = mysqli_fetch_array($run_cat)</td></tr>
+<tr class="separator:a4d68b9bfc2dda83fd22d6f170eb4054a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7726cec7e4913d12f2de0db62afc3685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a7726cec7e4913d12f2de0db62afc3685">$cat_title</a> = $row_cat['cat_title']</td></tr>
+<tr class="separator:a7726cec7e4913d12f2de0db62afc3685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de056c6e97fbb4417f9e2e2d20e6a6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a2de056c6e97fbb4417f9e2e2d20e6a6e">$select_products_stock</a> = &quot;select * from products_stock where product_id='$p_id'&quot;</td></tr>
+<tr class="separator:a2de056c6e97fbb4417f9e2e2d20e6a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf305205d66832d33a73d903b52f3ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#abcf305205d66832d33a73d903b52f3ba">$run_products_stock</a> = mysqli_query($con,$select_products_stock)</td></tr>
+<tr class="separator:abcf305205d66832d33a73d903b52f3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affdd493a7f22f62006a676e8396d84cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#affdd493a7f22f62006a676e8396d84cd">$count_product_stock</a> = mysqli_num_rows($run_products_stock)</td></tr>
+<tr class="separator:affdd493a7f22f62006a676e8396d84cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cbf2f35501e84b0e9424bb755404972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a>($count_product_stock==0)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a5cbf2f35501e84b0e9424bb755404972">else</a></td></tr>
+<tr class="separator:a5cbf2f35501e84b0e9424bb755404972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72b68c2c2d6c7974155da419705d48e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#ae72b68c2c2d6c7974155da419705d48e">$enable_stock</a> = $row_products_stock['enable_stock']</td></tr>
+<tr class="separator:ae72b68c2c2d6c7974155da419705d48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab606e181fa885911494f8a9ca8a9471b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#ab606e181fa885911494f8a9ca8a9471b">$stock_status</a> = $row_products_stock['stock_status']</td></tr>
+<tr class="separator:ab606e181fa885911494f8a9ca8a9471b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89eea6ca446a45bb0e19e35807c5eaeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a89eea6ca446a45bb0e19e35807c5eaeb">$stock_quantity</a> = $row_products_stock['stock_quantity']</td></tr>
+<tr class="separator:a89eea6ca446a45bb0e19e35807c5eaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0541e84caa051f8e84ebef137d0dde4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#ac0541e84caa051f8e84ebef137d0dde4">$allow_backorders</a> = $row_products_stock['allow_backorders']</td></tr>
+<tr class="separator:ac0541e84caa051f8e84ebef137d0dde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb047aa194a72a0247ca995e149535b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a6cb047aa194a72a0247ca995e149535b">while</a> ( $row_manfacturer=mysqli_fetch_array( $run_manufacturer))</td></tr>
+<tr class="separator:a6cb047aa194a72a0247ca995e149535b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee485c61562415c42f0b4e2d7189fdb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#aee485c61562415c42f0b4e2d7189fdb8">$get_p_cats</a> = &quot;select * from product_categories&quot;</td></tr>
+<tr class="separator:aee485c61562415c42f0b4e2d7189fdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474d154ccb82c071d70f7240a2c0875b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a474d154ccb82c071d70f7240a2c0875b">$run_p_cats</a> = mysqli_query($con,$get_p_cats)</td></tr>
+<tr class="separator:a474d154ccb82c071d70f7240a2c0875b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede6a8390e4908b5cc11e1882b717863"><td class="memItemLeft" align="right" valign="top">if($stock_status==&quot;instock&quot;) elseif( $stock_status==&quot;outofstock&quot;) elseif($stock_status==&quot;onbackorder&quot;) else if( $enable_stock==&quot;yes&quot;)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#aede6a8390e4908b5cc11e1882b717863">if</a> ( $enable_stock==&quot;no&quot;) {</td></tr>
+<tr class="separator:aede6a8390e4908b5cc11e1882b717863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d23c7e84c1b53341ddeba20190ec2a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a>($allow_backorders==&quot;no&quot;) elseif( $allow_backorders==&quot;notify&quot;) elseif($allow_backorders==&quot;yes&quot;) else&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a0d23c7e84c1b53341ddeba20190ec2a3">$select_product_attributes</a> = &quot;select * from product_attributes where product_id='$p_id'&quot;</td></tr>
+<tr class="separator:a0d23c7e84c1b53341ddeba20190ec2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108004c859bd071e248414232c31bb4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a108004c859bd071e248414232c31bb4f">$run_product_attributes</a> = mysqli_query($con,$select_product_attributes)</td></tr>
+<tr class="separator:a108004c859bd071e248414232c31bb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c38b04e2c32ccd5c048696fd6ec83cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a>($row_product_attributes=mysqli_fetch_array($run_product_attributes)) <a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a>( $enable_stock==&quot;no&quot;)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__bundle_8php.html#a7c38b04e2c32ccd5c048696fd6ec83cf">elseif</a> ( $enable_stock==&quot;yes&quot;)</td></tr>
+<tr class="separator:a7c38b04e2c32ccd5c048696fd6ec83cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="ac0541e84caa051f8e84ebef137d0dde4" name="ac0541e84caa051f8e84ebef137d0dde4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0541e84caa051f8e84ebef137d0dde4">&#9670;&nbsp;</a></span>$allow_backorders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$allow_backorders = $row_products_stock['allow_backorders']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00124">124</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a7726cec7e4913d12f2de0db62afc3685" name="a7726cec7e4913d12f2de0db62afc3685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7726cec7e4913d12f2de0db62afc3685">&#9670;&nbsp;</a></span>$cat_title</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$cat_title = $row_cat['cat_title']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00096">96</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="affdd493a7f22f62006a676e8396d84cd" name="affdd493a7f22f62006a676e8396d84cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affdd493a7f22f62006a676e8396d84cd">&#9670;&nbsp;</a></span>$count_product_stock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$count_product_stock = mysqli_num_rows($run_products_stock)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00102">102</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="ae72b68c2c2d6c7974155da419705d48e" name="ae72b68c2c2d6c7974155da419705d48e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae72b68c2c2d6c7974155da419705d48e">&#9670;&nbsp;</a></span>$enable_stock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$enable_stock = $row_products_stock['enable_stock']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00118">118</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a5949659309c3688388ee2421c8047bd5" name="a5949659309c3688388ee2421c8047bd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5949659309c3688388ee2421c8047bd5">&#9670;&nbsp;</a></span>$get_cat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_cat = &quot;select * from categories where cat_id='$cat'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00090">90</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a00023810e4ec2bdc1f0b8996b7bfbcd4" name="a00023810e4ec2bdc1f0b8996b7bfbcd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00023810e4ec2bdc1f0b8996b7bfbcd4">&#9670;&nbsp;</a></span>$get_manufacturer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_manufacturer = &quot;select * from manufacturers where manufacturer_id='$m_id'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00071">71</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a3f3e6ee0cf94d94903bddbc8fbcc8404" name="a3f3e6ee0cf94d94903bddbc8fbcc8404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3e6ee0cf94d94903bddbc8fbcc8404">&#9670;&nbsp;</a></span>$get_p_cat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_p_cat = &quot;select * from product_categories where p_cat_id='$p_cat'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00082">82</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="aee485c61562415c42f0b4e2d7189fdb8" name="aee485c61562415c42f0b4e2d7189fdb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee485c61562415c42f0b4e2d7189fdb8">&#9670;&nbsp;</a></span>$get_p_cats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$get_p_cats = &quot;select * from product_categories&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00395">395</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a711267c01053da5b35ac7fa7a34bff11" name="a711267c01053da5b35ac7fa7a34bff11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a711267c01053da5b35ac7fa7a34bff11">&#9670;&nbsp;</a></span>$manufacturer_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$manufacturer_id = $row_manfacturer['manufacturer_id']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00077">77</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a3791dc4437ed7dbb5b6993c54582ca60" name="a3791dc4437ed7dbb5b6993c54582ca60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3791dc4437ed7dbb5b6993c54582ca60">&#9670;&nbsp;</a></span>$manufacturer_title</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$manufacturer_title = $row_manfacturer['manufacturer_title']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00079">79</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a4dc6b2a047db1d3a347f884dd9435b7b" name="a4dc6b2a047db1d3a347f884dd9435b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc6b2a047db1d3a347f884dd9435b7b">&#9670;&nbsp;</a></span>$p_cat_title</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$p_cat_title = $row_p_cat['p_cat_title']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00088">88</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a4d68b9bfc2dda83fd22d6f170eb4054a" name="a4d68b9bfc2dda83fd22d6f170eb4054a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d68b9bfc2dda83fd22d6f170eb4054a">&#9670;&nbsp;</a></span>$row_cat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_cat = mysqli_fetch_array($run_cat)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00094">94</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a0600825cf397684f96458fba3adba717" name="a0600825cf397684f96458fba3adba717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0600825cf397684f96458fba3adba717">&#9670;&nbsp;</a></span>$row_manfacturer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_manfacturer = mysqli_fetch_array($run_manufacturer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00075">75</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a840e31972d7a67a839bba08309f5f866" name="a840e31972d7a67a839bba08309f5f866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840e31972d7a67a839bba08309f5f866">&#9670;&nbsp;</a></span>$row_p_cat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row_p_cat = mysqli_fetch_array($run_p_cat)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00086">86</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a2dd9bdb4310d6de0d93873f18ca8e515" name="a2dd9bdb4310d6de0d93873f18ca8e515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd9bdb4310d6de0d93873f18ca8e515">&#9670;&nbsp;</a></span>$run_cat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_cat = mysqli_query($con,$get_cat)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00092">92</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a944f1bd9018d5bc165c8d52cfe5d0382" name="a944f1bd9018d5bc165c8d52cfe5d0382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944f1bd9018d5bc165c8d52cfe5d0382">&#9670;&nbsp;</a></span>$run_manufacturer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_manufacturer = mysqli_query($con,$get_manufacturer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00073">73</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a1408fccf3bab377b555d86a2f86569ae" name="a1408fccf3bab377b555d86a2f86569ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1408fccf3bab377b555d86a2f86569ae">&#9670;&nbsp;</a></span>$run_p_cat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_p_cat = mysqli_query($con,$get_p_cat)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00084">84</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a474d154ccb82c071d70f7240a2c0875b" name="a474d154ccb82c071d70f7240a2c0875b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a474d154ccb82c071d70f7240a2c0875b">&#9670;&nbsp;</a></span>$run_p_cats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_p_cats = mysqli_query($con,$get_p_cats)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00397">397</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a108004c859bd071e248414232c31bb4f" name="a108004c859bd071e248414232c31bb4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108004c859bd071e248414232c31bb4f">&#9670;&nbsp;</a></span>$run_product_attributes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_product_attributes = mysqli_query($con,$select_product_attributes)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00773">773</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="abcf305205d66832d33a73d903b52f3ba" name="abcf305205d66832d33a73d903b52f3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf305205d66832d33a73d903b52f3ba">&#9670;&nbsp;</a></span>$run_products_stock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$run_products_stock = mysqli_query($con,$select_products_stock)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00100">100</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a0d23c7e84c1b53341ddeba20190ec2a3" name="a0d23c7e84c1b53341ddeba20190ec2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d23c7e84c1b53341ddeba20190ec2a3">&#9670;&nbsp;</a></span>$select_product_attributes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a>( $allow_backorders==&quot;no&quot;) elseif($allow_backorders==&quot;notify&quot;) elseif ( $allow_backorders==&quot;yes&quot;) else $select_product_attributes = &quot;select * from product_attributes where product_id='$p_id'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00771">771</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a2de056c6e97fbb4417f9e2e2d20e6a6e" name="a2de056c6e97fbb4417f9e2e2d20e6a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de056c6e97fbb4417f9e2e2d20e6a6e">&#9670;&nbsp;</a></span>$select_products_stock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$select_products_stock = &quot;select * from products_stock where product_id='$p_id'&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00098">98</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a89eea6ca446a45bb0e19e35807c5eaeb" name="a89eea6ca446a45bb0e19e35807c5eaeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89eea6ca446a45bb0e19e35807c5eaeb">&#9670;&nbsp;</a></span>$stock_quantity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stock_quantity = $row_products_stock['stock_quantity']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00122">122</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="ab606e181fa885911494f8a9ca8a9471b" name="ab606e181fa885911494f8a9ca8a9471b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab606e181fa885911494f8a9ca8a9471b">&#9670;&nbsp;</a></span>$stock_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stock_status = $row_products_stock['stock_status']</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00120">120</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a5cbf2f35501e84b0e9424bb755404972" name="a5cbf2f35501e84b0e9424bb755404972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbf2f35501e84b0e9424bb755404972">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a> (empty( $p_image3)) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line">$row_products_stock = mysqli_fetch_array(<a class="code hl_variable" href="edit__bundle_8php.html#abcf305205d66832d33a73d903b52f3ba">$run_products_stock</a>)</div>
+<div class="ttc" id="aedit__bundle_8php_html_abcf305205d66832d33a73d903b52f3ba"><div class="ttname"><a href="edit__bundle_8php.html#abcf305205d66832d33a73d903b52f3ba">$run_products_stock</a></div><div class="ttdeci">$run_products_stock</div><div class="ttdef"><b>Definition:</b> <a href="edit__bundle_8php_source.html#l00100">edit_bundle.php:100</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00114">114</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a7c38b04e2c32ccd5c048696fd6ec83cf" name="a7c38b04e2c32ccd5c048696fd6ec83cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c38b04e2c32ccd5c048696fd6ec83cf">&#9670;&nbsp;</a></span>elseif</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="view__order__id_8php.html#a67aaaf8581e79b8ceaa1b7914d1d33a5">while</a>( $row_product_attributes=mysqli_fetch_array( $run_product_attributes)) <a class="el" href="view__reviews_8php.html#ac231bc3a7a68f259fb03f1c2041a82af">if</a>($enable_stock==&quot;no&quot;) elseif($enable_stock==&quot;yes&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$enable_stock</em> = <code>=&#160;&quot;yes&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00943">943</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="aede6a8390e4908b5cc11e1882b717863" name="aede6a8390e4908b5cc11e1882b717863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede6a8390e4908b5cc11e1882b717863">&#9670;&nbsp;</a></span>if</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if( $stock_status==&quot;instock&quot;) elseif($stock_status==&quot;outofstock&quot;) elseif( $stock_status==&quot;onbackorder&quot;) else if($enable_stock==&quot;yes&quot;) if($enable_stock==&quot;no&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$enable_stock</em> = <code>=&#160;&quot;no&quot;</code></td><td>)</td>
+          <td> {</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00597">597</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+<a id="a6cb047aa194a72a0247ca995e149535b" name="a6cb047aa194a72a0247ca995e149535b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb047aa194a72a0247ca995e149535b">&#9670;&nbsp;</a></span>while</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">while($row_cat=mysqli_fetch_array($run_cat)) </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$row_manfacturer</em> = <code>mysqli_fetch_array($run_manufacturer)</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="edit__bundle_8php_source.html#l00364">364</a> del archivo <a class="el" href="edit__bundle_8php_source.html">edit_bundle.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>
