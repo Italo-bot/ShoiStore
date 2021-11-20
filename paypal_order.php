@@ -175,7 +175,7 @@ $order_date = date("F d, Y h:i");
 
 $payment_method = "paypal";
 
-$status = "processing";
+$status = "Procesando";
 
 $invoice_no = mt_rand();
 

@@ -121,7 +121,7 @@ $p_cat_title = $row_p_cat['p_cat_title'];
 
 $reviews_rating = array();
 
-$select_product_reviews = "select * from reviews where product_id='$pro_id' and NOT (review_status='trash' or review_status='pending')";
+$select_product_reviews = "select * from reviews where product_id='$pro_id' and NOT (review_status='basura' or review_status='pendiente')";
 
 $run_product_reviews = mysqli_query($con,$select_product_reviews);
 

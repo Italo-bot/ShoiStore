@@ -308,14 +308,14 @@ echo $customer_email;
 
 <td>
 <?php
-if($order_status=='pending'){
+if($order_status=='pendiente'){
 
-echo $order_status='pending';
+echo $order_status='pendiente';
 
 }
 else {
 
-echo $order_status='Complete';
+echo $order_status='Completada';
 
 }
 

@@ -177,9 +177,9 @@ date_default_timezone_set("America/Santiago");
 
 $order_date = date("F d, Y h:i");
 
-$payment_method = "pay offline";
+$payment_method = "pago offline";
 
-$status = "pending";
+$status = "pendiente";
 
 $invoice_no = mt_rand();
 
