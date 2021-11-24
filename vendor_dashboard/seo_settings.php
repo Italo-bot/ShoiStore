@@ -66,7 +66,7 @@ $meta_keywords = $row_store_settings["meta_keywords"];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label class="col-md-3 control-label"> Meta Autor : </label>
+<label class="col-md-3 control-label"> Autor : </label>
 
 <div class="col-md-6">
 
@@ -78,7 +78,7 @@ $meta_keywords = $row_store_settings["meta_keywords"];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label class="col-md-3 control-label"> Descripción Meta : </label>
+<label class="col-md-3 control-label"> Descripción : </label>
 
 <div class="col-md-6">
 
@@ -90,7 +90,7 @@ $meta_keywords = $row_store_settings["meta_keywords"];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label class="col-md-3 control-label"> Meta Keywords : </label>
+<label class="col-md-3 control-label"> Keywords : </label>
 
 <div class="col-md-6">
 

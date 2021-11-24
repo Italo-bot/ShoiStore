@@ -119,7 +119,7 @@ echo ucwords($order_status);
 
 <strong>$<?php echo $order_total; ?></strong>
 
-for <?php
+Por <?php
 
 $total = 0;
 
@@ -139,11 +139,11 @@ $total += $product_qty;
 
 if($total == 1){
 
-echo $total . " item";
+echo $total . " artículo";
 
 }else{
 
-echo $total . " items";	
+echo $total . " artículos";	
 	
 }
 

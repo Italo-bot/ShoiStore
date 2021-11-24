@@ -875,7 +875,7 @@ Ver
 
 <?php if(!empty($order_note)){ ?>
 
-<h4>Order Note</h4>
+<h4>Nota</h4>
 
 <p><?php echo $order_note; ?></p>
 
@@ -895,8 +895,6 @@ Ver
 
 <th class="text-muted lead"> <strong>Producto:</strong> </th>
 
-<th class="text-muted lead"> <strong>Descarga:</strong> </th>
-
 </tr>
 
 </thead>
@@ -910,16 +908,6 @@ if(!isset($_GET['sub_order_id']) and $count_vendor_orders == 1){
 if( $order_status != "processing" and $order_status != "completed" ){
 
 ?>
-
-<tr>
-
-<td colspan="2">
-
-Si el estado de su pedido es Procesando / Completado, podrá acceder a las descargas de pedidos.
-
-</td>
-
-</tr>
 
 <?php }else{ ?>
 
@@ -1012,16 +1000,6 @@ $count_vendor_orders = mysqli_num_rows($run_vendor_orders);
 if($count_vendor_orders == 0){
 
 ?>
-
-<tr>
-
-<td colspan="2">
-
-Si el estado de su pedido de proveedor está procesado / completado, podrá acceder a las descargas de pedidos.
-
-</td>
-
-</tr>
 
 <?php
 

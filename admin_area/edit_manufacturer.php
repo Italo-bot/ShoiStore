@@ -48,7 +48,7 @@ $new_m_image = $row_manufacturer['manufacturer_image'];
 
 <li class="active">
 
-<i class="fa fa-dashboard"></i> Dashboard / Editar Vendedor
+<i class="fa fa-dashboard"></i> Dashboard / Editar Fabricante
 
 </li>
 
@@ -69,7 +69,7 @@ $new_m_image = $row_manufacturer['manufacturer_image'];
 
 <h3 class="panel-title"><!-- panel-title Starts -->
 
-<i class="fa fa-money fa-fw"> </i> Editar Vendedor
+<i class="fa fa-money fa-fw"> </i> Editar Fabricante
 
 </h3><!-- panel-title Ends -->
 
@@ -93,7 +93,7 @@ $new_m_image = $row_manufacturer['manufacturer_image'];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label class="col-md-3 control-label"> Mostrar como los mejores vendedores </label>
+<label class="col-md-3 control-label"> Mostrar como los mejores fabricantes </label>
 
 <div class="col-md-6">
 
@@ -113,7 +113,7 @@ $new_m_image = $row_manufacturer['manufacturer_image'];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label class="col-md-3 control-label"> Seleccionar Imagen para vendedor </label>
+<label class="col-md-3 control-label"> Seleccionar Imagen para fabricante </label>
 
 <div class="col-md-6">
 

@@ -281,35 +281,27 @@ Ejemplo de URL del producto: camiseta azul marino
 
 <?php if($p_type == "physical_product"){ ?>
 
-<option value="physical_product" selected> (Producto físico) Producto simple </option>
+<option value="physical_product" selected> Producto simple </option>
 
-<option value="digital_product"> (Producto digital) Producto descargable </option>
-
-<option value="variable_product"> (Producto variable) Producto avanzado</option>
+<option value="variable_product"> Producto avanzado</option>
 
 <?php }elseif($p_type == "digital_product"){ ?>
 
-<option value="physical_product"> (Producto físico) Producto simple </option>
+<option value="physical_product"> Producto simple </option>
 
-<option value="digital_product" selected> (Producto digital) Producto descargable </option>
-
-<option value="variable_product"> (Producto variable) Producto avanzado </option>
+<option value="variable_product"> Producto avanzado </option>
 
 <?php }elseif($p_type == "variable_product"){ ?>
 
-<option value="physical_product"> (Producto físico) Producto simple </option>
+<option value="physical_product"> Producto simple </option>
 
-<option value="digital_product"> (Producto digital) Producto descargable </option>
-
-<option value="variable_product" selected> (Producto variable) Producto avanzado </option>
+<option value="variable_product" selected> Producto avanzado </option>
 
 <?php }else{ ?>
 
-<option value="physical_product"> (Producto físico) Producto simple </option>
+<option value="physical_product"> Producto simple </option>
 
-<option value="digital_product"> (Producto digital) Producto descargable </option>
-
-<option value="variable_product"> (Producto variable) Producto avanzado </option>
+<option value="variable_product"> Producto avanzado </option>
 
 <?php } ?>
 
@@ -319,7 +311,7 @@ Ejemplo de URL del producto: camiseta azul marino
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Selecionar vendedor </label>
+<label> Selecionar Fabricante </label>
 
 <select name="manufacturer" class="form-control">
 

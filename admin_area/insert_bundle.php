@@ -184,11 +184,9 @@ Ejemplo de URL de paquete: camiseta azul marino
 
 <select class="form-control" name="product_type"><!-- select manufacturer Starts -->
 
-<option value="physical_product"> (Producto físico) Paquete simple </option>
+<option value="physical_product"> Paquete simple </option>
 
-<option value="digital_product"> (Producto digital) Paquete descargable </option>
-
-<option value="variable_product"> (Producto variable) Paquete avanzado </option>
+<option value="variable_product"> Paquete avanzado </option>
 
 </select><!-- select manufacturer Ends -->
 

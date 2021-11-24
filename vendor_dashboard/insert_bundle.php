@@ -199,11 +199,9 @@ echo "<option value='$product_id'> $product_title </option>";
 
 <select class="form-control" name="product_type"><!-- select manufacturer Starts -->
 
-<option value="physical_product"> (Producto físico) Paquete simple </option>
+<option value="physical_product"> Paquete simple </option>
 
-<option value="digital_product"> (Producto digital) Paquete descargable </option>
-
-<option value="variable_product"> (Producto variable) Paquete avanzado </option>
+<option value="variable_product">  Paquete avanzado </option>
 
 </select><!-- select manufacturer Ends -->
 
@@ -211,11 +209,11 @@ echo "<option value='$product_id'> $product_title </option>";
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Seleccionar un Vendedor </label>
+<label> Seleccionar un Fabricante </label>
 
 <select class="form-control" name="manufacturer"><!-- select manufacturer Starts -->
 
-<option> Seleccionar un Vendedor </option>
+<option> Seleccionar un Fabricante </option>
 
 <?php
 

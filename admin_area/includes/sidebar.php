@@ -308,29 +308,6 @@ if($count_pending_products != 0){
 
 </li><!-- relations li Ends -->
 
-<li><!-- li Starts -->
-
-<a href="#" data-toggle="collapse" data-target="#downloads">
-
-<i class="fa fa-fw fa-arrows-v"></i> Descargables
-
-<i class="fa fa-fw fa-caret-down"></i>
-
-</a>
-
-<ul id="downloads" class="collapse">
-
-<li>
-<a href="index.php?insert_download"> Agregar descargable </a>
-</li>
-
-<li>
-<a href="index.php?view_downloads"> Ver Descargables </a>
-</li>
-
-</ul>
-
-</li><!-- li Ends -->
 
 <li><!-- reviews li Starts -->
 
@@ -450,7 +427,7 @@ if($count_pending_products != 0){
 
 <a href="#" data-toggle="collapse" data-target="#manufacturers"><!-- anchor Starts -->
 
-<i class="fa fa-fw fa-briefcase"></i> Vendedores
+<i class="fa fa-fw fa-briefcase"></i> Fabricantes
 
 <i class="fa fa-fw fa-caret-down"></i>
 
@@ -460,11 +437,11 @@ if($count_pending_products != 0){
 <ul id="manufacturers" class="collapse"><!-- ul collapse Starts -->
 
 <li>
-<a href="index.php?insert_manufacturer"> Agregar vendedor </a>
+<a href="index.php?insert_manufacturer"> Agregar fabricante </a>
 </li>
 
 <li>
-<a href="index.php?view_manufacturers"> Ver vendedores </a>
+<a href="index.php?view_manufacturers"> Ver fabricantes </a>
 </li>
 
 </ul><!-- ul collapse Ends -->

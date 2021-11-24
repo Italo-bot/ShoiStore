@@ -197,11 +197,9 @@ Ejemplo de URL del producto: camiseta azul marino
 
 <select class="form-control" name="product_type"><!-- select manufacturer Starts -->
 
-<option value="physical_product"> (Producto físico) Producto simple </option>
+<option value="physical_product"> Producto simple </option>
 
-<option value="digital_product"> (Producto digital) Producto descargable </option>
-
-<option value="variable_product"> (Producto variable) Producto avanzado </option>
+<option value="variable_product"> Producto avanzado </option>
 
 </select><!-- select manufacturer Ends -->
 
@@ -209,11 +207,11 @@ Ejemplo de URL del producto: camiseta azul marino
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Seleccionar vendedor </label>
+<label> Seleccionar fabricante </label>
 
 <select class="form-control" name="manufacturer"><!-- select manufacturer Starts -->
 
-<option> Seleccionar a un vendedor </option>
+<option> Seleccionar a un fabricante </option>
 
 <?php
 

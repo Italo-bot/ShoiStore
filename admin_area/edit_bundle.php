@@ -309,35 +309,27 @@ Ejemplo de URL de paquete: camiseta azul marino
 
 <?php if($p_type == "physical_product"){ ?>
 
-<option value="physical_product" selected> (Producto físico) Paquete simple </option>
+<option value="physical_product" selected> Paquete simple </option>
 
-<option value="digital_product"> (Producto digital) Paquete descargable </option>
-
-<option value="variable_product"> (Producto variable) Paquete avanzado </option>
+<option value="variable_product"> Paquete avanzado </option>
 
 <?php }elseif($p_type == "digital_product"){ ?>
 
-<option value="physical_product"> (Producto físico) Paquete simple </option>
+<option value="physical_product"> Paquete simple </option>
 
-<option value="digital_product" selected> (Producto digital) Paquete descargable </option>
-
-<option value="variable_product"> (Producto variable) Paquete avanzado </option>
+<option value="variable_product"> Paquete avanzado </option>
 
 <?php }elseif($p_type == "variable_product"){ ?>
 
-<option value="physical_product"> (Producto físico) Paquete simple </option>
+<option value="physical_product"> Paquete simple </option>
 
-<option value="digital_product"> (Producto digital) Paquete descargable </option>
-
-<option value="variable_product" selected> (Producto variable) Paquete avanzado </option>
+<option value="variable_product" selected> Paquete avanzado </option>
 
 <?php }else{ ?>
 
-<option value="physical_product"> (Producto físico) Paquete simple </option>
+<option value="physical_product"> Paquete simple </option>
 
-<option value="digital_product"> (Producto digital) Paquete descargable </option>
-
-<option value="variable_product"> (Producto variable) Paquete avanzado </option>
+<option value="variable_product"> Paquete avanzado </option>
 
 <?php } ?>
 
@@ -347,7 +339,7 @@ Ejemplo de URL de paquete: camiseta azul marino
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Seleccionar Vendedor </label>
+<label> Seleccionar Fabricante </label>
 
 <select name="manufacturer" class="form-control">
 

@@ -21,7 +21,7 @@ else {
 
 <li class="active">
 
-<i class="fa fa-dashboard"></i> Dashboard / Agregar Vendedor
+<i class="fa fa-dashboard"></i> Dashboard / Agregar Fabricantes
 
 </li>
 
@@ -42,7 +42,7 @@ else {
 
 <h3 class="panel-title"><!-- panel-title Starts -->
 
-<i class="fa fa-money fa-fw"> </i> Agregar Vendedor
+<i class="fa fa-money fa-fw"> </i> Agregar Fabricantes
 
 </h3><!-- panel-title Ends -->
 
@@ -66,7 +66,7 @@ else {
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label class="col-md-3 control-label"> Mostrar como los mejores vendedores </label>
+<label class="col-md-3 control-label"> Mostrar como los mejores Fabricantes </label>
 
 <div class="col-md-6">
 

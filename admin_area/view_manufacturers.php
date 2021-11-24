@@ -20,7 +20,7 @@ else {
 
 <li class="active">
 
-<i class="fa fa-dashboard"></i> Dashboard / Ver Vendedores
+<i class="fa fa-dashboard"></i> Dashboard / Ver Fabricantes
 
 </li>
 
@@ -40,7 +40,7 @@ else {
 
 <h3 class="panel-title">
 
-<i class="fa fa-money fa-fw"></i> Ver Vendedores
+<i class="fa fa-money fa-fw"></i> Ver Fabricantes
 
 </h3>
 
@@ -56,10 +56,10 @@ else {
 
 <tr>
 
-<th> ID del vendedor: </th>
-<th> Título del vendedor: </th>
-<th> Eliminar vendedor: </th>
-<th> Editar vendedor: </th>
+<th> ID del fabricante: </th>
+<th> Título del fabricante: </th>
+<th> Eliminar fabricante: </th>
+<th> Editar fabricante: </th>
 
 </tr>
 

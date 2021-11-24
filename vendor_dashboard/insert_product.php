@@ -155,7 +155,7 @@ Ejemplo de URL del producto: camiseta azul marino
 
 <div class="form-group" id="product_psp_price"><!-- form-group Starts -->
 
-<label> Product Sale Price </label>
+<label> Precio venta producto </label>
 
 <input type="text" name="psp_price" class="form-control">
 
@@ -171,11 +171,9 @@ Ejemplo de URL del producto: camiseta azul marino
 
 <select class="form-control" name="product_type"><!-- select manufacturer Starts -->
 
-<option value="physical_product"> (Producto físico) Producto simple </option>
+<option value="physical_product"> Producto simple </option>
 
-<option value="digital_product"> (Producto digital) Producto descargable </option>
-
-<option value="variable_product"> (Producto variable) Producto avanzado </option>
+<option value="variable_product"> Producto avanzado </option>
 
 </select><!-- select manufacturer Ends -->
 
@@ -183,11 +181,11 @@ Ejemplo de URL del producto: camiseta azul marino
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> Seleccionar Vendedor </label>
+<label> Seleccionar Fabricante </label>
 
 <select class="form-control" name="manufacturer"><!-- select manufacturer Starts -->
 
-<option> Seleccionar Vendedor </option>
+<option> Seleccionar Fabricante </option>
 
 <?php
 
@@ -353,7 +351,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label> ¿Habilitar la gestión de existencias a nivel de producto? </label>
+<label> Habilitar gestión de stock</label>
 
 <div class="radio">
 
@@ -546,19 +544,19 @@ $attribute_values = $row_product_attributes["attribute_values"];
 
 <a href="#" class="edit-product-attribute btn btn-primary btn-sm" data-attribute="<?php echo $attribute_id; ?>">
 
-<i class="fa fa-pencil"></i> Edit
+<i class="fa fa-pencil"></i> Editar
 
 </a>
 
 <a href="#" class="save-product-attribute btn btn-success btn-sm" data-attribute="<?php echo $attribute_id; ?>">
 
-<i class="fa fa-floppy-o"></i> Save
+<i class="fa fa-floppy-o"></i> Guardar
 
 </a>
 
 <a href="#" class="delete-product-attribute btn btn-danger btn-sm" data-attribute="<?php echo $attribute_id; ?>">
 
-<i class="fa fa-trash-o"></i> Delete
+<i class="fa fa-trash-o"></i> Borrar
 
 </a>
 

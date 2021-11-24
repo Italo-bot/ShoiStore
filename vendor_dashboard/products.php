@@ -228,11 +228,8 @@ $onbackorder += $row_product_stock["stock_quantity"];
 
 <?php if($product_type == "physical_product"){ ?>
 
-Producto Físico
+Producto físico
 
-<?php }elseif($product_type == "digital_product"){ ?>
-
-Producto Digital
 <?php }elseif($product_type == "variable_product"){ ?>
 
 Variable de producto

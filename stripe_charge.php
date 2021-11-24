@@ -30,7 +30,7 @@ $customer = \Stripe\Customer::create(array(
 $charge = \Stripe\Charge::create(array(
 'customer' => $customer->id,
 'amount'   => $stripe_total_amount,
-'currency' => 'usd'
+'currency' => 'clp'
 ));
 
 

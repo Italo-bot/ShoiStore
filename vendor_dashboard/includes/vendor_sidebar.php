@@ -63,12 +63,6 @@ echo "
 
 </li>
 
-<li class="<?php if(preg_match("/download/", $_SERVER["QUERY_STRING"])){ echo "active"; } ?>">
-
-<a href="index.php?downloads"> <i class="fa fa-download"> </i> Descargables </a>
-
-</li>
-
 <li class="<?php if(preg_match("/order/", $_SERVER["QUERY_STRING"])){ echo "active"; }  ?>">
 
 <a href="index.php?orders"> <i class="fa fa-list"> </i> Ordenes </a>

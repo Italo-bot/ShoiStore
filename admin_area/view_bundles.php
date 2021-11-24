@@ -153,11 +153,9 @@ echo "selected";
 
 <option value=""> Seleccione un tipo de paquete </option>
 
-<option value="physical_product" <?php select_product_type("physical_product"); ?>> (Paquete físico) Paquete simple </option>
+<option value="physical_product" <?php select_product_type("physical_product"); ?>> Paquete simple </option>
 
-<option value="digital_product" <?php select_product_type("digital_product"); ?>> (Paquete digital) Paquete descargable </option>
-
-<option value="variable_product" <?php select_product_type("variable_product"); ?>> (Paquete variable) Paquete avanzado </option>
+<option value="variable_product" <?php select_product_type("variable_product"); ?>> Paquete avanzado </option>
 
 </select>
 
@@ -169,11 +167,11 @@ echo "selected";
 
 <div class="form-group"><!--- form-group Starts --->
 
-<label> Filtrar por vendedor: </label>
+<label> Filtrar por fabricante: </label>
 
 <select name="vendor_id" class="form-control">
 
-<option value=""> Seleccione un producto de vendedor </option>
+<option value=""> Seleccione un producto de fabricante </option>
 
 <?php
 

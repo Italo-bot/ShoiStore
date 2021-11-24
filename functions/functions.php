@@ -532,7 +532,7 @@ echo "<li><a href='$pagination_url?page=1";
 
 if(!empty($aPath)){ echo "&".$aPath; }
 
-echo "' >".'First Page'."</a></li>";
+echo "' >".'Primera'."</a></li>";
 
 for ($i=1; $i<=$total_pages; $i++){
 	
@@ -554,7 +554,7 @@ echo "<li><a href='$pagination_url?page=$total_pages";
 
 if(!empty($aPath)){ echo "&".$aPath; }
 
-echo "' >".'Last Page'."</a></li>";
+echo "' >".'Última'."</a></li>";
 
 /// getPaginator Function Code Ends ///
 
