@@ -146,24 +146,24 @@ $p_cat_title = $row_p_cat['p_cat_title'];
 
 <body>
 
-<div id="content" ><!-- content Starts -->
-<div class="container" ><!-- container Starts -->
+<div id="content" >
+<div class="container" >
 
 <br><br><br><br>
 
-<div class="col-md-12"><!-- col-md-12 Starts -->
+<div class="col-md-12">
 
-<div class="row" id="productMain"><!-- row Starts -->
+<div class="row" id="productMain">
 
-<div class="col-sm-12"><!-- col-sm-6 Starts -->
+<div class="col-sm-12">
 
-<div class="box"><!-- box Starts -->
+<div class="box">
 
-<form action="" method="post" class="form-horizontal"><!-- form-horizontal Starts -->
+<form action="" method="post" class="form-horizontal">
 
 <?php if($pro_type == "variable_product"){ ?>
 
-<div id="variable-product-div"><!-- variable-product-div Starts -->
+<div id="variable-product-div">
 
 <?php 
 
@@ -329,11 +329,11 @@ $attribute_variation_ids = implode(",", $array_end);
 
 ?>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-lg-4 col-md-3 control-label"> <?php echo $attribute_name; ?> </label>
 
-<div class="col-lg-6 col-md-9"><!-- col-lg-6 col-md-9 Starts -->
+<div class="col-lg-6 col-md-9">
 
 <select name="<?php echo $meta_key; ?>" class="form-control attribute-select" required>
 
@@ -373,9 +373,9 @@ echo "<option>$meta_value</option>";
  
 </select>
 
-</div><!-- col-lg-6 col-md-9 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <?php 
 
@@ -493,8 +493,6 @@ $(".box").addClass("table-loader");
 
 var variation_ids = "<?php echo $variation_ids; ?>";
 
-// change_variation_id ajax post request code Starts
-
 $.ajax({
 	
 method: "POST",
@@ -513,8 +511,6 @@ $(".box").removeClass("table-loader");
 
 });
 
-// change_variation_id ajax post request code Ends
-
 });
 
 });
@@ -523,8 +519,7 @@ $(".box").removeClass("table-loader");
 
 <?php } ?>
 
-<div class="form-group"><!-- form-group Starts -->
-
+<div class="form-group">
 <?php if($status == "product"){ ?>
 
 <label class="col-lg-4 col-md-3 control-label" >Cantidad de Productos </label>
@@ -535,13 +530,13 @@ $(".box").removeClass("table-loader");
 
 <?php } ?>
 
-<div class="col-lg-6 col-md-9"><!-- col-lg-6 col-md-9 Starts -->
+<div class="col-lg-6 col-md-9">
 
 <input type="number" name="product_qty" class="form-control" value="1" min="1" max="10" required>
 
-</div><!-- col-lg-6 col-md-9 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <?php
 	
@@ -714,11 +709,11 @@ Precio Paquete de Venta : $$pro_psp_price
 
 <?php if($pro_type == "variable_product"){ ?>
 
-</div><!-- variable-product-div Ends -->
+</div>
 
 <?php } ?>
 
-<p class="text-center buttons"><!-- text-center buttons Starts -->
+<p class="text-center buttons">
 
 <button class="btn btn-primary" type="submit" name="add_cart">
 
@@ -877,21 +872,21 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 ?>
 
-</p><!-- text-center buttons Ends -->
+</p>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- box Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</div><!-- col-md-12 Ends -->
+</div>
 
-</div><!-- container Ends -->
+</div>
 
-</div><!-- content Ends -->
+</div>
 
 <?php include("includes/footer.php"); ?>
 

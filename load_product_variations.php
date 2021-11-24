@@ -188,11 +188,11 @@ $attribute_variation_ids = $variation_ids;
 
 ?>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-lg-4 col-md-3 control-label"> <?php echo $attribute_name; ?> </label>
 
-<div class="col-lg-6 col-md-9"><!-- col-lg-6 col-md-9 Starts -->
+<div class="col-lg-6 col-md-9">
 
 <select name="<?php echo $meta_key; ?>" class="form-control attribute-select" required>
 
@@ -232,9 +232,9 @@ echo "<option>$meta_value</option>";
  
 </select>
 
-</div><!-- col-lg-6 col-md-9 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <?php 
 

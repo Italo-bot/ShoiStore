@@ -81,8 +81,6 @@ if(count($physical_products) > 0){
 
 if($is_shipping_address == "no"){
 
-// Shipping Details Starts
-
 $shipping_first_name = mysqli_real_escape_string($con, $_POST["shipping_first_name"]);
 
 $shipping_last_name = mysqli_real_escape_string($con, $_POST["shipping_last_name"]);

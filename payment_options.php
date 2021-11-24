@@ -1,4 +1,4 @@
-<div class="box"><!-- box Starts -->
+<div class="box">
 
 <?php
 
@@ -23,9 +23,9 @@ $customer_id = $row_customer['customer_id'];
 
 </p>
 
-<center><!-- center Starts -->
+<center>
 
-<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"><!-- form Starts -->
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
 
 <input type="hidden" name="business" value="saady@gmail.com">
 
@@ -87,7 +87,7 @@ $i++;
 
 <input type="image" name="submit" width="500" height="230" src="images/paypal.png" >
 
-</form><!-- form Ends -->
+</form>
 
 <?php
  
@@ -134,6 +134,6 @@ require_once('stripe_config.php');
 
 </form>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- box Ends -->
+</div>

@@ -31,11 +31,11 @@ $include_page = "shop"
 
 <body>
 
-<div id="top"><!-- top Starts -->
+<div id="top">
 
-<div class="container"><!-- container Starts -->
+<div class="container">
 
-<div class="col-md-6 offer"><!-- col-md-6 offer Starts -->
+<div class="col-md-6 offer">
 
 <a href="#" class="btn btn-success btn-sm" >
 <?php
@@ -59,10 +59,10 @@ echo "Bienvenid@ : " . $_SESSION['customer_email'] . "";
 Precio Total: <?php total_price(); ?>, Cantidad de Items: <?php items(); ?>
 </a>
 
-</div><!-- col-md-6 offer Ends -->
+</div>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
-<ul class="menu"><!-- menu Starts -->
+<div class="col-md-6">
+<ul class="menu">
 
 <?php if(!isset($_SESSION['customer_email'])){ ?>
 
@@ -146,24 +146,24 @@ echo "<a href='logout.php'> Cerrar Sesión </a>";
 ?>
 </li>
 
-</ul><!-- menu Ends -->
+</ul>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- top Ends -->
+</div>
+</div>
 
-<div class="navbar navbar-default" id="navbar"><!-- navbar navbar-default Starts -->
-<div class="container" ><!-- container Starts -->
+<div class="navbar navbar-default" id="navbar">
+<div class="container" >
 
-<div class="navbar-header"><!-- navbar-header Starts -->
+<div class="navbar-header">
 
-<a class="navbar-brand home" href="index.php" ><!--- navbar navbar-brand home Starts -->
+<a class="navbar-brand home" href="index.php" >
 
 <img src="images/ShoiStoree.png" alt="ShoiStore logo" class="hidden-xs" >
 <img src="images/ShoiStoree.png" alt="ShoiStore logo" class="visible-xs" >
 
-</a><!--- navbar navbar-brand home Ends -->
+</a>
 
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"  >
 
@@ -182,13 +182,13 @@ echo "<a href='logout.php'> Cerrar Sesión </a>";
 </button>
 
 
-</div><!-- navbar-header Ends -->
+</div>
 
-<div class="navbar-collapse collapse" id="navigation" ><!-- navbar-collapse collapse Starts -->
+<div class="navbar-collapse collapse" id="navigation" >
 
-<div class="padding-nav" ><!-- padding-nav Starts -->
+<div class="padding-nav" >
 
-<ul class="nav navbar-nav navbar-left"><!-- nav navbar-nav navbar-left Starts -->
+<ul class="nav navbar-nav navbar-left">
 
 <li>
 <a href="index.php"> Home </a>
@@ -234,19 +234,19 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 <a href="contact.php"> Contáctanos </a>
 </li>
 
-</ul><!-- nav navbar-nav navbar-left Ends -->
+</ul>
 
-</div><!-- padding-nav Ends -->
+</div>
 
-<a class="btn btn-primary navbar-btn right" href="cart.php"><!-- btn btn-primary navbar-btn right Starts -->
+<a class="btn btn-primary navbar-btn right" href="cart.php">
 
 <i class="fa fa-shopping-cart"></i>
 
 <span> <?php items(); ?> Artículos </span>
 
-</a><!-- btn btn-primary navbar-btn right Ends -->
+</a>
 
-<div class="navbar-collapse collapse right"><!-- navbar-collapse collapse right Starts -->
+<div class="navbar-collapse collapse right">
 
 <button class="btn navbar-btn btn-primary" type="button" data-toggle="collapse" data-target="#search">
 
@@ -256,17 +256,17 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</div><!-- navbar-collapse collapse right Ends -->
+</div>
 
-<div class="collapse clearfix" id="search"><!-- collapse clearfix Starts -->
+<div class="collapse clearfix" id="search">
 
-<form class="navbar-form" method="get" action="results.php"><!-- navbar-form Starts -->
+<form class="navbar-form" method="get" action="results.php">
 
-<div class="input-group"><!-- input-group Starts -->
+<div class="input-group">
 
 <input class="form-control" type="text" placeholder="Buscar" name="user_query" required>
 
-<span class="input-group-btn"><!-- input-group-btn Starts -->
+<span class="input-group-btn">
 
 <button type="submit" value="Search" name="search" class="btn btn-primary">
 
@@ -274,26 +274,26 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</span><!-- input-group-btn Ends -->
+</span>
 
-</div><!-- input-group Ends -->
+</div>
 
-</form><!-- navbar-form Ends -->
+</form>
 
-</div><!-- collapse clearfix Ends -->
+</div>
 
-</div><!-- navbar-collapse collapse Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- navbar navbar-default Ends -->
+</div>
+</div>
 
 
-<div id="content" ><!-- content Starts -->
-<div class="container" ><!-- container Starts -->
+<div id="content" >
+<div class="container" >
 
-<div class="col-md-12" ><!--- col-md-12 Starts -->
+<div class="col-md-12" >
 
-<ul class="breadcrumb" ><!-- breadcrumb Starts -->
+<ul class="breadcrumb" >
 
 <li>
 <a href="index.php">Home</a>
@@ -301,19 +301,19 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 <li>Tienda</li>
 
-</ul><!-- breadcrumb Ends -->
+</ul>
 
 
 
-</div><!--- col-md-12 Ends -->
+</div>
 
-<div class="col-md-3"><!-- col-md-3 Starts -->
+<div class="col-md-3">
 
 <?php include("includes/sidebar.php"); ?>
 
-</div><!-- col-md-3 Ends -->
+</div>
 
-<div class="col-md-9" ><!-- col-md-9 Starts --->
+<div class="col-md-9" >
 
 <div class='box'>
 
@@ -321,32 +321,30 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </div>
 
-<div class="row flex-wrap" id="Products" ><!-- row Starts -->
+<div class="row flex-wrap" id="Products" >
 
 <?php getProducts(""); ?>
 
-</div><!-- row Ends -->
+</div>
 
-<center><!-- center Starts -->
+<center>
 
-<ul class="pagination" ><!-- pagination Starts -->
+<ul class="pagination" >
 
 <?php getPaginator(""); ?>
 
-</ul><!-- pagination Ends -->
+</ul>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- col-md-9 Ends --->
+</div>
 
-<div id="wait" style="position:absolute;top:40%;left:45%;padding:100px;padding-top:200px;"><!--- wait Starts -->
+<div id="wait" style="position:absolute;top:40%;left:45%;padding:100px;padding-top:200px;">
 
-</div><!--- wait Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- content Ends -->
-
-
+</div>
+</div>
 
 <?php
 
@@ -361,8 +359,6 @@ include("includes/footer.php");
 <script>
 
 $(document).ready(function(){
-
-/// Hide And Show Code Starts ///
 
 $('.nav-toggle').click(function(){
 
@@ -382,10 +378,6 @@ $(".hide-show").html('Hide');
 });
 
 });
-
-/// Hide And Show Code Ends ///
-
-/// Search Filters code Starts /// 
 
 $(function(){
 
@@ -435,8 +427,6 @@ $('[data-action="filter"][id="dev-table-filter"]').filterTable();
 
 });
 
-/// Search Filters code Ends /// 
-
 });
 
  
@@ -449,12 +439,9 @@ $('[data-action="filter"][id="dev-table-filter"]').filterTable();
 
 $(document).ready(function(){
  
-  // getProducts Function Code Starts 
 
   function getProducts(){
   
-  // Manufacturers Code Starts 
-
     var sPath = ''; 
 
 var aInputs = $('li').find('.get_manufacturer');
@@ -489,10 +476,6 @@ sPath = sPath + 'man[]=' + aKeys[i]+'&';
 
 }
 
-// Manufacturers Code ENDS 
-
-// Products Categories Code Starts 
-
 var aInputs = Array();
 
 var aInputs = $('li').find('.get_p_cat');
@@ -524,10 +507,6 @@ sPath = sPath + 'p_cat[]=' + aKeys[i]+'&';
 }
 
 }
-
-// Products Categories Code ENDS 
-
-   // Categories Code Starts 
 
 var aInputs = Array();
 
@@ -561,15 +540,7 @@ if(aKeys.length>0){
 
 }
 
-   // Categories Code ENDS 
-   
-   // Loader Code Starts 
-
 $('#wait').html('<img src="images/load.gif">'); 
-
-// Loader Code ENDS
-
-// ajax Code Starts 
 
 $.ajax({
 
@@ -601,12 +572,10 @@ $('.pagination').html(data);
 }  
 
     });
-
-// ajax Code Ends 
+ 
    
    }
 
-   // getProducts Function Code Ends    
 
 $('.get_manufacturer').click(function(){ 
 

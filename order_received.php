@@ -41,12 +41,11 @@ echo "<script> window.open('checkout.php','_self'); </script>";
 
 <body>
 
-<div id="top"><!-- top Starts -->
+<div id="top">
 
-<div class="container"><!-- container Starts -->
+<div class="container">
 
-<div class="col-md-6 offer"><!-- col-md-6 offer Starts -->
-
+<div class="col-md-6 offer">
 <a href="#" class="btn btn-success btn-sm" >
 
 <?php
@@ -71,10 +70,10 @@ echo "Bienvenid@ : " . $_SESSION['customer_email'] . "";
 Precio Total: <?php total_price(); ?>, Cantidad de Items <?php items(); ?>
 </a>
 
-</div><!-- col-md-6 offer Ends -->
+</div>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
-<ul class="menu"><!-- menu Starts -->
+<div class="col-md-6">
+<ul class="menu">
 
 <?php if(!isset($_SESSION['customer_email'])){ ?>
 
@@ -158,24 +157,24 @@ echo "<a href='logout.php'> Cerrar Sesión </a>";
 ?>
 </li>
 
-</ul><!-- menu Ends -->
+</ul>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- top Ends -->
+</div>
+</div>
 
-<div class="navbar navbar-default" id="navbar"><!-- navbar navbar-default Starts -->
-<div class="container" ><!-- container Starts -->
+<div class="navbar navbar-default" id="navbar">
+<div class="container" >
 
-<div class="navbar-header"><!-- navbar-header Starts -->
+<div class="navbar-header">
 
-<a class="navbar-brand home" href="index.php" ><!--- navbar navbar-brand home Starts -->
+<a class="navbar-brand home" href="index.php" >
 
 <img src="images/ShoiStoree.png" alt="ShoiStore logo" class="hidden-xs" >
 <img src="images/ShoiStoree.png" alt="ShoiStore logo" class="visible-xs" >
 
-</a><!--- navbar navbar-brand home Ends -->
+</a>
 
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"  >
 
@@ -194,13 +193,12 @@ echo "<a href='logout.php'> Cerrar Sesión </a>";
 </button>
 
 
-</div><!-- navbar-header Ends -->
+</div>
 
-<div class="navbar-collapse collapse" id="navigation" ><!-- navbar-collapse collapse Starts -->
+<div class="navbar-collapse collapse" id="navigation" >
 
-<div class="padding-nav" ><!-- padding-nav Starts -->
-
-<ul class="nav navbar-nav navbar-left"><!-- nav navbar-nav navbar-left Starts -->
+<div class="padding-nav" >
+<ul class="nav navbar-nav navbar-left">
 
 <li>
 <a href="index.php"> Home </a>
@@ -246,19 +244,19 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 <a href="contact.php"> Contáctanos </a>
 </li>
 
-</ul><!-- nav navbar-nav navbar-left Ends -->
+</ul>
 
-</div><!-- padding-nav Ends -->
+</div>
 
-<a class="btn btn-primary navbar-btn right" href="cart.php"><!-- btn btn-primary navbar-btn right Starts -->
+<a class="btn btn-primary navbar-btn right" href="cart.php">
 
 <i class="fa fa-shopping-cart"></i>
 
 <span> <?php items(); ?> Artículos </span>
 
-</a><!-- btn btn-primary navbar-btn right Ends -->
+</a>
 
-<div class="navbar-collapse collapse right"><!-- navbar-collapse collapse right Starts -->
+<div class="navbar-collapse collapse right">
 
 <button class="btn navbar-btn btn-primary" type="button" data-toggle="collapse" data-target="#search">
 
@@ -268,17 +266,17 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</div><!-- navbar-collapse collapse right Ends -->
+</div>
 
-<div class="collapse clearfix" id="search"><!-- collapse clearfix Starts -->
+<div class="collapse clearfix" id="search">
 
-<form class="navbar-form" method="get" action="results.php"><!-- navbar-form Starts -->
+<form class="navbar-form" method="get" action="results.php">
 
-<div class="input-group"><!-- input-group Starts -->
+<div class="input-group">
 
 <input class="form-control" type="text" placeholder="Buscar" name="user_query" required>
 
-<span class="input-group-btn"><!-- input-group-btn Starts -->
+<span class="input-group-btn">
 
 <button type="submit" value="Search" name="search" class="btn btn-primary">
 
@@ -286,32 +284,32 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</span><!-- input-group-btn Ends -->
+</span>
 
-</div><!-- input-group Ends -->
+</div>
 
-</form><!-- navbar-form Ends -->
+</form>
 
-</div><!-- collapse clearfix Ends -->
+</div>
 
-</div><!-- navbar-collapse collapse Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- navbar navbar-default Ends -->
+</div>
+</div>
 
-<div id="content"><!-- content Starts -->
+<div id="content">
 
-<div class="container"><!-- container Starts -->
+<div class="container">
 
-<div class="col-md-12"><!--- col-md-12 Starts -->
+<div class="col-md-12">
 
-<ul class="breadcrumb"><!-- breadcrumb Starts -->
+<ul class="breadcrumb">
 
 <li><a href="index.php">Home</a></li>
 
 <li>Orden Completada</li>
 
-</ul><!-- breadcrumb Ends -->
+</ul>
 
 <nav class="checkout-breadcrumbs text-center">
 
@@ -327,9 +325,9 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </nav>
 
-</div><!--- col-md-12 Ends -->
+</div>
 
-<div class="col-md-8"><!-- col-md-12 Starts -->
+<div class="col-md-8">
 
 <?php 
 
@@ -423,7 +421,7 @@ $count_vendor_orders = mysqli_num_rows($run_vendor_orders);
 
 ?>
 
-<div class="box"><!-- box Starts -->
+<div class="box">
 
 <h3>Detalles de Orden</h3>
 
@@ -635,9 +633,9 @@ $<?php echo $shipping_cost; ?>
   
 </div>
 
-<table class="table border-table"><!--- table border-table Starts --->
+<table class="table border-table">
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -655,9 +653,9 @@ $<?php echo $shipping_cost; ?>
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!--- tbody Starts --->
+<tbody>
 
 <?php
 
@@ -683,7 +681,7 @@ $i++;
 
 ?>
 
-<tr><!-- tr Starts -->
+<tr>
 
 <th><?php echo $i; ?></th>
 
@@ -765,19 +763,19 @@ Ver Orden
 
 </td>
 
-</tr><!-- tr Ends -->
+</tr>
 
 <?php } ?>
 
-</tbody><!--- tbody Ends --->
+</tbody>
 
-</table><!--- table border-table Ends --->
+</table>
 
 <?php } ?>
 
 <h3>Detalles del cliente</h3>
 
-<table class="table border-table"><!--- table border-table Starts --->
+<table class="table border-table">
 
 <tbody>
 
@@ -807,7 +805,7 @@ Ver Orden
  
 </table> 
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
 <div class="col-sm-6">
 
@@ -865,15 +863,15 @@ echo $country_name = $row_country['country_name'];
 
 <?php } ?>
 
-</div><!-- row Ends -->
+</div>
 
-</div><!-- box Ends -->
+</div>
 
-</div><!-- col-md-8 Ends -->
+</div>
 
-<div class="col-md-4"><!-- col-md-4 Starts -->
+<div class="col-md-4">
 
-<div class="box"><!-- box Starts -->
+<div class="box">
 
 <h4 class="text-success">Gracias. Tu orden ha sido recibida.</h4>
 
@@ -891,13 +889,13 @@ echo $country_name = $row_country['country_name'];
 
 </ul>
 
-</div><!-- box Ends -->
+</div>
 
-</div><!-- col-md-4 Ends -->
+</div>
 
-</div><!-- container Ends -->
+</div>
 
-</div><!-- content Ends -->
+</div>
 
 <?php include("includes/footer.php"); ?>
 

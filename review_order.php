@@ -34,7 +34,7 @@ $paypal_url = "https://www.paypal.com/cgi-bin/webscr";
 
 ?>
 
-<div class="row"><!--- row Starts -->
+<div class="row">
 
 <?php
 
@@ -50,23 +50,22 @@ if($count_cart == 0){
 
 ?>
 
-<div class="col-md-12"><!-- col-md-12 Starts -->
+<div class="col-md-12">
 
-<div class="box text-center"><!-- box Starts -->
+<div class="box text-center">
 
 <p class="lead"> Pago no Disponible, Carrito Vacío. </p>
 
 <a href="shop.php" class="btn btn-primary btn-lg"> Volver a Tienda </a>
 
-</div><!-- box Ends -->
+</div>
 
-</div><!-- col-md-12 Ends -->
+</div>
 
 <?php }else{ ?>
 
-<div class="col-md-8"><!-- col-md-8 Starts -->
-
-<div class="box"><!-- box Starts -->
+<div class="col-md-8">
+<div class="box">
 
 <p class="lead">No dude en consultar los detalles de facturación y envío.</p>
 
@@ -160,39 +159,39 @@ array_push($physical_products[$vendor_id], $product_id);
 
 ?>
 
-<form method="post" enctype="multipart/form-data" id="shipping-billing-details-form"><!-- shipping-billing-details-form Starts -->
+<form method="post" enctype="multipart/form-data" id="shipping-billing-details-form">
 
 <h2> Detalles de facturación </h2>
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Nombre : </label>
 
 <input type="text" name="billing_first_name" class="form-control" required value="<?php echo $billing_first_name; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Apellido : </label>
 
 <input type="text" name="billing_last_name" class="form-control" required value="<?php echo $billing_last_name; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> País : </label>
 
@@ -230,66 +229,66 @@ if($billing_country == $country_id){ echo "selected"; }
 
 </select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Dirección 1 : </label>
 
 <input type="text" name="billing_address_1" class="form-control" required value="<?php echo $billing_address_1; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Dirección 2 : </label>
 
 <input type="text" name="billing_address_2" class="form-control" required value="<?php echo $billing_address_2; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Región : </label>
 
 <input type="text" name="billing_state" class="form-control" required value="<?php echo $billing_state; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Ciudad : </label>
 
 <input type="text" name="billing_city" class="form-control" required value="<?php echo $billing_city; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Postal : </label>
 
 <input type="text" name="billing_postcode" class="form-control" required value="<?php echo $billing_postcode; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 <?php if(count($physical_products) > 0 ){ ?>
 
 <hr>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <h4>¿Los detalles de envío son los mismos?</h4>
 
@@ -325,41 +324,41 @@ $_SESSION["is_shipping_address"] = "yes";
 
 <?php } ?>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div id="shipping-details-form-div"><!-- shipping-details-form-div Starts -->
+<div id="shipping-details-form-div">
 
 <h2>Detalles de envío</h2>
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Nombre : </label>
 
 <input type="text" name="shipping_first_name" class="form-control" required value="<?php echo $shipping_first_name; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
 <div class="col-sm-6">
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Apellido : </label>
 
 <input type="text" name="shipping_last_name" class="form-control" value="<?php echo $shipping_last_name; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> País : </label>
 
@@ -397,90 +396,89 @@ if($shipping_country == $country_id){ echo "selected"; }
 
 </select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Dirección 1 : </label>
 
 <input type="text" name="shipping_address_1" class="form-control" required value="<?php echo $shipping_address_1; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Dirección 2 : </label>
 
 <input type="text" name="shipping_address_2" class="form-control" required value="<?php echo $shipping_address_2; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Región : </label>
 
 <input type="text" name="shipping_state" class="form-control" required value="<?php echo $shipping_state; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Ciudad/Comuna : </label>
 
 <input type="text" name="shipping_city" class="form-control" required value="<?php echo $shipping_city; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Postal : </label>
 
 <input type="text" name="shipping_postcode" class="form-control" required value="<?php echo $shipping_postcode; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- shipping-details-form-div Ends -->
+</div>
 
 <?php } ?>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Notas/Referencias : </label>
 
 <textarea name="order_note" rows="3" placeholder="Aquí puede ingresar referencias para el envío." class="form-control"></textarea>
 
-</div><!-- form-group Ends -->
+</div>
 
 <input type="submit" name="submit" id="shipping-billing-form-submit" style="display:none;">
 
-</form><!-- shipping-billing-details-form Ends -->
+</form>
 
-</div><!-- box Ends -->
+</div>
 
-</div><!-- col-md-8 Ends -->
+</div>
 
-<div class="col-md-4"><!-- col-md-4 Starts -->
+<div class="col-md-4">
 
-<div class="box" id="order-summary"><!-- box Starts -->
+<div class="box" id="order-summary">
 
-<div class="box-header"><!-- box-header Starts -->
+<div class="box-header">
 
 <h3>Resumen Orden</h3>
 
-</div><!-- box-header Ends -->
-
+</div>
 <table class="table">
 
 <thead>
@@ -1344,7 +1342,7 @@ Pague a través de PayPal, puede pagar con su tarjeta de crédito si no tiene un
 
 <td id="payment-forms-td" colspan="2">
 
-<form id="offline_form" action="order.php" method="post"><!-- offline Payment form Starts -->
+<form id="offline_form" action="order.php" method="post">
 
 <?php if(count($physical_products) > 0 ){ ?>
 
@@ -1358,7 +1356,7 @@ Pague a través de PayPal, puede pagar con su tarjeta de crédito si no tiene un
 
 <input type="submit" id="offline-submit" name="submit" value="Place Order" class="btn btn-success btn-lg" style="border-radius:0px;">
 
-</form><!-- offline Payment form Starts -->
+</form>
 
 <?php
 
@@ -1404,7 +1402,7 @@ data-email="<?php echo $customer_email; ?>">
 
 <?php if($enable_paypal == "yes"){ ?>
 
-<form id="paypal_form" action="<?php echo $paypal_url; ?>" method="post"><!-- PayPal form Starts -->
+<form id="paypal_form" action="<?php echo $paypal_url; ?>" method="post">
 
 <input type="hidden" name="business" value="<?php echo $paypal_email; ?>">
 
@@ -1486,7 +1484,7 @@ $i++;
 
 <input type="submit" id="paypal-submit" name="submit" value="Pagar con PayPal" class="btn btn-success btn-lg" style="border-radius:0px;">
 
-</form><!-- PayPal form Ends -->
+</form>
 
 <?php } ?>
 
@@ -1498,13 +1496,13 @@ $i++;
  
 </table>
 
-</div><!-- box Ends -->
+</div>
 
-</div><!-- col-md-4 Ends -->
+</div>
 
 <?php } ?>
 
-</div><!--- row Ends -->
+</div>
 
 <div id="data_response"></div>
 

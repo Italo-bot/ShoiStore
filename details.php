@@ -405,11 +405,11 @@ $star_vendor_rating = 0;
 
 <body>
 
-<div id="top"><!-- top Starts -->
+<div id="top">
 
-<div class="container"><!-- container Starts -->
+<div class="container">
 
-<div class="col-md-6 offer"><!-- col-md-6 offer Starts -->
+<div class="col-md-6 offer">
 
 <a href="#" class="btn btn-success btn-sm" >
 <?php
@@ -433,10 +433,10 @@ echo "Bienvenid@ : " . $_SESSION['customer_email'] . "";
 Precio Total: <?php total_price(); ?>, Cantidad de Items: <?php items(); ?>
 </a>
 
-</div><!-- col-md-6 offer Ends -->
+</div>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
-<ul class="menu"><!-- menu Starts -->
+<div class="col-md-6">
+<ul class="menu">
 
 <?php if(!isset($_SESSION['customer_email'])){ ?>
 
@@ -520,24 +520,24 @@ echo "<a href='logout.php'> Cerrar Sesión </a>";
 ?>
 </li>
 
-</ul><!-- menu Ends -->
+</ul>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- top Ends -->
+</div>
+</div>
 
-<div class="navbar navbar-default" id="navbar"><!-- navbar navbar-default Starts -->
-<div class="container" ><!-- container Starts -->
+<div class="navbar navbar-default" id="navbar">
+<div class="container" >
 
-<div class="navbar-header"><!-- navbar-header Starts -->
+<div class="navbar-header">
 
-<a class="navbar-brand home" href="index.php" ><!--- navbar navbar-brand home Starts -->
+<a class="navbar-brand home" href="index.php" >
 
 <img src="images/ShoiStoree.png" alt="ShoiStore logo" class="hidden-xs" >
 <img src="images/ShoiStoree.png" alt="ShoiStore logo" class="visible-xs" >
 
-</a><!--- navbar navbar-brand home Ends -->
+</a>
 
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"  >
 
@@ -556,13 +556,13 @@ echo "<a href='logout.php'> Cerrar Sesión </a>";
 </button>
 
 
-</div><!-- navbar-header Ends -->
+</div>
 
-<div class="navbar-collapse collapse" id="navigation" ><!-- navbar-collapse collapse Starts -->
+<div class="navbar-collapse collapse" id="navigation" >
 
-<div class="padding-nav" ><!-- padding-nav Starts -->
+<div class="padding-nav" >
 
-<ul class="nav navbar-nav navbar-left"><!-- nav navbar-nav navbar-left Starts -->
+<ul class="nav navbar-nav navbar-left">
 
 <li>
 <a href="index.php"> Home </a>
@@ -608,19 +608,18 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 <a href="contact.php"> Contáctanos </a>
 </li>
 
-</ul><!-- nav navbar-nav navbar-left Ends -->
+</ul>
 
-</div><!-- padding-nav Ends -->
-
-<a class="btn btn-primary navbar-btn right" href="cart.php"><!-- btn btn-primary navbar-btn right Starts -->
+</div>
+<a class="btn btn-primary navbar-btn right" href="cart.php">
 
 <i class="fa fa-shopping-cart"></i>
 
 <span> <?php items(); ?> Artículos </span>
 
-</a><!-- btn btn-primary navbar-btn right Ends -->
+</a>
 
-<div class="navbar-collapse collapse right"><!-- navbar-collapse collapse right Starts -->
+<div class="navbar-collapse collapse right">
 
 <button class="btn navbar-btn btn-primary" type="button" data-toggle="collapse" data-target="#search">
 
@@ -630,17 +629,16 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</div><!-- navbar-collapse collapse right Ends -->
+</div>
 
-<div class="collapse clearfix" id="search"><!-- collapse clearfix Starts -->
+<div class="collapse clearfix" id="search">
 
-<form class="navbar-form" method="get" action="results.php"><!-- navbar-form Starts -->
-
-<div class="input-group"><!-- input-group Starts -->
+<form class="navbar-form" method="get" action="results.php">
+<div class="input-group">
 
 <input class="form-control" type="text" placeholder="Buscar" name="user_query" required>
 
-<span class="input-group-btn"><!-- input-group-btn Starts -->
+<span class="input-group-btn">
 
 <button type="submit" value="Search" name="search" class="btn btn-primary">
 
@@ -648,26 +646,26 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</span><!-- input-group-btn Ends -->
+</span>
 
-</div><!-- input-group Ends -->
+</div>
 
-</form><!-- navbar-form Ends -->
+</form>
 
-</div><!-- collapse clearfix Ends -->
+</div>
 
-</div><!-- navbar-collapse collapse Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- navbar navbar-default Ends -->
+</div>
+</div>
 
 
-<div id="content" ><!-- content Starts -->
-<div class="container" ><!-- container Starts -->
+<div id="content" >
+<div class="container" >
 
-<div class="col-md-12" ><!--- col-md-12 Starts -->
+<div class="col-md-12" >
 
-<ul class="breadcrumb" ><!-- breadcrumb Starts -->
+<ul class="breadcrumb" >
 
 <li>
 <a href="index.php">Home</a>
@@ -683,21 +681,21 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 <li> <?php echo $pro_title; ?> </li>
 
-</ul><!-- breadcrumb Ends -->
+</ul>
 
-</div><!--- col-md-12 Ends -->
+</div>
 
-<div class="col-md-12"><!-- col-md-12 Starts -->
+<div class="col-md-12">
 
-<div class="row" id="productMain"><!-- row Starts -->
+<div class="row" id="productMain">
 
-<div class="col-sm-6"><!-- col-sm-6 Starts -->
+<div class="col-sm-6">
 
-<div id="mainImage"><!-- mainImage Starts -->
+<div id="mainImage">
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-<ol class="carousel-indicators"><!-- carousel-indicators Starts -->
+<ol class="carousel-indicators">
 
 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 
@@ -713,9 +711,9 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 <?php } ?>
 
-</ol><!-- carousel-indicators Ends -->
+</ol>
 
-<div class="carousel-inner"><!-- carousel-inner Starts -->
+<div class="carousel-inner">
 
 <div class="item active">
 <center>
@@ -743,35 +741,35 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 <?php } ?>
 
-</div><!-- carousel-inner Ends -->
+</div>
 
-<a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Starts -->
+<a href="#myCarousel" class="left carousel-control" data-slide="prev">
 
 <span class="glyphicon glyphicon-chevron-left"> </span>
 
 <span class="sr-only"> Previous </span>
 
-</a><!-- left carousel-control Ends -->
+</a>
 
-<a class="right carousel-control" href="#myCarousel" data-slide="next"><!-- right carousel-control Starts -->
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
 
 <span class="glyphicon glyphicon-chevron-right"> </span>
 
 <span class="sr-only"> Next </span>
 
-</a><!-- right carousel-control Ends -->
+</a>
 
 </div>
 
-</div><!-- mainImage Ends -->
+</div>
 
 <?php echo $product_label; ?>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-<div class="col-sm-6"><!-- col-sm-6 Starts -->
+<div class="col-sm-6">
 
-<div class="box"><!-- box Starts -->
+<div class="box">
 
 <div class="detail-product-info">
 
@@ -803,7 +801,7 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </div>
 
-<form action="" method="post" class="form-horizontal"><!-- form-horizontal Starts -->
+<form action="" method="post" class="form-horizontal">
 
 <?php 
 
@@ -819,7 +817,7 @@ if($count_product_variations != 0){
 
 ?>
 
-<div id="variable-product-div"><!-- variable-product-div Starts -->
+<div id="variable-product-div">
 
 <?php 
 	
@@ -987,11 +985,11 @@ $attribute_variation_ids = $variation_ids;
 
 ?>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-lg-4 col-md-3 control-label"> <?php echo $attribute_name; ?> </label>
 
-<div class="col-lg-6 col-md-9"><!-- col-lg-6 col-md-9 Starts -->
+<div class="col-lg-6 col-md-9">
 
 <select name="<?php echo $meta_key; ?>" class="form-control attribute-select" required>
 
@@ -1031,9 +1029,9 @@ echo "<option>$meta_value</option>";
  
 </select>
 
-</div><!-- col-lg-6 col-md-9 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <?php 
 
@@ -1173,7 +1171,7 @@ $(".box").removeClass("table-loader");
 
 </script>
 
-</div><!-- variable-product-div Ends -->
+</div>
 
 <?php 
 
@@ -1202,7 +1200,7 @@ $allow_backorders = $row_product_stock["allow_backorders"];
 
 ?>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <?php if($status == "product"){ ?>
 
@@ -1214,7 +1212,7 @@ $allow_backorders = $row_product_stock["allow_backorders"];
 
 <?php } ?>
 
-<div class="col-lg-6 col-md-9"><!-- col-lg-6 col-md-9 Starts -->
+<div class="col-lg-6 col-md-9">
 
 <?php
 
@@ -1290,9 +1288,9 @@ limitquantity();
 
 </script>
 
-</div><!-- col-lg-6 col-md-9 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <?php include("productIncludes/productIcons.php"); ?>
 
@@ -1530,7 +1528,7 @@ var _0x29d5=["\x73\x68\x6F\x77","\x2E\x74\x65\x78\x74\x2D\x63\x65\x6E\x74\x65\x7
 
 </script>
 
-<p class="text-center buttons"><!-- text-center buttons Starts -->
+<p class="text-center buttons">
 
 <button class="btn btn-primary" type="submit" name="add_cart">
 
@@ -1863,18 +1861,17 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 ?>
 
-</p><!-- text-center buttons Ends -->
+</p>
 
 <?php //}// ?>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- box Ends -->
+</div>
 
+<div class="row" id="thumbs" >
 
-<div class="row" id="thumbs" ><!-- row Starts -->
-
-<div class="col-xs-4"><!-- col-xs-4 Starts -->
+<div class="col-xs-4">
 
 <a href="#" class="thumb" >
 
@@ -1882,11 +1879,11 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 </a>
 
-</div><!-- col-xs-4 Ends -->
+</div>
 
 <?php if(!empty($pro_img2)){ ?>
 
-<div class="col-xs-4" ><!-- col-xs-4 Starts -->
+<div class="col-xs-4" >
 
 <a href="#" class="thumb" >
 
@@ -1894,13 +1891,13 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 </a>
 
-</div><!-- col-xs-4 Ends -->
+</div>
 
 <?php } ?>
 
 <?php if(!empty($pro_img3)){ ?>
 
-<div class="col-xs-4" ><!-- col-xs-4 Starts -->
+<div class="col-xs-4" >
 
 <a href="#" class="thumb" >
 
@@ -1908,23 +1905,23 @@ echo "<script>window.open('$pro_url','_self')</script>";
 
 </a>
 
-</div><!-- col-xs-4 Ends -->
+</div>
 
 <?php } ?>
 
-</div><!-- row Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="box" id="details"><!-- box Starts -->
+<div class="box" id="details">
 
-<ul class="nav nav-pills" style="margin-bottom:15px;"><!-- ul nav pills Starts -->
+<ul class="nav nav-pills" style="margin-bottom:15px;">
 
-<li class="active"><!-- li Starts -->
+<li class="active">
 
-<a class="tab" href="#description" data-toggle="tab"><!-- btn btn-primary Starts -->
+<a class="tab" href="#description" data-toggle="tab">
 
 <?php
 
@@ -1941,57 +1938,57 @@ echo "Descripción de Paquete";
 
 ?>
 
-</a><!-- btn btn-primary Ends -->
+</a>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
-<a class="tab" href="#features" data-toggle="tab"><!-- btn btn-primary Starts -->
+<a class="tab" href="#features" data-toggle="tab">
 
 Características
 
-</a><!-- btn btn-primary Ends -->
+</a>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
-<a class="tab" href="#video" data-toggle="tab"><!-- btn btn-primary Starts -->
+<a class="tab" href="#video" data-toggle="tab">
 
 Sonidos y videos
 
-</a><!-- btn btn-primary Ends -->
+</a>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
-<a class="tab" href="#vendor_info" data-toggle="tab"><!-- btn btn-primary Starts -->
+<a class="tab" href="#vendor_info" data-toggle="tab">
 
 Info. Vendedor
 
-</a><!-- btn btn-primary Ends -->
+</a>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
-<a class="tab" href="#reviews" data-toggle="tab"><!-- btn btn-primary Starts -->
+<a class="tab" href="#reviews" data-toggle="tab">
 
 Reseñas
 
-</a><!-- btn btn-primary Ends -->
+</a>
 
-</li><!-- li Ends -->
+</li>
 
-</ul><!-- ul nav pills Ends -->
+</ul>
 
 <hr style="margin-top:0px; margin-right:-20px; margin-left:-20px;">
 
-<div class="tab-content"><!-- tab-content Starts -->
+<div class="tab-content">
 
-<div id="description" class="tab-pane fade in active" style="margin-top:7px;" ><!-- description tab-pane fade in active Starts -->
+<div id="description" class="tab-pane fade in active" style="margin-top:7px;" >
 
 <h3>Descripción de Producto</h3>
 
@@ -2035,25 +2032,25 @@ $attribute_values = str_replace("|",", ",$row_product_attributes["attribute_valu
 
 <?php } ?>
 
-</div><!-- description tab-pane fade in active Ends -->
+</div>
 
-<div id="features" class="tab-pane fade in" style="margin-top:7px;" ><!-- features tab-pane fade in  Starts -->
+<div id="features" class="tab-pane fade in" style="margin-top:7px;" >
 
 <h3>Características de Producto</h3>
 
 <?php echo $pro_features; ?>
 
-</div><!-- features tab-pane fade in  Ends -->
+</div>
 
-<div id="video" class="tab-pane fade in" style="margin-top:7px;" ><!-- video tab-pane fade in Starts -->
+<div id="video" class="tab-pane fade in" style="margin-top:7px;" >
 
 <h3>Sonidos y vídeos del producto</h3>
 
 <?php echo $pro_video; ?>
 
-</div><!-- video tab-pane fade in  Ends -->
+</div>
 
-<div id="vendor_info" class="tab-pane fade in"><!-- vendor_info tab-pane fade in Starts -->
+<div id="vendor_info" class="tab-pane fade in">
 
 <h3> Info. Vendedor </h3>
 
@@ -2119,15 +2116,15 @@ Escrito Por <?php echo $count_vendor_products_reviews; ?> Reseñas
 
 </p>
 
-</div><!-- vendor_info tab-pane fade in  Ends -->
+</div>
 
-<div id="reviews" class="tab-pane fade in" style="margin-top:7px;" ><!-- reviews tab-pane fade in Starts -->
+<div id="reviews" class="tab-pane fade in" style="margin-top:7px;" >
 
-<div class="product-reviews" id="write-a-review"><!-- product-reviews Starts -->
+<div class="product-reviews" id="write-a-review">
 
-<section class="reviews-summary row"><!-- reviews-summary row Starts -->
+<section class="reviews-summary row">
 
-<article class="avg-rating col-md-3"><!-- avg-rating Starts -->
+<article class="avg-rating col-md-3">
 
 <header> Puntuación Media </header>
 
@@ -2141,13 +2138,13 @@ Basado en <?php echo $count_product_reviews; ?> Puntuación
 
 </footer>
 
-</article><!-- avg-rating Ends -->
+</article>
 
-<article class="rating-bars col-md-4"><!-- rating-bars Starts -->
+<article class="rating-bars col-md-4">
 
-<ul><!-- rating-bars ul Starts -->
+<ul>
 
-<li><!-- li Starts -->
+<li>
 
 <span class="star">5 Estrellas</span>
 
@@ -2159,9 +2156,9 @@ Basado en <?php echo $count_product_reviews; ?> Puntuación
 
 </div>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
 <span class="star">4 Estrellas</span>
 
@@ -2173,9 +2170,9 @@ Basado en <?php echo $count_product_reviews; ?> Puntuación
 
 </div>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
 <span class="star">3 Estrellas</span>
 
@@ -2187,9 +2184,9 @@ Basado en <?php echo $count_product_reviews; ?> Puntuación
 
 </div>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
 <span class="star">2 Estrellas</span>
 
@@ -2201,9 +2198,9 @@ Basado en <?php echo $count_product_reviews; ?> Puntuación
 
 </div>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
 <span class="star">1 Estrella</span>
 
@@ -2215,13 +2212,13 @@ Basado en <?php echo $count_product_reviews; ?> Puntuación
 
 </div>
 
-</li><!-- li Ends -->
+</li>
 
-</ul><!-- rating-bars ul Ends -->
+</ul>
 
-</article><!-- rating-bars Ends -->
+</article>
 
-<article class="write-review col-md-4"><!-- write-review Starts -->
+<article class="write-review col-md-4">
 
 <header> ¿Has usado este producto antes?</header>
 
@@ -2231,7 +2228,7 @@ Basado en <?php echo $count_product_reviews; ?> Puntuación
 
 <input type="hidden" name="referral" value="product">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="control-label"> Puntúalo: * </label>
 
@@ -2245,7 +2242,7 @@ $('.rating-loading').rating({
 
 step: 1,
 
-starCaptions: {1: 'Lo odio', 2: 'No me gustó', 3: 'Está bien', 4: 'Me gustó', 5: 'Es perfecto!'},
+starCaptions: {1: 'Muy malo', 2: 'Malo', 3: 'Bueno', 4: 'Muy bueno', 5: 'Es perfecto!'},
 
 starCaptionClasses: {1: 'btn btn-danger', 2: 'btn btn-warning', 3: 'btn btn-info', 4: 'btn btn-primary', 5: 'btn btn-success'},
 
@@ -2257,7 +2254,7 @@ clearCaptionClass:"btn btn-default"
 
 </script>
 
-</div><!-- form-group Ends -->
+</div>
 
 <button type="submit" name="submit" class="btn btn-success btn-lg">
 Escribe tu Reseña
@@ -2265,17 +2262,17 @@ Escribe tu Reseña
 
 </form>
 
-</article><!-- write-review Ends -->
+</article>
 
-</section><!-- reviews-summary Ends -->
+</section>
 
-<section class="reviews-listing"><!-- reviews-listing Starts -->
+<section class="reviews-listing">
 
 <hr>
 
 <h4 class="pull-left"> Todas las reseñas de productos </h4> 
 
-<div class="dropdown pull-right"><!--- dropdown float-right Starts -->
+<div class="dropdown pull-right">
 
 <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
 
@@ -2283,7 +2280,7 @@ Escribe tu Reseña
 
 </button>
 
-<ul class="dropdown-menu"><!-- dropdown-menu Starts -->
+<ul class="dropdown-menu">
 
 <li class="active all"> <a href="#">Más Recientes</a> </li>
 
@@ -2291,15 +2288,15 @@ Escribe tu Reseña
 
 <li class="bad"> <a href="#"> Reseñas Negativos </a> </li>
 
-</ul><!-- dropdown-menu Ends -->
+</ul>
 
-</div><!--- dropdown float-right Ends -->
+</div>
 
 <div class="clearfix"></div>
 
 <hr>
 
-<ul id="all" class="reviews-list"><!-- all reviews-list Starts -->
+<ul id="all" class="reviews-list">
 
 <?php
 
@@ -2307,11 +2304,11 @@ if($count_product_reviews == 0){
 	
 ?>
 
-<li><!-- li Starts -->
+<li>
 
 <h3 align="center"> Este producto no tiene reseñas, conviértase en el primero en escribir una reseña.</h3>
 
-</li><!-- li Ends -->
+</li>
 
 <?php
 
@@ -2350,17 +2347,17 @@ $review_customer_image = $row_customer['customer_image'];
 ?>	
 
 
-<li><!-- li Starts -->
+<li>
 
-<span class="user-picture"><!-- user-picture Starts -->
+<span class="user-picture">
 
 <img src="customer/customer_images/<?php echo $review_customer_image; ?>" width="60" height="60">
 
-</span><!-- user-picture Ends -->
+</span>
 
-<div class="review-body"><!-- review-body Starts -->
+<div class="review-body">
 
-<h4><!-- h4 Starts -->
+<h4>
 
 <?php echo $review_title; ?>
 
@@ -2376,13 +2373,13 @@ $review_customer_image = $row_customer['customer_image'];
 
 <?php } ?>
  
-</h4><!-- h4 Ends -->
+</h4>
 
-<h5><!-- h4 Starts -->
+<h5>
 
 Por <?php echo $review_customer_name; ?> <span>(Propietario verificado)</span> 
  
-</h5><!-- h4 Ends -->
+</h5>
 
 <span class="review-meta">
 
@@ -2414,17 +2411,17 @@ echo rtrim($reviews_meta,"| ");
 
 <span class="review-date"> <?php echo $review_date; ?> </span>
 
-</div><!-- review-body Ends -->
+</div>
 
-</li><!-- li Ends -->
+</li>
 
 <hr>
 	
 <?php } ?>
 
-</ul><!-- all reviews-list Ends -->
+</ul>
 
-<ul id="good" class="reviews-list"><!-- good reviews-list Starts -->
+<ul id="good" class="reviews-list">
 
 <?php
 
@@ -2438,11 +2435,11 @@ if($count_product_reviews == 0){
 	
 ?>
 
-<li><!-- li Starts -->
+<li>
 
 <h3 align="center"> Actualmente no hay una reseña positiva de este producto.</h3>
 
-</li><!-- li Ends -->
+</li>
 
 <?php
 
@@ -2477,17 +2474,17 @@ $review_customer_image = $row_customer['customer_image'];
 ?>	
 
 
-<li><!-- li Starts -->
+<li>
 
-<span class="user-picture"><!-- user-picture Starts -->
+<span class="user-picture">
 
 <img src="customer/customer_images/<?php echo $review_customer_image; ?>" width="60" height="60">
 
-</span><!-- user-picture Ends -->
+</span>
 
-<div class="review-body"><!-- review-body Starts -->
+<div class="review-body">
 
-<h4><!-- h4 Starts -->
+<h4>
 
 <?php echo $review_title; ?>
 
@@ -2503,13 +2500,13 @@ $review_customer_image = $row_customer['customer_image'];
 
 <?php } ?>
  
-</h4><!-- h4 Ends -->
+</h4>
 
-<h5><!-- h4 Starts -->
+<h5>
 
 Por <?php echo $review_customer_name; ?> 
  
-</h5><!-- h4 Ends -->
+</h5>
 
 <span class="review-meta">
 
@@ -2541,17 +2538,17 @@ echo rtrim($reviews_meta,"| ");
 
 <span class="review-date"> <?php echo $review_date; ?> </span>
 
-</div><!-- review-body Ends -->
+</div>
 
-</li><!-- li Ends -->
+</li>
 
 <hr>
 	
 <?php } ?>
 
-</ul><!-- good reviews-list Ends -->
+</ul>
 
-<ul id="bad" class="reviews-list"><!-- bad reviews-list Starts -->
+<ul id="bad" class="reviews-list">
 
 <?php
 
@@ -2565,11 +2562,11 @@ if($count_product_reviews == 0){
 	
 ?>
 
-<li><!-- li Starts -->
+<li>
 
 <h3 align="center"> Actualmente no hay una reseña negativa de este producto. </h3>
 
-</li><!-- li Ends -->
+</li>
 
 <?php
 
@@ -2604,17 +2601,16 @@ $review_customer_image = $row_customer['customer_image'];
 ?>	
 
 
-<li><!-- li Starts -->
+<li>
 
-<span class="user-picture"><!-- user-picture Starts -->
+<span class="user-picture">
 
 <img src="customer/customer_images/<?php echo $review_customer_image; ?>" width="60" height="60">
 
-</span><!-- user-picture Ends -->
+</span>
+<div class="review-body">
 
-<div class="review-body"><!-- review-body Starts -->
-
-<h4><!-- h4 Starts -->
+<h4>
 
 <?php echo $review_title; ?>
 
@@ -2630,13 +2626,13 @@ $review_customer_image = $row_customer['customer_image'];
 
 <?php } ?>
  
-</h4><!-- h4 Ends -->
+</h4>
 
-<h5><!-- h4 Starts -->
+<h5>
 
 Por <?php echo $review_customer_name; ?> 
  
-</h5><!-- h4 Ends -->
+</h5>
 
 <span class="review-meta">
 
@@ -2668,39 +2664,37 @@ echo rtrim($reviews_meta,"| ");
 
 <span class="review-date"> <?php echo $review_date; ?> </span>
 
-</div><!-- review-body Ends -->
-
-</li><!-- li Ends -->
+</div>
+</li>
 
 <hr>
 	
 <?php } ?>
 
-</ul><!-- bad reviews-list Ends -->
+</ul>
 
-</section><!-- reviews-listing Ends -->
+</section>
 
-</div><!-- product-reviews Ends -->
+</div>
 
-</div><!-- reviews tab-pane fade in  Ends -->
+</div>
 
-</div><!-- tab-content Ends -->
+</div>
 
-</div><!-- box Ends -->
+</div>
 
-<div id="row same-height-row flex-wrap"><!-- row same-height-row Starts -->
+<div id="row same-height-row flex-wrap">
 
 <?php if($status == "product"){ ?>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-<div class="box same-height headline"><!-- box same-height headline Starts -->
+<div class="box same-height headline">
 
 <h3 class="text-center"> También te gustan estos productos </h3>
 
-</div><!-- box same-height headline Ends -->
-
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
+</div>
 
 <?php
 
@@ -2959,11 +2953,11 @@ $product_label
 
 <?php }else{ ?>
 
-<div class="box same-height"><!-- box same-height Starts -->
+<div class="box same-height">
 
 <h3 class="text-center"> Productos del paquete </h3>
 
-</div><!-- box same-height Ends -->
+</div>
 
 <?php
 
@@ -3236,13 +3230,13 @@ $product_label
 
 <?php } ?>
 
-</div><!-- row same-height-row Ends -->
+</div>
 
-</div><!-- col-md-12 Ends -->
+</div>
 
-</div><!-- container Ends -->
+</div>
 
-</div><!-- content Ends -->
+</div>
 
 <script>
 
