@@ -14,11 +14,11 @@ else {
  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
   <script>tinymce.init({ selector:'textarea' });</script>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -26,95 +26,86 @@ else {
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
+<div class="row">
 
+<div class="col-lg-12">
 
-<div class="row"><!-- 2 row Starts -->
+<div class="panel panel-default">
 
+<div class="panel-heading">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
-
-
-<div class="panel panel-default"><!-- panel panel-default Starts -->
-
-<div class="panel-heading"><!-- panel-heading Starts -->
-
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Agregar Términos
 
-</h3><!-- panel-title Ends -->
+</h3>
+</div>
 
-</div><!-- panel-heading Ends -->
+<div class="panel-body">
 
-<div class="panel-body"><!-- panel-body Starts -->
+<form class="form-horizontal" action="" method="post">
 
-<form class="form-horizontal" action="" method="post"><!-- form-horizontal Starts -->
-
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Título </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="text" name="term_title" class="form-control" >
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Descripción </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
-
+<div class="col-md-6">
 <textarea name="term_desc" class="form-control" rows="6" cols="19" ></textarea>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Link Término </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="text" name="term_link" class="form-control" >
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
-
+<div class="col-md-6">
 <input type="submit" name="submit" value="Agregar" class="btn btn-primary form-control" >
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
+</div>
 
-</div><!-- col-lg-12 Ends -->
-
-</div><!-- 2 row Ends -->
-
+</div>
 
 <?php
 

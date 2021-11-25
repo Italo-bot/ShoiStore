@@ -1,4 +1,4 @@
-<center style="margin-bottom:20px;"><!-- center Starts -->
+<center style="margin-bottom:20px;">
 
 <?php
 
@@ -16,4 +16,4 @@ echo "<img src='admin_area/icon_images/$icon_image' width='45' height='45' > &nb
 
 ?>
 
-</center><!-- center Ends -->
+</center>

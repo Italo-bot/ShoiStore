@@ -33,11 +33,11 @@ $enquiry_title = $row_enquiry_type['enquiry_title'];
 
 ?>
 
-<div class="row" ><!-- 1 row Starts -->
+<div class="row" >
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts --> 
+<div class="col-lg-12" >
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -46,19 +46,19 @@ $enquiry_title = $row_enquiry_type['enquiry_title'];
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends --> 
+</div> 
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
 <h3 class="panel-title">
 
@@ -66,13 +66,13 @@ $enquiry_title = $row_enquiry_type['enquiry_title'];
 
 </h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<form class="form-horizontal" action="" method="post" ><!-- form-horizontal Starts -->
+<form class="form-horizontal" action="" method="post" >
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Consulta </label>
 
@@ -82,9 +82,9 @@ $enquiry_title = $row_enquiry_type['enquiry_title'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">  </label>
 
@@ -94,18 +94,18 @@ $enquiry_title = $row_enquiry_type['enquiry_title'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
 
-</form><!-- form-horizontal Ends-->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <?php
 

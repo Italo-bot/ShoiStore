@@ -927,7 +927,7 @@ $total_cart_price = $total + $total_shipping_cost;
 
 <td id="payment-forms-td" colspan="2">
 
-<form id="offline_form" action="order.php" method="post"><!-- offline Payment form Starts -->
+<form id="offline_form" action="order.php" method="post"><!-- pago offline -->
 
 <?php if(count($physical_products) > 0 ){ ?>
 
@@ -941,7 +941,7 @@ $total_cart_price = $total + $total_shipping_cost;
 
 <input type="submit" id="offline-submit" name="submit" value="Realizar pedido" class="btn btn-success btn-lg" style="border-radius:0px;">
 
-</form><!-- offline Payment form Starts -->
+</form><!-- pago offline -->
 
 
 <?php
@@ -988,7 +988,7 @@ data-email="<?php echo $customer_email; ?>">
 
 <?php if($enable_paypal == "yes"){ ?>
 
-<form id="paypal_form" action="<?php echo $paypal_url; ?>" method="post"><!-- PayPal form Starts -->
+<form id="paypal_form" action="<?php echo $paypal_url; ?>" method="post"><!-- PayPal -->
 
 <input type="hidden" name="business" value="<?php echo $paypal_email; ?>">
 
@@ -1068,9 +1068,9 @@ $i++;
 
 <input type="hidden" name="email" value="<?php echo $customer_email; ?>">
 
-<input type="submit" id="paypal-submit" name="submit" value="Pagar con Paypal" class="btn btn-success btn-lg" style="border-radius:0px;">
+<input type="submit" id="paypal-submit" name="submit" value="Pagar con PayPal" class="btn btn-success btn-lg" style="border-radius:0px;">
 
-</form><!-- PayPal form Ends -->
+</form><!-- PayPal -->
 
 <?php } ?>
 

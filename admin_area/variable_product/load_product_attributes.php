@@ -96,8 +96,6 @@ $attribute_values = $row_product_attributes["attribute_values"];
 
 $(document).ready(function(){
 
-//Edit Product Attribute Code Starts
-
 $(".input-edit").hide();
 
 $(".save-product-attribute").hide();
@@ -121,10 +119,6 @@ $(".edit-product-attribute[data-attribute='" + attribute_id +"']").hide();
 $(".save-product-attribute[data-attribute='" + attribute_id +"']").show();
 	
 });
-
-//Edit Product Attribute Code Ends
-
-//Update Save Product Attribute Code Starts
 
 $(".save-product-attribute").on('click', function(event){
 	
@@ -161,10 +155,6 @@ data: { random_id: random_id, attribute_id: attribute_id, attribute_name: attrib
 });
 
 });
-
-//Update Save Product Attribute Code Ends
-
-//Delete Product Attribute Code Starts
 	
 $(".delete-product-attribute").on('click', function(event){
 	
@@ -187,8 +177,6 @@ data: { random_id: random_id, attribute_id: attribute_id }
 });
 
 });
-
-//Delete Product Attribute Code Ends
 
 });
 

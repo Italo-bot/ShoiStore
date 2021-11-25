@@ -84,13 +84,13 @@ $allow_backorders = $row_product_stock["allow_backorders"];
 	
 ?>
 
-<div class="single-variation-row" id="variation_<?php echo $variation_id; ?>"><!-- single-variation-row Starts -->
+<div class="single-variation-row" id="variation_<?php echo $variation_id; ?>">
 
 <hr class="variation-hr">
 
 <strong> #<?php echo $variation_id; ?> </strong>
 
-<div class="variation-attributes"><!-- variation-attributes Starts -->
+<div class="variation-attributes">
 
 <?php
 
@@ -110,7 +110,7 @@ $meta_key = str_replace(' ', '_', strtolower($attribute_name));
 
 ?>
 
-<select class="form-control" name="variations[<?php echo $variation_id; ?>][attributes][<?php echo $meta_key; ?>]"><!-- attribute select Starts -->
+<select class="form-control" name="variations[<?php echo $variation_id; ?>][attributes][<?php echo $meta_key; ?>]">
 
 <option value=""> Select A <?php echo $attribute_name; ?> </option>
 
@@ -140,13 +140,13 @@ echo "<option>$attribute_value</option>";
 
 ?>
 
-</select><!-- attribute select Ends -->
+</select>
 
 <?php } ?>
 
-</div><!-- variation-attributes Ends -->
+</div>
 
-<div class="variation-actions"><!-- variation-actions Starts -->
+<div class="variation-actions">
 
 <button class="btn btn-default btn-sm" title="Expand Variation" data-toggle="collapse" href="#variation_collapse_<?php echo $variation_id; ?>">
 
@@ -160,27 +160,27 @@ echo "<option>$attribute_value</option>";
 
 </a>
 
-</div><!-- variation-actions Ends -->
+</div>
 
-<div class="variation-row-expand collapse" id="variation_collapse_<?php echo $variation_id; ?>"><!-- variation-row-expand Starts -->
+<div class="variation-row-expand collapse" id="variation_collapse_<?php echo $variation_id; ?>">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Producto Imagen 1 </label>
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-sm-8"><!-- col-sm-8 Starts -->
+<div class="col-sm-8">
 
 <input type="file" name="variations[<?php echo $variation_id; ?>][product_img1]" class="form-control">
 
-</div><!-- col-sm-8 Ends -->
+</div>
 
-<div class="col-sm-4"><!-- col-sm-4 Starts -->
+<div class="col-sm-4">
 
 <img src="../admin_area/product_images/<?php if(empty($product_img1)){ echo "no-image.jpg"; }else{ echo $product_img1; } ?>" width="70" height="70">
 
@@ -188,53 +188,45 @@ echo "<option>$attribute_value</option>";
 
 <button style="margin-top:10px;" class="btn btn-primary btn-sm" id="product_img1_remove_<?php echo $variation_id; ?>">
 
-Remover
+Borrar
 
 </button>
 
 <?php } ?>
 
-</div><!-- col-sm-4 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Precio Producto </label>
 
 <input type="text" name="variations[<?php echo $variation_id; ?>][product_price]" class="form-control" required value="<?php echo $product_price; ?>" >
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Seleccionar tipo producto </label>
 
-<select class="form-control" name="variations[<?php echo $variation_id; ?>][product_type]"><!-- select manufacturer Starts -->
+<select class="form-control" name="variations[<?php echo $variation_id; ?>][product_type]">
 
 <?php if($product_type == "physical_product"){ ?>
 
-<option value="physical_product" selected> (Producto físico) Producto simple </option>
+<option value="physical_product" selected> Producto Ropa </option>
 
-<option value="digital_product"> (Producto digital) Producto descargable </option>
-
-<?php }elseif($product_type == "digital_product"){ ?>
-
-<option value="digital_product" selected> (Producto digital) Producto descargable </option>
-
-<option value="physical_product"> (Producto físico) Producto simple </option>
+<option value="physical_product"> Producto Ropa </option>
 
 <?php }else{ ?>
 
-<option value="physical_product"> (Producto físico) Producto simple</option>
-
-<option value="digital_product"> (Producto digital) Producto descargable   </option>
+<option value="physical_product"> Producto Ropa</option>
 
 <?php } ?>
 
@@ -306,15 +298,15 @@ Remover
 
 <?php } ?>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-<div class="col-sm-6"><!-- col-sm-6 Starts -->
+<div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> ¿Habilitar la gestión de existencias a nivel de variación? </label>
 
@@ -334,33 +326,33 @@ Remover
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="row" id="stock-management-row-<?php echo $variation_id; ?>"><!-- row Starts -->
+<div class="row" id="stock-management-row-<?php echo $variation_id; ?>">
 
-<div class="col-sm-6"><!-- col-sm-6 Starts -->
+<div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Cantidad de Stock </label>
 
 <input type="number" name="variations[<?php echo $variation_id; ?>][stock_quantity]" value="<?php echo $stock_quantity; ?>" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-<div class="col-sm-6"><!-- col-sm-6 Starts -->
+<div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Permitir Encargos? </label>
 
-<select class="form-control" name="variations[<?php echo $variation_id; ?>][allow_backorders]" required><!-- select manufacturer Starts -->
+<select class="form-control" name="variations[<?php echo $variation_id; ?>][allow_backorders]" required>
 
 <?php if($allow_backorders == "no"){ ?>
 
@@ -396,21 +388,21 @@ Remover
 
 <?php } ?>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</div><!-- variation-row-expand Ends -->
+</div>
 
 <script>
 
 $(document).ready(function(){
 
-//Product Stock Management Code Starts
+//Gestión de Stock
 
 <?php if($enable_stock == "no"){ ?>
 
@@ -442,7 +434,7 @@ $("#stock-management-row-<?php echo $variation_id; ?>").hide();
 	
 });
 
-//Product Stock Management Code Ends
+//Gestión de Stock
 
 $("#variation_collapse_<?php echo $variation_id; ?>").on("show.bs.collapse", function(){
 	
@@ -490,7 +482,7 @@ $(".product-variations-div").removeClass("wait-loader");
 
 </script>
 
-</div><!-- single-variation-row Ends -->
+</div>
 
 <?php 
 

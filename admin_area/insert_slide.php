@@ -12,11 +12,11 @@ else {
 
 ?>
 
-<div class="row" ><!-- 1 row Starts -->
+<div class="row" >
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts --> 
+<div class="col-lg-12" >
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -24,21 +24,18 @@ else {
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
+</div> 
 
+</div>
 
-</div><!-- col-lg-12 Ends --> 
+<div class="row" >
 
-</div><!-- 1 row Ends -->
+<div class="col-lg-12" >
 
-<div class="row" ><!-- 2 row Starts -->
-
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
-
-<div class="panel panel-default" ><!-- panel panel-default Starts -->
-
-<div class="panel-heading" ><!-- panel-heading Starts -->
+<div class="panel panel-default" >
+<div class="panel-heading" >
 
 <h3 class="panel-title" >
 
@@ -46,13 +43,13 @@ else {
 
 </h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body" ><!-- panel-body Starts -->
+<div class="panel-body" >
 
-<form class="form-horizontal" action="" method="post" enctype="multipart/form-data" ><!-- form-horizontal Starts -->
+<form class="form-horizontal" action="" method="post" enctype="multipart/form-data" >
 
-<div class="form-group" ><!-- 1 form-group Starts -->
+<div class="form-group" >
 
 <label class="col-md-3 control-label">Nombre:</label>
 
@@ -62,9 +59,9 @@ else {
 
 </div>
 
-</div><!-- 1 form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- 2 form-group Starts -->
+<div class="form-group" >
 
 <label class="col-md-3 control-label">Imagen:</label>
 
@@ -74,10 +71,9 @@ else {
 
 </div>
 
-</div><!-- 2 form-group Ends -->
+</div>
 
-
-<div class="form-group" ><!-- 3 form-group Starts -->
+<div class="form-group" >
 
 <label class="col-md-3 control-label">URL Slide:</label>
 
@@ -87,9 +83,9 @@ else {
 
 </div>
 
-</div><!-- 3 form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- 4 form-group Starts -->
+<div class="form-group" >
 
 <label class="col-md-3 control-label"></label>
 
@@ -99,20 +95,17 @@ else {
 
 </div>
 
-</div><!--4 form-group Ends -->
+</div>
 
+</form>
 
-</form><!-- form-horizontal Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
+</div>
 
-</div><!-- panel panel-default Ends -->
-
-</div><!-- col-lg-12 Ends -->
-
-
-</div><!-- 2 row Ends -->
+</div>
 
 <?php
 
@@ -153,9 +146,6 @@ echo "<script>alert('Ya ha insertado 4 Slides')</script>";
 
 }
 
-
 ?>
-
-
 
 <?php } ?>

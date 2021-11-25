@@ -1,14 +1,14 @@
 
-<div id="footer"><!-- footer Starts -->
-<div class="container"><!-- container Starts -->
+<div id="footer">
+<div class="container">
 
-<div class="row" ><!-- row Starts -->
+<div class="row" >
 
-<div class="col-md-3 col-sm-6" ><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6" >
 
 <h4>Páginas</h4>
 
-<ul><!-- ul Starts -->
+<ul>
 
 <li><a href="../cart.php">Carrito</a></li>
 
@@ -60,13 +60,13 @@ if($customer_role == "vendor"){
 
 <?php } } ?>
 
-</ul><!-- ul Ends -->
+</ul>
 
 <hr>
 
 <h4>Sección Usuario</h4>
 
-<ul><!-- ul Starts -->
+<ul>
 
 <?php 
 
@@ -117,17 +117,16 @@ echo "<a href='my_account.php?my_orders'>Mi Cuenta</a>";
 
 <li><a href="../terms.php"> Términos y Condiciones </a></li>
 
-</ul><!-- ul Ends -->
+</ul>
 
 <hr class="hidden-md hidden-lg hidden-sm" >
 
-</div><!-- col-md-3 col-sm-6 Ends -->
-
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+</div>
+<div class="col-md-3 col-sm-6">
 
 <h4> Categorías de productos </h4>
 
-<ul><!-- ul Starts -->
+<ul>
 
 <?php
 
@@ -148,18 +147,18 @@ echo "<li> <a href='shop.php?p_cat=$p_cat_id'> $p_cat_title </a> </li>";
 ?>
 
 
-</ul><!-- ul Ends -->
+</ul>
 
 <hr class="hidden-md hidden-lg">
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
 <h4>Información</h4>
 
-<p><!-- p Starts -->
+<p>
 <strong>ShoiStore</strong>
 <br>Santiago
 <br>Chile
@@ -168,58 +167,57 @@ echo "<li> <a href='shop.php?p_cat=$p_cat_id'> $p_cat_title </a> </li>";
 <br>
 
 
-</p><!-- p Ends -->
+</p>
 
 <a href="../contact.php">Contáctanos</a>
 
 <hr class="hidden-md hidden-lg">
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-</form><!-- form Ends -->
+</form>
 
 <hr>
 
 <h4> Redes Sociales </h4>
 
-<p class="social"><!-- social Starts --->
+<p class="social">
 
 <a href="#"><i class="fa fa-facebook"></i></a>
 <a href="#"><i class="fa fa-twitter"></i></a>
 <a href="#"><i class="fa fa-instagram"></i></a>
 
-</p><!-- social Ends --->
+</p>
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
+</div>
 
-</div><!-- container Ends -->
-</div><!-- footer Ends -->
+<div id="copyright">
 
-<div id="copyright"><!-- copyright Starts -->
+<div class="container" >
 
-<div class="container" ><!-- container Starts -->
-
-<div class="col-md-6" ><!-- col-md-6 Starts -->
+<div class="col-md-6" >
 
 <p class="pull-left"> &copy; 2021 ShoiStore </p>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-<div class="col-md-6" ><!-- col-md-6 Starts -->
+<div class="col-md-6" >
 
 <p class="pull-right" >
 
 </p>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- container Ends -->
+</div>
 
-</div><!-- copyright Ends -->
+</div>
 
 
 

@@ -12,7 +12,7 @@ overflow-x: hidden;
 
 }
 
-/* Top Navbar Styles  */
+/* Barra Nav Styles  */
 
 #top {
 
@@ -92,7 +92,7 @@ color: #f7f7f7;
 
 }
 
-/* Header Styles */
+/* Cabecera Styles */
 
 .navbar {
 background:white;
@@ -221,7 +221,7 @@ z-index:2;
 }
 
 
-/* Products Styles  */
+/* Productos Styles  */
 
 #hot h2 {
 text-transform: uppercase;
@@ -314,7 +314,7 @@ text-align:center;
 
 }
 
-/* products categories and categories styles */
+/* Productos categorías/categorías generales styles */
 
 #content .panel.sidebar-menu {
 
@@ -339,7 +339,7 @@ margin: 0;
 }
 
 
-/* Shop Products Styles */
+/* Tienda Styles */
 
 @media (max-width: 768px) {
 
@@ -362,7 +362,7 @@ margin:0 auto;
 }
 
 
-/* Details Styles */
+/* Detalles Styles */
 
 #content #productMain {
 
@@ -393,7 +393,7 @@ height: 350px;
 }
 
 
-/* Cart page Styles */
+/* Carrito Styles */
 
 #content #cart .table tbody tr td img {
 width: 50px;
@@ -503,9 +503,8 @@ font-size:12px;
 margin: 0;
 }
 
-/** ----------------------------------- **/
-/** Customer Vendor Dashboard Styles **/
-/** ----------------------------------- **/
+
+/** Vendedor Dashboard Styles **/
 
 
 .dashboard-widget{

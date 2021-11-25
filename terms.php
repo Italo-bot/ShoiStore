@@ -28,11 +28,11 @@ include("functions/functions.php");
 
 <body>
 
-<div id="top"><!-- top Starts -->
+<div id="top">
 
-<div class="container"><!-- container Starts -->
+<div class="container">
 
-<div class="col-md-6 offer"><!-- col-md-6 offer Starts -->
+<div class="col-md-6 offer">
 
 <a href="#" class="btn btn-success btn-sm" >
 <?php

@@ -127,13 +127,13 @@ echo $count_reviews = mysqli_num_rows($run_reviews);
 
 ?>
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-body text-center"><!-- panel-body Starts -->
+<div class="panel-body text-center">
 
 <h4 class="text-muted"> Ventas </h4>
 
@@ -157,23 +157,23 @@ echo $count_reviews = mysqli_num_rows($run_reviews);
 
 <h3> <?php echo $count_vendor_orders; ?> </h3>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-<div class="panel panel-default" ><!-- panel panel-default Starts -->
+<div class="panel panel-default" >
 
-<div class="panel-heading" ><!-- panel-heading Starts -->
+<div class="panel-heading" >
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-list"> </i> Ordenes
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <ul class="list-group">
 
@@ -217,7 +217,7 @@ Reintegrada <span class="badge"> <?php get_orders_status_count("refunded"); ?> <
 
 <hr>
 
-<div class="text-right"><!-- text-right Starts -->
+<div class="text-right">
 
 <a href="index.php?orders">
 
@@ -225,32 +225,32 @@ Ver todas las Ordenes <i class="fa fa-arrow-circle-right" ></i>
 
 </a>
 
-</div><!-- text-right Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!--- col-md-6 Ends -->
+</div>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 
-<div class="panel panel-default" ><!-- panel panel-default Starts -->
+<div class="panel panel-default" >
 
-<div class="panel-heading" ><!-- panel-heading Starts -->
+<div class="panel-heading" >
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-list"></i> Productos y Paquetes
 
 <span class="pull-right"> <a href="index.php?insert_product"> + Ingresar nuevo producto </a> </span> 
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <ul class="list-group">
 
@@ -282,7 +282,7 @@ Revisión pendiente <span class="badge"> <?php get_products_status_count("pendin
 
 <hr>
 
-<div class="text-right"><!-- text-right Starts -->
+<div class="text-right">
 
 <a href="index.php?products">
 
@@ -290,25 +290,25 @@ Ver todos los productos <i class="fa fa-arrow-circle-right"></i>
 
 </a>
 
-</div><!-- text-right Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-<div class="panel panel-default" ><!-- panel panel-default Starts -->
+<div class="panel panel-default" >
 
-<div class="panel-heading" ><!-- panel-heading Starts -->
+<div class="panel-heading" >
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-list"></i> Reseñas 
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <ul class="list-group">
 
@@ -346,7 +346,7 @@ Basura <span class="badge"> <?php get_reviews_status_count("trash"); ?> </span>
 
 <hr>
 
-<div class="text-right"><!-- text-right Starts -->
+<div class="text-right">
 
 <a href="index.php?reviews">
 
@@ -354,13 +354,13 @@ Ver todas las reseñas <i class="fa fa-arrow-circle-right"></i>
 
 </a>
 
-</div><!-- text-right Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!--- col-md-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 

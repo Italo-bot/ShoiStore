@@ -21,11 +21,11 @@ echo "selected";
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -33,29 +33,28 @@ echo "selected";
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
+<div class="panel panel-default">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
-
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <h3 style="margin-top:0px;"> Filtrar comisiones de vendedor </h3>
 
-<form method="post" action="index.php?vendors_commissions=1"><!--- form Starts --->
+<form method="post" action="index.php?vendors_commissions=1">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label> Filtrar por vendedor : </label>
 
@@ -91,13 +90,12 @@ echo "<option value='$customer_id'> $customer_name </option>";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-4 col-sm-6 Starts -->
-
-<div class="form-group"><!--- form-group Starts --->
+<div class="col-md-3 col-sm-6">
+<div class="form-group">
 
 <label> Filtrar por estado : </label>
 
@@ -111,53 +109,53 @@ echo "<option value='$customer_id'> $customer_name </option>";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
 <label></label>
 
 <button type="submit" class="btn btn-success form-control"> Filtrar pedidos </button>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</form><!--- form Ends --->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"> </i> Ver comisiones a vendedores
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-hover table-bordered table-striped"><!-- table table-hover table-bordered table-striped Starts -->
+<table class="table table-hover table-bordered table-striped">
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -177,9 +175,8 @@ echo "<option value='$customer_id'> $customer_name </option>";
 
 </tr>
 
-</thead><!-- thead Ends -->
-
-<tbody><!-- tbody Starts -->
+</thead>
+<tbody>
 
 <?php
 
@@ -194,11 +191,7 @@ $page = $_GET["vendors_commissions"];
 $page = 1;	
 	
 }
-
-// Page will start from 0 and Multiple by Per Page
 $start_from = ($page-1) * $per_page;
-
-//Selecting the data from table but with limit
 
 $i = 0;
 
@@ -405,15 +398,15 @@ $vendor_name = $row_customer['customer_name'];
 
 <?php } ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table table-hover table-bordered table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>
 
-<center><!-- center Starts -->
+<center>
 
-<ul class="pagination"><!-- pagination Starts -->
+<ul class="pagination">
 
 <?php
 
@@ -431,19 +424,11 @@ $select_vendor_commissions = "select * from vendor_commissions order by 1 desc";
 	
 }
 
-//Now select all from table
-
 $run_vendor_commissions = mysqli_query($con,$select_vendor_commissions);
-
-// Count the total records
 
 $count_vendor_commissions = mysqli_num_rows($run_vendor_commissions);
 
-//Using ceil function to divide the total records on per page
-
 $total_pages = ceil($count_vendor_commissions / $per_page);
-
-//Going to first page
 
 echo "
 
@@ -487,8 +472,6 @@ $i
 	
 }
 
-// Going to last page
-
 echo "
 
 <li class='page-item'>
@@ -505,16 +488,16 @@ echo "
 
 ?>
 
-</ul><!-- pagination Ends -->
+</ul>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <?php } ?>

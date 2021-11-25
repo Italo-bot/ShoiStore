@@ -28,7 +28,7 @@ echo "<script>window.open('index.php','_self')</script>";
 
 <body>
 
-<div class="container" ><!-- container Starts -->
+<div class="container" >
 
 <div class="alert alert-info">
 
@@ -36,7 +36,7 @@ echo "<script>window.open('index.php','_self')</script>";
   
 </div>
 
-<form class="form-login" action="" method="post" ><!-- form-login Starts -->
+<form class="form-login" action="" method="post" >
 
 <h2 class="form-login-heading"> Has olvidado tu contraseña </h2>
 
@@ -54,9 +54,9 @@ Enviar
 
 </h4>
 
-</form><!-- form-login Ends -->
+</form>
 
-</div><!-- container Ends -->
+</div>
 
 </body>
 

@@ -190,9 +190,9 @@ $attribute_variation_ids = $variation_ids;
 
 ?>
 
-<div class="col-sm-4"><!-- col-sm-4 Starts -->
+<div class="col-sm-4">
 
-<select class="form-control attribute-select" name="default_attributes[<?php echo $meta_key; ?>]"><!-- select manufacturer Starts -->
+<select class="form-control attribute-select" name="default_attributes[<?php echo $meta_key; ?>]">
 
 <option value=""> Elegir una opción </option>
 
@@ -232,7 +232,7 @@ echo "<option>$meta_value</option>";
 
 <br>
 
-</div><!-- col-sm-4 Ends -->
+</div>
 
 <?php } ?>
 

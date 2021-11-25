@@ -26,9 +26,8 @@ echo "<script>window.open('index.php','_self')</script>";
 
 <body>
 
-<div class="container" ><!-- container Starts -->
-
-<form class="form-login" action="" method="post" ><!-- form-login Starts -->
+<div class="container" >
+<form class="form-login" action="" method="post" >
 
 <h2 class="form-login-heading" >Acceso Administradores</h2>
 
@@ -48,9 +47,9 @@ Iniciar sesión
 
 </h4>
 
-</form><!-- form-login Ends -->
+</form>
 
-</div><!-- container Ends -->
+</div>
 
 </body>
 

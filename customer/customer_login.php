@@ -9,9 +9,9 @@ echo "<script> window.open('../checkout.php','_self'); </script>";
 ?>
 
 
-<div class="box" ><!-- box Starts -->
+<div class="box" >
 
-<div class="box-header" ><!-- box-header Starts -->
+<div class="box-header" >
 
 <center>
 
@@ -25,19 +25,19 @@ echo "<script> window.open('../checkout.php','_self'); </script>";
 
 
 
-</div><!-- box-header Ends -->
+</div>
 
-<form action="checkout.php" method="post" ><!--form Starts -->
+<form action="checkout.php" method="post" >
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label>Email</label>
 
 <input type="text" class="form-control" name="c_email" required >
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label>Contraseña</label>
 
@@ -49,9 +49,9 @@ echo "<script> window.open('../checkout.php','_self'); </script>";
 
 </h4>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="text-center" ><!-- text-center Starts -->
+<div class="text-center" >
 
 <button name="login" value="Login" class="btn btn-primary" >
 
@@ -60,12 +60,12 @@ echo "<script> window.open('../checkout.php','_self'); </script>";
 
 </button>
 
-</div><!-- text-center Ends -->
+</div>
 
 
-</form><!--form Ends -->
+</form>
 
-<center><!-- center Starts -->
+<center>
 
 <a href="customer_register.php" >
 
@@ -73,9 +73,9 @@ echo "<script> window.open('../checkout.php','_self'); </script>";
 
 </a>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- box Ends -->
+</div>
 
 <?php
 

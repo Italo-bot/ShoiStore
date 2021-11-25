@@ -1,7 +1,7 @@
 
-<div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Starts -->
+<div class="panel panel-default sidebar-menu">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
 <?php
 
@@ -39,11 +39,11 @@ echo "
 
 ?>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<ul class="nav nav-pills nav-stacked" id="dashboard-sidebar"><!-- nav nav-pills nav-stacked Starts -->
+<ul class="nav nav-pills nav-stacked" id="dashboard-sidebar">
 
 <li class="<?php if(empty($_GET)){ echo "active"; } ?>">
 
@@ -87,11 +87,7 @@ echo "
 
 </li>
 
-<!-- <li class="<?php if(preg_match("/withdraw/", $_SERVER["QUERY_STRING"])){ echo "active"; } ?>"> -->
-
-<!-- <a href="index.php?withdraw"> <i class="fa fa-upload"></i> (Useless-Delete) Withdraw </a> -->
-
-<!-- </li> -->
+<?php if(preg_match("/withdraw/", $_SERVER["QUERY_STRING"])){ echo "active"; } ?>
 
 <li>
 
@@ -103,9 +99,9 @@ echo "
 
 </li>
 
-</ul><!-- nav nav-pills nav-stacked Ends -->
+</ul>
 
-<ul class="nav nav-pills nav-stacked" id="settings-sidebar"><!-- nav nav-pills nav-stacked Starts -->
+<ul class="nav nav-pills nav-stacked" id="settings-sidebar">
 
 <li>
 
@@ -123,13 +119,9 @@ echo "
 
 </li>
 
-<!-- <li class="<?php if(isset($_GET['payment_settings'])){ echo "active"; } ?>"> -->
+<?php if(isset($_GET['payment_settings'])){ echo "active"; } ?>"> -->
 
-<!-- <a href="index.php?payment_settings"> <i class="fa fa-credit-card"></i> (Useless-Delete) Payment Settings </a> -->
-
-<!-- </li> -->
-
-<li class="<?php if(preg_match("/shipping/", $_SERVER["QUERY_STRING"])){ echo "active"; } ?>"><!-- shipping_settings li Starts -->
+<li class="<?php if(preg_match("/shipping/", $_SERVER["QUERY_STRING"])){ echo "active"; } ?>">
 
 <a href="#" class="shipping_settings" data-toggle="collapse" data-target="#shipping_settings"> 
 
@@ -153,7 +145,7 @@ echo "
 
 </ul>
 
-</li><!-- shipping_settings li Ends -->
+</li>
 
 <li class="<?php if(isset($_GET['seo_settings'])){ echo "active"; } ?>">
 
@@ -161,9 +153,9 @@ echo "
 
 </li>
 
-</ul><!-- nav nav-pills nav-stacked Ends -->
+</ul>
 
-<ul class="nav nav-pills nav-stacked"><!-- nav nav-pills nav-stacked Starts -->
+<ul class="nav nav-pills nav-stacked">
 
 <li>
 
@@ -173,11 +165,11 @@ echo "
 
 </li>
 
-</ul><!-- nav nav-pills nav-stacked Ends -->
+</ul>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default sidebar-menu Ends -->
+</div>
 
 <script>
 

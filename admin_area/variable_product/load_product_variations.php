@@ -82,13 +82,13 @@ $allow_backorders = $row_product_stock["allow_backorders"];
 	
 ?>
 
-<div class="single-variation-row" id="variation_<?php echo $variation_id; ?>"><!-- single-variation-row Starts -->
+<div class="single-variation-row" id="variation_<?php echo $variation_id; ?>">
 
 <hr class="variation-hr">
 
 <strong> #<?php echo $variation_id; ?> </strong>
 
-<div class="variation-attributes"><!-- variation-attributes Starts -->
+<div class="variation-attributes">
 
 <?php
 
@@ -108,7 +108,7 @@ $meta_key = str_replace(' ', '_', strtolower($row_product_attributes["attribute_
 
 ?>
 
-<select class="form-control" name="variations[<?php echo $variation_id; ?>][attributes][<?php echo $meta_key; ?>]"><!-- attribute select Starts -->
+<select class="form-control" name="variations[<?php echo $variation_id; ?>][attributes][<?php echo $meta_key; ?>]">
 
 <option value=""> Selecciona una <?php echo $attribute_name; ?> </option>
 
@@ -138,13 +138,13 @@ echo "<option>$attribute_value</option>";
 
 ?>
 
-</select><!-- attribute select Ends -->
+</select>
 
 <?php } ?>
 
-</div><!-- variation-attributes Ends -->
+</div>
 
-<div class="variation-actions"><!-- variation-actions Starts -->
+<div class="variation-actions">
 
 <button class="btn btn-default btn-sm" title="Expand Variation" data-toggle="collapse" href="#variation_collapse_<?php echo $variation_id; ?>">
 
@@ -158,31 +158,30 @@ echo "<option>$attribute_value</option>";
 
 </a>
 
-</div><!-- variation-actions Ends -->
-
+</div>
 <div class="variation-row-expand collapse" id="variation_collapse_<?php echo $variation_id; ?>" data-variation="<?php echo $variation_id; ?>"><!-- variation-row-expand Starts -->
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Precio producto </label>
 
 <input type="text" name="variations[<?php echo $variation_id; ?>][product_price]" class="form-control" required value="<?php echo $product_price; ?>" >
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Producto precio venta </label>
 
 <input type="text" name="variations[<?php echo $variation_id; ?>][product_psp_price]" class="form-control" value="<?php echo $product_psp_price; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" id="stock-status-<?php echo $variation_id; ?>"><!-- form-group Starts -->
+<div class="form-group" id="stock-status-<?php echo $variation_id; ?>">
 
 <label> Estado de Stock </label>
 
@@ -222,25 +221,24 @@ echo "<option>$attribute_value</option>";
 
 <?php } ?>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div id="stock-management-row-<?php echo $variation_id; ?>"><!-- stock-management-row Starts -->
-
-<div class="form-group"><!-- form-group Starts -->
+<div id="stock-management-row-<?php echo $variation_id; ?>">
+<div class="form-group">
 
 <label> Cantidad de Stock </label>
 
 <input type="number" name="variations[<?php echo $variation_id; ?>][stock_quantity]" value="<?php echo $stock_quantity; ?>" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Permitir Encargos? </label>
 
-<select class="form-control" name="variations[<?php echo $variation_id; ?>][allow_backorders]" required><!-- select manufacturer Starts -->
+<select class="form-control" name="variations[<?php echo $variation_id; ?>][allow_backorders]" required>
 
 <?php if($allow_backorders == "no"){ ?>
 
@@ -276,55 +274,47 @@ echo "<option>$attribute_value</option>";
 
 <?php } ?>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- stock-management-row Ends -->
+</div>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Seleccione un tipo de producto </label>
 
-<select class="form-control" name="variations[<?php echo $variation_id; ?>][product_type]"><!-- select manufacturer Starts -->
+<select class="form-control" name="variations[<?php echo $variation_id; ?>][product_type]">
 
 <?php if($product_type == "physical_product"){ ?>
 
-<option value="physical_product" selected> (Producto físico) Producto simple </option>
+<option value="physical_product" selected> Producto ropa </option>
 
-<option value="digital_product"> (Producto digital) Producto descargable </option>
-
-<?php }elseif($product_type == "digital_product"){ ?>
-
-<option value="digital_product" selected> (Producto digital) Producto descargable </option>
-
-<option value="physical_product"> (Producto físico) Producto simple </option>
+<option value="physical_product"> Producto ropa </option>
 
 <?php }else{ ?>
 
-<option value="physical_product"> (Producto físico) Producto simple </option>
-
-<option value="digital_product"> (Producto digital) Producto descargable  </option>
+<option value="physical_product"> Producto ropa </option>
 
 <?php } ?>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Peso Producto <small> (kg)</small> </label>
 
 <input type="text" name="variations[<?php echo $variation_id; ?>][product_weight]" class="form-control" value="<?php echo $product_weight; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> ¿Habilitar la gestión de existencias a nivel de variación? </label>
 
@@ -344,13 +334,13 @@ echo "<option>$attribute_value</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</div><!-- variation-row-expand Ends -->
+</div>
 
 <script>
 
@@ -370,7 +360,7 @@ $("#stock-status-<?php echo $variation_id; ?>").hide();
 
 </script>
 
-</div><!-- single-variation-row Ends -->
+</div>
 
 <?php 
 

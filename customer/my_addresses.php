@@ -60,37 +60,36 @@ $shipping_state = $row_addresses["shipping_state"];
 
 <h2> Dirección de Envío 1 </h2>
 
-<form method="post" enctype="multipart/form-data"><!--- form Starts -->
+<form method="post" enctype="multipart/form-data">
 
-<div class="row"><!-- row Starts -->
-
+<div class="row">
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Nombre : </label>
 
 <input type="text" name="billing_first_name" class="form-control" required value="<?php echo $billing_first_name; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Apellido : </label>
 
 <input type="text" name="billing_last_name" class="form-control" required value="<?php echo $billing_last_name; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> País : </label>
 
@@ -128,101 +127,101 @@ if($billing_country == $country_id){ echo "selected"; }
 
 </select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Dirección 1 : </label>
 
 <input type="text" name="billing_address_1" class="form-control" required value="<?php echo $billing_address_1; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Dirección 2 : </label>
 
 <input type="text" name="billing_address_2" class="form-control" required value="<?php echo $billing_address_2; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Región : </label>
 
 <input type="text" name="billing_state" class="form-control" required value="<?php echo $billing_state; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Comuna : </label>
 
 <input type="text" name="billing_city" class="form-control" required value="<?php echo $billing_city; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Postal : </label>
 
 <input type="text" name="billing_postcode" class="form-control" required value="<?php echo $billing_postcode; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <input type="submit" name="update_billing_address" value="Actualizar" class="form-control btn btn-success">
 
-</div><!-- form-group Ends -->
+</div>
 
 </form>
 
 <h2> Dirección de envío 2 </h2>
 
-<form method="post" enctype="multipart/form-data"><!--- form Starts -->
+<form method="post" enctype="multipart/form-data">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Nombre : </label>
 
 <input type="text" name="shipping_first_name" class="form-control" required value="<?php echo $shipping_first_name; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
 <div class="col-sm-6">
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Apellido : </label>
 
 <input type="text" name="shipping_last_name" class="form-control" required value="<?php echo $shipping_last_name; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> País : </label>
 
@@ -260,65 +259,65 @@ if($shipping_country == $country_id){ echo "selected"; }
 
 </select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Dirección 1 : </label>
 
 <input type="text" name="shipping_address_1" class="form-control" required value="<?php echo $shipping_address_1; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Dirección 2 : </label>
 
 <input type="text" name="shipping_address_2" class="form-control" required value="<?php echo $shipping_address_2; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
 <div class="col-sm-6">
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Región : </label>
 
 <input type="text" name="shipping_state" class="form-control" required value="<?php echo $shipping_state; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
 <div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Comuna : </label>
 
 <input type="text" name="shipping_city" class="form-control" required value="<?php echo $shipping_city; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Postal: </label>
 
 <input type="text" name="shipping_postcode" class="form-control" required value="<?php echo $shipping_postcode; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <input type="submit" name="update_shipping_address" value="Actualizar" class="form-control btn btn-success">
 
-</div><!-- form-group Ends -->
+</div>
 
 </form>
 

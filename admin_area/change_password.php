@@ -50,7 +50,7 @@ echo " <script> window.open('login.php','_self'); </script> ";
 
 <body>
 
-<div class="container" ><!-- container Starts -->
+<div class="container" >
 
 <div class="alert alert-info">
 
@@ -60,7 +60,7 @@ La contraseña debe tener al menos doce caracteres. Para hacerlo más fuerte, us
 
 </div>
 
-<form class="form-login" action="" method="post" ><!-- form-login Starts -->
+<form class="form-login" action="" method="post" >
 
 <h2 class="form-login-heading" style="margin-top:0px;"> Cambiar Contraseña </h2>
 
@@ -74,9 +74,9 @@ Cambiar
 
 </button>
 
-</form><!-- form-login Ends -->
+</form>
 
-</div><!-- container Ends -->
+</div>
 
 </body>
 

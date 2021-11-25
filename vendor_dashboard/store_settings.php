@@ -48,27 +48,27 @@ $store_email = $row_store_settings["store_email"];
 
 ?>
 
-<div class="row" ><!-- 2 row Starts -->
+<div class="row" >
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
+<div class="col-lg-12" >
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Configuración de la tienda
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<form class="form-horizontal store-settings-form" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
+<form class="form-horizontal store-settings-form" method="post" enctype="multipart/form-data">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Imagen de portada / banner </label>
 
@@ -90,9 +90,9 @@ $store_email = $row_store_settings["store_email"];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Image de perfil </label>
 
@@ -114,9 +114,9 @@ $store_email = $row_store_settings["store_email"];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Nombre tienda</label>
 
@@ -126,15 +126,15 @@ $store_email = $row_store_settings["store_email"];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Dirección tienda</label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> País: </label>
 
@@ -178,54 +178,54 @@ if($store_country == $country_id){ echo "selected"; }
 
 </select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Dirección 1: </label>
 
 <input type="text" name="store_address_1" class="form-control" value="<?php echo $store_address_1; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Dirección 2 (Opcional): </label>
 
 <input type="text" name="store_address_2" class="form-control" value="<?php echo $store_address_2; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Región: </label>
 
 <input type="text" name="store_state" class="form-control" value="<?php echo $store_state; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Ciudad: </label>
 
 <input type="text" name="store_city" class="form-control" value="<?php echo $store_city; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Postal: </label>
 
 <input type="text" name="store_postcode" class="form-control" value="<?php echo $store_postcode; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> PayPal Email </label>
 
@@ -235,9 +235,9 @@ if($store_country == $country_id){ echo "selected"; }
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Teléfono </label>
 
@@ -247,9 +247,9 @@ if($store_country == $country_id){ echo "selected"; }
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Tienda Email </label>
 
@@ -265,9 +265,9 @@ Mostrar la dirección de Email en la tienda
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"></label>
 
@@ -277,17 +277,17 @@ Mostrar la dirección de Email en la tienda
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 
 <?php

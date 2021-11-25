@@ -2,7 +2,7 @@
 
 $db = mysqli_connect("localhost","root","","shoistore");
 
-/// IP address code starts /////
+/// Dirección IP ///
 function getRealUserIp(){
     switch(true){
       case (!empty($_SERVER['HTTP_X_REAL_IP'])) : return $_SERVER['HTTP_X_REAL_IP'];
@@ -11,10 +11,10 @@ function getRealUserIp(){
       default : return $_SERVER['REMOTE_ADDR'];
     }
  }
-/// IP address code Ends /////
+/// Dirección IP/////
 
 
-// items function Starts ///
+// función para productos //
 
 function items(){
 
@@ -41,9 +41,9 @@ echo $count_items;
 }
 
 
-// items function Ends ///
+// función para productos //
 
-// total_price function Starts //
+// Precio total //
 
 function total_price(){
 
@@ -81,11 +81,9 @@ echo "$" . $total;
 
 }
 
+// Precio total //
 
-
-// total_price function Ends //
-
-// getPro function Starts //
+// función obtener producto (getpro) //
 
 function getPro(){
 
@@ -212,15 +210,13 @@ $product_label
 
 }
 
-// getPro function Ends //
+// función obtener producto (getpro) //
 
 
 
-/// getPaginator Function Starts ///
+/// Función páginas numeradas ///
 
 function getPaginator(){
-
-/// getPaginator Function Code Starts ///
 
 $per_page = 6;
 
@@ -230,7 +226,7 @@ $aWhere = array();
 
 $aPath = '';
 
-/// Manufacturers Code Starts ///
+/// Fabricantes ///
 
 if(isset($_REQUEST['man'])&&is_array($_REQUEST['man'])){
 
@@ -248,9 +244,9 @@ $aPath .= 'man[]='.(int)$sVal.'&';
 
 }
 
-/// Manufacturers Code Ends ///
+/// Fabricantes ///
 
-/// Products Categories Code Starts ///
+/// Categorías de productos ///
 
 if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
@@ -268,9 +264,9 @@ $aPath .= 'p_cat[]='.(int)$sVal.'&';
 
 }
 
-/// Products Categories Code Ends ///
+/// Categorías de productos ///
 
-/// Categories Code Starts ///
+/// Categorías generales ///
 
 if(isset($_REQUEST['cat'])&&is_array($_REQUEST['cat'])){
 
@@ -288,7 +284,7 @@ $aPath .= 'cat[]='.(int)$sVal.'&';
 
 }
 
-/// Categories Code Ends ///
+/// Categorías generales ///
 
 $sWhere = (count($aWhere)>0?' WHERE '.implode(' or ',$aWhere):'');
 
@@ -318,24 +314,22 @@ if(!empty($aPath)){ echo "&".$aPath; }
 
 echo "' >".'Última'."</a></li>";
 
-/// getPaginator Function Code Ends ///
+
 
 }
 
-/// getPaginator Function Ends ///
 
 
-/// getProducts Function Starts ///
+
+/// Obtener productos ///
 
 function getProducts(){
-
-/// getProducts function Code Starts ///
 
 global $db;
 
 $aWhere = array();
 
-/// Manufacturers Code Starts ///
+/// Fabricantes ///
 
 if(isset($_REQUEST['man'])&&is_array($_REQUEST['man'])){
 
@@ -351,9 +345,9 @@ $aWhere[] = 'manufacturer_id='.(int)$sVal;
 
 }
 
-/// Manufacturers Code Ends ///
+/// Fabricantes ///
 
-/// Products Categories Code Starts ///
+/// Categorías de productos ///
 
 if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
@@ -369,9 +363,9 @@ $aWhere[] = 'p_cat_id='.(int)$sVal;
 
 }
 
-/// Products Categories Code Ends ///
+/// Categorías de productos ///
 
-/// Categories Code Starts ///
+/// Categorías generales ///
 
 if(isset($_REQUEST['cat'])&&is_array($_REQUEST['cat'])){
 
@@ -387,7 +381,7 @@ $aWhere[] = 'cat_id='.(int)$sVal;
 
 }
 
-/// Categories Code Ends ///
+/// Categorías generales ///
 
 $per_page=6;
 
@@ -518,7 +512,6 @@ echo "
 
 $product_label
 
-
 </div>
 
 </div>
@@ -526,12 +519,7 @@ $product_label
 ";
 
 }
-/// getProducts function Code Ends ///
 
 }
 
-
-/// getProducts Function Ends ///
-
- 
 ?>

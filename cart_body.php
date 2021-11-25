@@ -122,7 +122,7 @@ $allow_backorders = $row_product_stock["allow_backorders"];
 
 ?>
 
-<tr><!-- tr Starts -->
+<tr>
 
 <td>
 
@@ -198,6 +198,6 @@ $<?php echo $sub_total; ?>.00
 
 </td>
 
-</tr><!-- tr Ends -->
+</tr>
 
 <?php } } ?>

@@ -98,13 +98,13 @@ $count_pending_orders = mysqli_num_rows($run_pending_orders);
 
 <body>
 
-<div id="wrapper"><!-- wrapper Starts -->
+<div id="wrapper">
 
 <?php include("includes/sidebar.php");  ?>
 
-<div id="page-wrapper"><!-- page-wrapper Starts -->
+<div id="page-wrapper">
 
-<div class="container-fluid"><!-- container-fluid Starts -->
+<div class="container-fluid">
 
 <?php
 
@@ -759,11 +759,11 @@ include("delete_commission.php");
 
 ?>
 
-</div><!-- container-fluid Ends -->
+</div>
 
-</div><!-- page-wrapper Ends -->
+</div>
 
-</div><!-- wrapper Ends -->
+</div>
 
 <script src="js/bootstrap.min.js"></script>
 

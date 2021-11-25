@@ -50,27 +50,26 @@ $paypal_email = $row_store_settings["paypal_email"];
 
 ?>
 
-<div class="row" ><!-- 2 row Starts -->
+<div class="row" >
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
+<div class="col-lg-12" >
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Informe de pagos
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
+<div class="panel-body">
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="table-responsive">
 
-<div class="table-responsive"><!-- table-responsive Starts -->
-
-<table class="table table-bordered table-hover table-striped" ><!-- table table-bordered table-hover table-striped Starts -->
+<table class="table table-bordered table-hover table-striped" >
 
 <tbody class="text-center">
 
@@ -132,17 +131,17 @@ $paypal_email = $row_store_settings["paypal_email"];
 
 </tbody>
 
-</table><!-- table table-bordered table-hover table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <?php if($current_balance >= $minimum_withdraw_limit){ ?>
 
@@ -164,23 +163,23 @@ Retraerse a <i class="fa fa-paypal"></i> Cuenta de Paypal
 
 <br><br>
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Pagos
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-bordered table-hover table-striped" ><!-- table table-bordered table-hover table-striped Starts -->
+<table class="table table-bordered table-hover table-striped" >
 
 <thead>
 
@@ -280,27 +279,27 @@ $total_amount = $net_amount + $shipping_cost;
 
 </tbody>
 
-</table><!-- table table-bordered table-hover table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
-
-
-</div><!-- panel-body Ends -->
-
-</div><!-- panel panel-default Ends -->
-
-</div><!-- col-lg-12 Ends -->
-
-</div><!-- 2 row Ends -->
+</div>
 
 
-<div id="paypal_withdraw_modal" class="modal fade"><!-- paypal_withdraw_modal modal fade Starts -->
+</div>
 
-<div class="modal-dialog"><!-- modal-dialog Starts -->
+</div>
 
-<div class="modal-content"><!-- modal-content Starts -->
+</div>
 
-<div class="modal-header"><!-- modal-header Starts -->
+</div>
+
+
+<div id="paypal_withdraw_modal" class="modal fade">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
 
 <button type="button" class="close" data-dismiss="modal">
 
@@ -310,12 +309,11 @@ $total_amount = $net_amount + $shipping_cost;
 
 <h4 class="modal-title"> Retirar comisiones a cuenta Paypal </h4>
 
-</div><!-- modal-header Ends -->
+</div>
 
-<div class="modal-body"><!-- modal-body Starts -->
+<div class="modal-body">
 
-<center><!-- center Starts -->
-
+<center>
 <?php if(empty($paypal_email)){ ?>
 
 <p class="lead">
@@ -338,9 +336,9 @@ Sus comisiones se enviarán al siguiente correo electrónico de la cuenta de Pay
 
 </p>
 
-<form class="form-horizontal" action="paypal_payouts.php" method="post"><!-- withdraw form Starts -->
+<form class="form-horizontal" action="paypal_payouts.php" method="post">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Monto del retiro: </label>
 
@@ -356,9 +354,9 @@ Sus comisiones se enviarán al siguiente correo electrónico de la cuenta de Pay
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"></label>
 
@@ -368,26 +366,26 @@ Sus comisiones se enviarán al siguiente correo electrónico de la cuenta de Pay
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- withdraw form Ends -->
+</form>
 
 <?php } ?>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- modal-body Ends -->
+</div>
 
-<div class="modal-footer"><!-- modal-footer Starts -->
+<div class="modal-footer">
 
 <button class="btn btn-default" data-dismiss="modal">
 Close
 </button>
 
-</div><!-- modal-footer Ends -->
+</div>
 
-</div><!-- modal-content Ends -->
+</div>
 
-</div><!-- modal-dialog Ends -->
+</div>
 
-</div><!-- paypal_withdraw_modal modal fade Ends -->
+</div>

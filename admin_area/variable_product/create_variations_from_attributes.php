@@ -49,8 +49,6 @@ $variation_attributes[$attribute_name] = $attribute_values;
 
 function possible_combinations_function($arrays){
 
-//returned array...
-
 $possible_combinations = array();
 
 if(sizeof($arrays) > 0){
@@ -83,15 +81,11 @@ $possible_combinations[$i][$key] = $current;
 
 foreach($arrays as $key => $value){
 
-//if next returns true, then break
-
 if(next($arrays[$key])){
 	
 break;
 
 }else{ 
- 
-//if next returns false, then reset and go on with previuos array...
 reset($arrays[$key]);
 
 }

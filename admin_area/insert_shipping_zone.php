@@ -22,46 +22,44 @@ $admin_id = $row_admin['admin_id'];
 
 <link rel="stylesheet" href="css/chosen.min.css">
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
 <i class="fa fa-dashboard"></i> Dashboard / Agregar zona de envío
 
-
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"> </i> Agregar zona de envío
 
-</h3><!-- panel-title Ends -->
+</h3>
+</div>
 
-</div><!-- panel-heading Ends -->
+<div class="panel-body">
 
-<div class="panel-body"><!-- panel-body Starts -->
+<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
 
-<form class="form-horizontal" action="" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
-
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Nombre zona </label>
 
@@ -71,9 +69,9 @@ $admin_id = $row_admin['admin_id'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Región </label>
 
@@ -103,9 +101,9 @@ echo "<option value='$country_id'>$country_name</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Código Postal </label>
 
@@ -115,9 +113,9 @@ echo "<option value='$country_id'>$country_name</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> </label>
 
@@ -127,17 +125,17 @@ echo "<option value='$country_id'>$country_name</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <script src="js/jquery.min.js"></script>
 

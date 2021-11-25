@@ -46,11 +46,10 @@ $admin_about = $row_admin['admin_about'];
 
 ?>
 
-<div class="row" ><!-- 1  row Starts -->
+<div class="row" >
+<div class="col-lg-12">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
-
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -58,19 +57,19 @@ $admin_about = $row_admin['admin_about'];
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1  row Ends -->
+</div>
 
-<div class="row" ><!-- 2 row Starts -->
+<div class="row" >
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
+<div class="col-lg-12" >
 
-<div class="panel panel-default" ><!-- panel panel-default Starts -->
+<div class="panel panel-default" >
 
-<div class="panel-heading" ><!-- panel-heading Starts -->
+<div class="panel-heading" >
 
 <h3 class="panel-title" >
 
@@ -78,102 +77,99 @@ $admin_about = $row_admin['admin_about'];
 
 </h3>
 
+</div>
 
-</div><!-- panel-heading Ends -->
+<div class="panel-body">
 
+<form class="form-horizontal" method="post" enctype="multipart/form-data">
 
-<div class="panel-body"><!-- panel-body Starts -->
-
-<form class="form-horizontal" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
-
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Nombre: </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="text" name="admin_name" class="form-control" required value="<?php echo $admin_name; ?>">
 
-</div><!-- col-md-6 Ends -->
+</div>
+</div>
 
-</div><!-- form-group Ends -->
 
-
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Usuario Email: </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="text" name="admin_email" class="form-control" required value="<?php echo $admin_email; ?>">
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Usuario País: </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="text" name="admin_country" class="form-control" required value="<?php echo $admin_country; ?>">
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Usuario Trabajo: </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="text" name="admin_job" class="form-control" required value="<?php echo $admin_job; ?>">
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Usuario Contacto: </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="text" name="admin_contact" class="form-control" required value="<?php echo $admin_contact; ?>">
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Sobre el usuario: </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <textarea name="admin_about" class="form-control" rows="3"> <?php echo $admin_about; ?> </textarea>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Imagen: </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="file" name="admin_image" class="form-control" >
 <br>
 <img src="admin_images/<?Php echo $admin_image; ?>" width="70" height="70" >
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <hr>
 
@@ -181,51 +177,51 @@ $admin_about = $row_admin['admin_about'];
 Cambie la contraseña de la cuenta <span class="text-muted h6"> Si no desea cambiar la contraseña, deje estos campos vacíos. </span> 
 </h3>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Cambiar la contraseña: </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="text" name="admin_pass" class="form-control">
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label">Confirmar cambio de contraseña: </label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="password" name="confirm_admin_pass" class="form-control">
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"></label>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+<div class="col-md-6">
 
 <input type="submit" name="update" value="Update User" class="btn btn-primary form-control">
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <?php
 
@@ -295,9 +291,6 @@ session_destroy();
 
 }
 
-
 ?>
-
-
 
 <?php }  ?>

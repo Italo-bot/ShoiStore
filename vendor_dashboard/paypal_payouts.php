@@ -30,7 +30,7 @@ $row_payment_settings = mysqli_fetch_array($run_payment_setttings);
 
 $minimum_withdraw_limit = $row_payment_settings['minimum_withdraw_limit'];
 
-//$paypal_email = $row_payment_settings['paypal_email'];
+$paypal_email = $row_payment_settings['paypal_email'];
 
 $paypal_sandbox = $row_payment_settings['paypal_sandbox'];
 
@@ -58,7 +58,7 @@ use PayPal\Auth\OAuthTokenCredential;
 
 use PayPal\Exception\PayPalConnectionException;
 
-//Api Setup
+//Elementos para funcionamiento PayPal
 
 $api = new ApiContext(
 
@@ -129,12 +129,8 @@ $payouts->setSenderBatchHeader($senderBatchHeader)
 
 ->addItem($senderItem);
 	
-// ### Create Payout
-
 try{
 	
-//$payouts->create(null, $api);
-
 if($payouts->create(null, $api)){
 
 $update_vendor_account = "update vendor_accounts set current_balance=current_balance-$amount,withdrawals=withdrawals+$amount where vendor_id='$customer_id'";

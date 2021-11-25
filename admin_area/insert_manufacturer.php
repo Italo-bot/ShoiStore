@@ -13,11 +13,11 @@ else {
 ?>
 
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -25,34 +25,30 @@ else {
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
+<div class="row">
 
-<div class="row"><!-- 2 row Starts -->
+<div class="col-lg-12">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="panel panel-default">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel-heading">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
-
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"> </i> Agregar Fabricantes
 
-</h3><!-- panel-title Ends -->
+</h3>
+</div>
 
-</div><!-- panel-heading Ends -->
-
-<div class="panel-body"><!-- panel-body Starts -->
-
-<form class="form-horizontal" action="" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
-
-<div class="form-group"><!-- form-group Starts -->
+<div class="panel-body">
+<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Nombre </label>
 
@@ -62,9 +58,9 @@ else {
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Mostrar como los mejores Fabricantes </label>
 
@@ -80,9 +76,9 @@ else {
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Imagen </label>
 
@@ -92,9 +88,9 @@ else {
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> </label>
 
@@ -104,17 +100,17 @@ else {
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <?php
 

@@ -22,7 +22,7 @@ $aPCat = array();
 
 $aCat  = array();
 
-/// Manufacturers Code Starts ///
+/// Fabricantes ///
 
 if(isset($_REQUEST['man'])&&is_array($_REQUEST['man'])){
 
@@ -38,9 +38,9 @@ $aMan[(int)$sVal] = (int)$sVal;
 
 }
 
-/// Manufacturers Code Ends ///
+/// Fabricantes ///
 
-/// Products Categories Code Starts ///
+/// Categoría de producto ///
 
 if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
@@ -56,9 +56,9 @@ $aPCat[(int)$sVal] = (int)$sVal;
 
 }
 
-/// Products Categories Code Ends ///
+/// Categoría de producto ///
 
-/// Categories Code Starts ///
+/// Categorías generales ///
 
 if(isset($_REQUEST['cat'])&&is_array($_REQUEST['cat'])){
 
@@ -74,7 +74,7 @@ $aCat[(int)$sVal] = (int)$sVal;
 
 }
 
-/// Categories Code Ends ///
+/// Categorías generales ///
 
 $store_text = "";
 
@@ -110,44 +110,43 @@ $store_text .= "Store";
 
 ?>
 
-<div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Starts -->
+<div class="panel panel-default sidebar-menu">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <?php echo $store_text; ?> Vendedores
 
-<div class="pull-right"><!-- pull-right Starts -->
+<div class="pull-right">
 
 <a href="#" style="color:black;">
 
 </a>
 
-</div><!-- pull-right Ends -->
+</div>
+</h3>
 
-</h3><!-- panel-title Ends -->
+</div>
 
-</div><!-- panel-heading Ends -->
+<div class="panel-collapse collapse-data">
 
-<div class="panel-collapse collapse-data"><!-- panel-collapse collapse-data starts -->
+<div class="panel-body">
 
-<div class="panel-body"><!-- panel-body Starts -->
-
-<div class="input-group"><!-- input-group Starts -->
+<div class="input-group">
 
 <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-manufacturer" placeholder="Buscar">
 
 
 <a class="input-group-addon"> <i class="fa fa-search"></i> </a>
 
-</div><!-- input-group Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-<div class="panel-body scroll-menu"><!-- panel-body scroll-menu Starts -->
+<div class="panel-body scroll-menu">
 
-<ul class="nav nav-pills nav-stacked category-menu" id="dev-manufacturer"><!-- nav nav-pills nav-stacked category-menu Starts -->
+<ul class="nav nav-pills nav-stacked category-menu" id="dev-manufacturer">
 
 <?php
 
@@ -277,53 +276,53 @@ $manufacturer_title
 
 ?>
 
-</ul><!-- nav nav-pills nav-stacked category-menu Ends -->
+</ul>
 
-</div><!-- panel-body scroll-menu Ends -->
+</div>
 
-</div><!-- panel-collapse collapse-data Ends -->
-
-
-</div><!-- panel panel-default sidebar-menu Ends -->
+</div>
 
 
-<div class="panel panel-default sidebar-menu"><!--- panel panel-default sidebar-menu Starts -->
+</div>
 
-<div class="panel-heading"><!-- panel-heading Starts -->
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<div class="panel panel-default sidebar-menu">
+
+<div class="panel-heading">
+
+<h3 class="panel-title">
 
 <?php echo $store_text; ?>  Categorías
 
-<div class="pull-right"><!-- pull-right Starts -->
+<div class="pull-right">
 
 <a href="#" style="color:black;">
 
 </a>
 
-</div><!-- pull-right Ends -->
+</div>
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-collapse collapse-data"><!-- panel-collapse collapse-data Starts -->
+<div class="panel-collapse collapse-data">
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<div class="input-group"><!-- input-group Starts -->
+<div class="input-group">
 
 <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-p-cats" placeholder="Buscar">
 
 <a class="input-group-addon"> <i class="fa fa-search"></i> </a>
 
-</div><!-- input-group Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-<div class="panel-body scroll-menu"><!-- panel-body scroll-menu Starts -->
+<div class="panel-body scroll-menu">
 
-<ul class="nav nav-pills nav-stacked category-menu" id="dev-p-cats"><!-- nav nav-pills nav-stacked category-menu Starts -->
+<ul class="nav nav-pills nav-stacked category-menu" id="dev-p-cats">
 
 <?php
 
@@ -451,53 +450,52 @@ $p_cat_title
 
 ?>
 
-</ul><!-- nav nav-pills nav-stacked category-menu Ends -->
+</ul>
 
-</div><!-- panel-body scroll-menu Ends -->
+</div>
 
-</div><!-- panel-collapse collapse-data Ends -->
+</div>
 
-</div><!--- panel panel-default sidebar-menu Ends -->
+</div>
 
 
 
-<div class="panel panel-default sidebar-menu"><!--- panel panel-default sidebar-menu Starts -->
+<div class="panel panel-default sidebar-menu">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <?php echo $store_text; ?> Sección
 
-<div class="pull-right"><!-- pull-right Starts -->
+<div class="pull-right">
 
 <a href="#" style="color:black;">
 
 </a>
 
-</div><!-- pull-right Ends -->
+</div>
+</h3>
 
-</h3><!-- panel-title Ends -->
+</div>
 
-</div><!-- panel-heading Ends -->
+<div class="panel-collapse collapse-data">
 
-<div class="panel-collapse collapse-data"><!-- panel-collapse collapse-data Starts -->
+<div class="panel-body">
 
-<div class="panel-body"><!-- panel-body Starts -->
-
-<div class="input-group"><!-- input-group Starts -->
+<div class="input-group">
 
 <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-cats" placeholder="Buscar">
 
 <a class="input-group-addon"> <i class="fa fa-search"> </i> </a>
 
-</div><!-- input-group Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-<div class="panel-body scroll-menu"><!-- panel-body scroll-menu Starts -->
+<div class="panel-body scroll-menu">
 
-<ul class="nav nav-pills nav-stacked category-menu" id="dev-cats"><!-- nav nav-pills nav-stacked category-menu Starts -->
+<ul class="nav nav-pills nav-stacked category-menu" id="dev-cats">
 
 <?php
 
@@ -619,10 +617,10 @@ $cat_title
 
 ?>
 
-</ul><!-- nav nav-pills nav-stacked category-menu Ends -->
+</ul>
 
-</div><!-- panel-body scroll-menu Ends -->
+</div>
 
-</div><!-- panel-collapse collapse-data Ends -->
+</div>
 
-</div><!--- panel panel-default sidebar-menu Ends -->
+</div>

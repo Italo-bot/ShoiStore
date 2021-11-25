@@ -30,9 +30,9 @@ $days_before_withdraw = $row_payment_settings['days_before_withdraw'];
 ?>
 
 
-<div class="row"><!-- 2 row Starts --->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
 <div class="alert alert-info">
 
@@ -48,23 +48,21 @@ Retirar en: <?php echo $days_before_withdraw; ?> días
   
 </div>
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
-
-<h3 class="panel-title"><!-- panel-title Starts -->
+<div class="panel-heading">
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"> </i> Hacer una solicitud de retiro
 
-</h3><!-- panel-title Ends -->
+</h3>
+</div>
 
-</div><!-- panel-heading Ends -->
+<div class="panel-body">
 
-<div class="panel-body"><!--panel-body Starts -->
+<form class="form-horizontal" method="post" enctype="multipart/form-data">
 
-<form class="form-horizontal" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
-
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Cantidad de retiro: </label>
 
@@ -80,15 +78,14 @@ Retirar en: <?php echo $days_before_withdraw; ?> días
 
 </div>
 
-</div><!-- form-group Ends -->
-
-<div class="form-group"><!-- form-group Starts -->
+</div>
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Método de pago: </label>
 
 <div class="col-md-6">
 
-<select class="form-control" name="method"><!-- select payment method Starts -->
+<select class="form-control" name="method">
 
 <option value="paypal"> Paypal </option>
 
@@ -98,13 +95,13 @@ Retirar en: <?php echo $days_before_withdraw; ?> días
 
 <option value="bank-transfer"> Transferencia Bancaria </option>
 
-</select><!-- select payment method Ends -->
+</select>
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"></label>
 
@@ -114,17 +111,17 @@ Retirar en: <?php echo $days_before_withdraw; ?> días
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!--panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends --->
+</div>
 
 
 <?php

@@ -11,11 +11,11 @@ else {
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -23,36 +23,36 @@ else {
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts --> 
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Ver Clientes
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
 
-<div class="panel-body" ><!-- panel-body Starts -->
+<div class="panel-body" >
 
-<div class="table-responsive" ><!-- table-responsive Starts -->
+<div class="table-responsive" >
 
-<table class="table table-bordered table-hover table-striped" ><!-- table table-bordered table-hover table-striped Starts -->
+<table class="table table-bordered table-hover table-striped" >
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -66,9 +66,9 @@ else {
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!-- tbody Starts -->
+<tbody>
 
 <?php
 
@@ -124,11 +124,11 @@ $i++;
 
 <?php } ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table table-bordered table-hover table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>
 
 <center>
 
@@ -140,19 +140,11 @@ $page = 1;
 
 $per_page = 10;
 
-//Now select all from table
-
 $query = "select * from countries order by 1 DESC LIMIT 0,20";
 
 $result = mysqli_query($con, $query);
-
-// Count the total records
 $total_records = mysqli_num_rows($result);
-
-//Using ceil function to divide the total records on per page
 $total_pages = ceil($total_records / $per_page);
-
-//Going to first page
 
 echo "<li class='page-item' ><a href='index.php?countries_pagination=1' class='page-link' >".'Primera'. "</a><li> ";
 
@@ -170,7 +162,6 @@ echo "><a href='index.php?countries_pagination=".$i."' class='page-link' >".$i."
 
 };
 
-// Going to last page
 echo "<li class='page-item'><a href='index.php?countries_pagination=$total_pages' class='page-link' >".'Última'."</a></li> ";
 
 ?>
@@ -179,12 +170,12 @@ echo "<li class='page-item'><a href='index.php?countries_pagination=$total_pages
 
 </center>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends --> 
+</div>
 
 <?php } ?>

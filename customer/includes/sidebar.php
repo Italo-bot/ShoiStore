@@ -1,6 +1,6 @@
-<div class="panel panel-default sidebar-menu"><!-- panel panel-default sidebar-menu Starts -->
+<div class="panel panel-default sidebar-menu">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
 <?php
 
@@ -40,11 +40,11 @@ echo "
 
 ?>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<ul class="nav nav-pills nav-stacked"><!-- nav nav-pills nav-stacked Starts -->
+<ul class="nav nav-pills nav-stacked">
 
 <li class="<?php if(preg_match("/order/", $_SERVER["QUERY_STRING"])){ echo "active"; } ?>">
 
@@ -89,8 +89,8 @@ echo "
 </li>
 
 
-</ul><!-- nav nav-pills nav-stacked Ends -->
+</ul>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default sidebar-menu Ends -->
+</div>

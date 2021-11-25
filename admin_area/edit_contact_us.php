@@ -33,11 +33,11 @@ $contact_desc = $row_contact_us['contact_desc'];
 
 
 
-<div class="row" ><!-- 1 row Starts -->
+<div class="row" >
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts --> 
+<div class="col-lg-12" >
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -45,19 +45,18 @@ $contact_desc = $row_contact_us['contact_desc'];
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends --> 
+</div>
+</div>
 
-</div><!-- 1 row Ends -->
+<div class="row">
 
-<div class="row"><!-- 2 row Starts -->
+<div class="col-lg-12">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="panel panel-default">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
-
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
 <h3 class="panel-title">
 
@@ -65,13 +64,13 @@ $contact_desc = $row_contact_us['contact_desc'];
 
 </h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<form class="form-horizontal" action="" method="post"><!-- form-horizontal Starts -->
+<form class="form-horizontal" action="" method="post">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Contacto Email: </label>
 
@@ -81,9 +80,9 @@ $contact_desc = $row_contact_us['contact_desc'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Contacto Cabecera: </label>
 
@@ -93,9 +92,9 @@ $contact_desc = $row_contact_us['contact_desc'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Descripción: </label>
 
@@ -107,9 +106,9 @@ $contact_desc = $row_contact_us['contact_desc'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> </label>
 
@@ -119,17 +118,17 @@ $contact_desc = $row_contact_us['contact_desc'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 
 <?php

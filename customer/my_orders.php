@@ -11,7 +11,7 @@ echo "<script>window.open('../checkout.php','_self')</script>";
 
 ?>
 
-<center><!-- center Starts -->
+<center>
 
 <h1>Mis Ordenes</h1>
 
@@ -23,15 +23,15 @@ Si tiene alguna pregunta, no dude en <a href="../contact.php" >contáctarnos,</a
 
 </p>
 
-</center><!-- center Ends -->
+</center>
 
 <hr>
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-bordered table-hover"><!-- table table-bordered table-hover Starts -->
+<table class="table table-bordered table-hover">
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -49,9 +49,9 @@ Si tiene alguna pregunta, no dude en <a href="../contact.php" >contáctarnos,</a
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!--- tbody Starts --->
+<tbody>
 
 <?php
 
@@ -89,7 +89,7 @@ $i++;
 
 ?>
 
-<tr><!-- tr Starts -->
+<tr>
 
 <th><?php echo $i; ?></th>
 
@@ -185,12 +185,12 @@ Confirmar si se pagó
 
 </td>
 
-</tr><!-- tr Ends -->
+</tr>
 
 <?php } ?>
 
-</tbody><!--- tbody Ends --->
+</tbody>
 
-</table><!-- table table-bordered table-hover Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>

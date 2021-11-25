@@ -11,19 +11,19 @@ echo "<script>window.open('../checkout.php','_self')</script>";
 
 ?>
 
-<center><!-- center Starts -->
+<center>
 
 <h1> Mi Lista de deseos </h1>
 
 <p class="lead"> Todos sus productos de la lista de deseos en un solo lugar. </p>
 
-</center><!-- center Ends -->
+</center>
 
 <hr>
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-bordered table-hover"><!-- table table-bordered table-hover Starts -->
+<table class="table table-bordered table-hover">
 
 <thead>
 
@@ -144,6 +144,6 @@ echo rtrim($wishlist_meta,", ");
 
 </tbody>
 
-</table><!-- table table-bordered table-hover Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>

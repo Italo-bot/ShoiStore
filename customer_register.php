@@ -272,17 +272,17 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</div><!-- navbar-collapse collapse right Ends -->
+</div>
 
-<div class="collapse clearfix" id="search"><!-- collapse clearfix Starts -->
+<div class="collapse clearfix" id="search">
 
-<form class="navbar-form" method="get" action="results.php"><!-- navbar-form Starts -->
+<form class="navbar-form" method="get" action="results.php">
 
-<div class="input-group"><!-- input-group Starts -->
+<div class="input-group">
 
 <input class="form-control" type="text" placeholder="Buscar" name="user_query" required>
 
-<span class="input-group-btn"><!-- input-group-btn Starts -->
+<span class="input-group-btn">
 
 <button type="submit" value="Search" name="search" class="btn btn-primary">
 
@@ -290,26 +290,24 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</span><!-- input-group-btn Ends -->
+</span>
+</div>
+</form>
 
-</div><!-- input-group Ends -->
+</div>
 
-</form><!-- navbar-form Ends -->
+</div>
 
-</div><!-- collapse clearfix Ends -->
-
-</div><!-- navbar-collapse collapse Ends -->
-
-</div><!-- container Ends -->
-</div><!-- navbar navbar-default Ends -->
+</div>
+</div>
 
 
-<div id="content" ><!-- content Starts -->
-<div class="container" ><!-- container Starts -->
+<div id="content" >
+<div class="container" >
 
-<div class="col-md-12" ><!--- col-md-12 Starts -->
+<div class="col-md-12" >
 
-<ul class="breadcrumb" ><!-- breadcrumb Starts -->
+<ul class="breadcrumb" >
 
 <li>
 <a href="index.php">Home</a>
@@ -317,121 +315,121 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 <li>Registrarse</li>
 
-</ul><!-- breadcrumb Ends -->
+</ul>
 
-</div><!--- col-md-12 Ends -->
+</div>
 
-<div class="col-md-12" ><!-- col-md-12 Starts -->
+<div class="col-md-12" >
 
-<div class="box" ><!-- box Starts -->
+<div class="box" >
 
-<div class="box-header" ><!-- box-header Starts -->
+<div class="box-header" >
 
-<center><!-- center Starts -->
+<center>
 
 <h2> Registrar Nuevo Usuario </h2>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- box-header Ends -->
+</div>
 
-<form action="customer_register.php" method="post" enctype="multipart/form-data" ><!-- form Starts -->
+<form action="customer_register.php" method="post" enctype="multipart/form-data" >
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label>Nombre</label>
 
 <input type="text" class="form-control" name="c_name" value="<?php echo @$_POST["c_name"]; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Email</label>
 
 <input type="email" class="form-control" name="c_email" value="<?php echo @$_POST["c_email"]; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Contraseña </label>
 
-<div class="input-group"><!-- input-group Starts -->
+<div class="input-group">
 
-<span class="input-group-addon"><!-- input-group-addon Starts -->
+<span class="input-group-addon">
 
 <i class="fa fa-check tick1"> </i>
 
 <i class="fa fa-times cross1"> </i>
 
-</span><!-- input-group-addon Ends -->
+</span>
 
 <input type="password" class="form-control" id="pass" name="c_pass"  required>
 
-<span class="input-group-addon"><!-- input-group-addon Starts -->
+<span class="input-group-addon">
 
-<div id="meter_wrapper"><!-- meter_wrapper Starts -->
+<div id="meter_wrapper">
 
 <span id="pass_type"> </span>
 
 <div id="meter"> </div>
 
-</div><!-- meter_wrapper Ends -->
+</div>
 
-</span><!-- input-group-addon Ends -->
+</span>
 
-</div><!-- input-group Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Nombre de Usuario </label>
 
 <input type="text" class="form-control" name="c_username" value="<?php echo @$_POST["c_username"]; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Confirmar Contraseña </label>
 
-<div class="input-group"><!-- input-group Starts -->
+<div class="input-group">
 
-<span class="input-group-addon"><!-- input-group-addon Starts -->
+<span class="input-group-addon">
 
 <i class="fa fa-check tick2"> </i>
 
 <i class="fa fa-times cross2"> </i>
 
-</span><!-- input-group-addon Ends -->
+</span>
 
 <input type="password" class="form-control confirm" id="con_pass" required>
 
-</div><!-- input-group Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Contacto </label>
 
 <input type="text" class="form-control" name="c_contact" value="<?php echo @$_POST["c_contact"]; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Imagen de Perfil </label>
 
 <input type="file" class="form-control" name="c_image" value="<?php echo @$_POST["c_image"]; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
 <?php if($enable_vendor == "yes"){ ?>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Rol </label>
 
@@ -441,7 +439,7 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 <input type="radio" name="c_role" value="vendor" required> Vendedor
 
-</div><!-- form-group Ends -->
+</div>
 
 <?php }elseif($enable_vendor == "no"){ ?>
 
@@ -449,7 +447,7 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 <?php } ?>
 
-<div class="text-center"><!-- text-center Starts -->
+<div class="text-center">
 
 <button type="submit" name="register" class="btn btn-primary">
 
@@ -457,17 +455,16 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</div><!-- text-center Ends -->
+</div>
 
-</form><!-- form Ends -->
+</form>
 
-</div><!-- box Ends -->
+</div>
 
-</div><!-- col-md-12 Ends -->
+</div>
 
-</div><!-- container Ends -->
-
-</div><!-- content Ends -->
+</div>
+</div>
 
 <?php
 
@@ -544,16 +541,13 @@ function check_pass() {
  var no=0;
  if(val!="")
  {
-// If the password length is less than or equal to 6
+
 if(val.length<=6)no=1;
 
- // If the password length is greater than 6 and contain any lowercase alphabet or any number or any special character
   if(val.length>6 && (val.match(/[a-z]/) || val.match(/\d+/) || val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/)))no=2;
 
-  // If the password length is greater than 6 and contain alphabet,number,special character respectively
   if(val.length>6 && ((val.match(/[a-z]/) && val.match(/\d+/)) || (val.match(/\d+/) && val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/)) || (val.match(/[a-z]/) && val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/))))no=3;
 
-  // If the password length is greater than 6 and must contain alphabets,numbers and special characters
   if(val.length>6 && val.match(/[a-z]/) && val.match(/\d+/) && val.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/))no=4;
 
   if(no==1)
@@ -607,8 +601,6 @@ $secret = "6Lc-WxYUAAAAAN5j2OdDsryWwGfREg5eeuZFpKMv";
 $response = $_POST['g-recaptcha-response'];
 
 $remoteip = $_SERVER['REMOTE_ADDR'];
-
-$url = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip");
 
 $result = json_decode($url, TRUE);
 

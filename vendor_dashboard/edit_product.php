@@ -152,29 +152,29 @@ $product_vendor_status = "pending";
 
 <h3> Editar Producto </h3>
 
-<form id="edit_product_form" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
+<form id="edit_product_form" method="post" enctype="multipart/form-data">
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-md-9"><!-- col-md-9 Starts -->
+<div class="col-md-9">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="control-label"> Nombre Producto </label>
 
 <input type="text" name="product_title" class="form-control" required value="<?php echo $p_title; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Descripción SEO de producto </label>
 
 <textarea name="product_seo_desc" class="form-control" maxlength="230" placeholder="La mayoría de los motores de búsqueda utilizan un máximo de 230 caracteres para la descripción "><?php echo $p_seo_desc; ?></textarea>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> URL Producto </label>
 
@@ -186,14 +186,14 @@ $product_vendor_status = "pending";
 Ejemplo de URL del producto: camiseta azul marino
 </p>
 
-</div><!-- form-group Ends -->
+</div>
 
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Fichas de producto </label>
 
-<ul class="nav nav-tabs"><!-- nav nav-tabs Starts -->
+<ul class="nav nav-tabs">
 
 <li class="active">
 
@@ -213,71 +213,70 @@ Ejemplo de URL del producto: camiseta azul marino
 
 </li>
 
-</ul><!-- nav nav-tabs Ends -->
+</ul>
 
-<div class="tab-content"><!-- tab-content Starts -->
+<div class="tab-content">
 
-<div id="description" class="tab-pane fade in active"><!-- description tab-pane fade in active Starts -->
+<div id="description" class="tab-pane fade in active">
 
 <br>
 
 <textarea name="product_desc" class="form-control" rows="15" id="product_desc"><?php echo $p_desc; ?></textarea>
 
-</div><!-- description tab-pane fade in active Ends -->
+</div>
 
-<div id="features" class="tab-pane fade in"><!-- features tab-pane fade in Starts -->
+<div id="features" class="tab-pane fade in">
 
 <br>
 
 <textarea name="product_features" class="form-control" rows="15" id="product_features"><?php echo $p_features; ?></textarea>
 
-</div><!-- features tab-pane fade in Ends -->
+</div>
 
-<div id="video" class="tab-pane fade in"><!-- video tab-pane fade in Starts -->
+<div id="video" class="tab-pane fade in">
 
 <br>
 
 <textarea name="product_video" class="form-control" rows="15"><?php echo $p_video; ?></textarea>
 
-</div><!-- video tab-pane fade in Ends -->
+</div>
 
-</div><!-- tab-content Ends -->
+</div>
+</div>
 
-</div><!-- form-group Ends -->
-
-<div class="form-group" id="product_weight"><!-- form-group Starts -->
+<div class="form-group" id="product_weight">
 
 <label> Peso de producto <small> (kg)</small> </label>
 
 <input type="text" name="product_weight" class="form-control" value="<?php echo $p_weight; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" id="product_price"><!-- form-group Starts -->
+<div class="form-group" id="product_price">
 
 <label> Precio Producto </label>
 
 <input type="text" name="product_price" class="form-control" required value="<?php echo $p_price; ?>" >
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" id="product_psp_price"><!-- form-group Starts -->
+<div class="form-group" id="product_psp_price">
 
 <label> Precio de venta del producto </label>
 
 <input type="text" name="psp_price" class="form-control" required value="<?php echo $psp_price; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-md-9 Ends -->
+</div>
 
-<div class="col-md-3"><!-- col-md-3 Starts -->
+<div class="col-md-3">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Seleccione un tipo de producto </label>
 
-<select class="form-control" name="product_type"><!-- select manufacturer Starts -->
+<select class="form-control" name="product_type">
 
 <?php if($p_type == "physical_product"){ ?>
 
@@ -305,11 +304,11 @@ Ejemplo de URL del producto: camiseta azul marino
 
 <?php } ?>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Selecionar Fabricante </label>
 
@@ -343,9 +342,9 @@ $manufacturer_title
 
 </select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Categoría Producto </label>
 
@@ -376,9 +375,9 @@ echo "<option value='$p_cat_id' >$p_cat_title</option>";
 
 </select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Categoría </label>
 
@@ -407,9 +406,9 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </select>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Producto imagen 1 </label>
 
@@ -419,9 +418,9 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <img src="../admin_area/product_images/<?php echo $p_image1; ?>" width="70" height="70">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Producto imagen 2 </label>
 
@@ -439,9 +438,9 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <?php } ?>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Producto imagen 3 </label>
 
@@ -459,51 +458,51 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <?php } ?>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Keywords de producto </label>
 
 <input type="text" name="product_keywords" class="form-control" value="<?php echo $p_keywords; ?>" >
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Etiqueta del producto </label>
 
 <input type="text" name="product_label" class="form-control" value="<?php echo $p_label; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-md-3 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
-<div class="form-group" id="product-stock-management"><!-- form-group Starts -->
+<div class="form-group" id="product-stock-management">
 
 <label> Gestión de stock de inventario de productos </label>
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
 <strong> Inventario - Opciones de stock</strong>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!--panel-body Starts -->
+<div class="panel-body">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-sm-6" id="stock-status"><!-- col-sm-6 Starts -->
+<div class="col-sm-6" id="stock-status">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Estado de Stock </label>
 
-<select class="form-control" name="stock_status" required><!-- select manufacturer Starts -->
+<select class="form-control" name="stock_status" required>
 
 <?php if($stock_status == "instock"){ ?>
 
@@ -539,15 +538,15 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <?php } ?>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-<div class="col-sm-6"><!-- col-sm-6 Starts -->
+<div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> ¿Habilitar la gestión de existencias a nivel de producto? </label>
 
@@ -567,33 +566,33 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="row" id="stock-management-row"><!-- row Starts -->
+<div class="row" id="stock-management-row">
 
-<div class="col-sm-6"><!-- col-sm-6 Starts -->
+<div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Cantidad de Stock </label>
 
 <input type="number" name="stock_quantity" value="<?php echo $stock_quantity; ?>" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-<div class="col-sm-6"><!-- col-sm-6 Starts -->
+<div class="col-sm-6">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> ¿Permitir pedidos atrasados? </label>
 
-<select class="form-control" name="allow_backorders" required><!-- select manufacturer Starts -->
+<select class="form-control" name="allow_backorders" required>
 
 <?php if($allow_backorders == "no"){ ?>
 
@@ -629,33 +628,33 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 <?php } ?>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</div><!--panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- form-group Ends -->
-
-
-</form><!-- form-horizontal Ends -->
+</div>
 
 
-<div class="form-group" id="variable_product_options"><!-- form-group Starts -->
+</form>
+
+
+<div class="form-group" id="variable_product_options">
 
 <label> Opciones de productos variables </label>
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<ul class="nav nav-tabs"><!-- nav nav-tabs Starts -->
+<ul class="nav nav-tabs">
 
 <li class="active">
 
@@ -669,57 +668,56 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </li>
 
-</ul><!-- nav nav-tabs Ends -->
+</ul>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!--panel-body Starts -->
+<div class="panel-body">
 
-<div class="tab-content"><!-- tab-content Starts -->
+<div class="tab-content">
 
-<div id="product_attributes" class="tab-pane fade in active"><!-- product_attributes tab-pane fade in active Starts -->
+<div id="product_attributes" class="tab-pane fade in active">
 
-<form id="insert_attribute_form" method="post"><!-- form Starts -->
+<form id="insert_attribute_form" method="post">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-sm-4"><!-- col-sm-4 Starts -->
+<div class="col-sm-4">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Nombre: </label>
 
 <input type="text" name="attribute_name" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-4 Ends -->
+</div>
 
-<div class="col-sm-8"><!-- col-sm-8 Starts -->
+<div class="col-sm-8">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Valor: </label>
 
 <textarea name="attribute_values" class="form-control" placeholder="Ingrese algunos atributos por '|' separando valores." required></textarea>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-8 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <input type="submit" value="Insertar atributo de producto" class="btn btn btn-primary">
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form Ends -->
+</form>
 
-<table class="table table-hover table-bordered table-striped"><!-- table table-hover table-bordered table-striped Starts -->
-
-<thead><!-- thead Starts -->
+<table class="table table-hover table-bordered table-striped">
+<thead>
 
 <tr>
 
@@ -729,9 +727,9 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!-- tbody Starts -->
+<tbody>
 
 <?php
 
@@ -797,26 +795,26 @@ $attribute_values = $row_product_attributes["attribute_values"];
 
 <?php } ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table table-hover table-bordered table-striped Ends -->
+</table>
 
-</div><!-- product_attributes tab-pane fade in active Ends -->
+</div>
 
-<div id="product_variations" class="tab-pane fade in"><!-- product_variations tab-pane fade in Starts -->
+<div id="product_variations" class="tab-pane fade in">
 
-<form id="product-variations-form" method="post" enctype="multipart/form-data"><!-- form Starts -->
+<form id="product-variations-form" method="post" enctype="multipart/form-data">
 
-<div class="form-group row"><!-- form-group Starts -->
+<div class="form-group row">
 
 <label class="col-sm-3 control-label"> Valores predeterminados:</label>
 
-<div class="col-sm-9"><!-- col-sm-10 Starts -->
+<div class="col-sm-9">
 
-<div class="row" id="default_form_values"><!-- row default_form_values Starts -->
+<div class="row" id="default_form_values">
 
 
-</div><!-- row default_form_values Ends -->
+</div>
 
 <span class="help-block">
 
@@ -824,19 +822,19 @@ Estos son los atributos del producto que serán preseleccionados en la interfaz.
 
 </span>
 
-</div><!-- col-sm-9 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <hr class="variation-hr">
 
-<div class="form-group row"><!-- form-group Starts -->
+<div class="form-group row">
 
 <label class="col-sm-1 control-label"> Acciones: </label>
 
-<div class="col-sm-10"><!-- col-sm-10 Starts -->
+<div class="col-sm-10">
 
-<select class="form-control" id="action_select"><!-- select manufacturer Starts -->
+<select class="form-control" id="action_select">
 
 <option value="add_variation"> Agregar nueva variación </option>
 
@@ -844,56 +842,54 @@ Estos son los atributos del producto que serán preseleccionados en la interfaz.
 
 <option value="delete_all_variations"> Eliminar todas las variaciones </option>
 
-</select><!-- select manufacturer Ends -->
+</select>
+</div>
 
-</div><!-- col-sm-10 Ends -->
-
-<div class="col-sm-1"><!-- col-sm-1 Starts -->
-
+<div class="col-sm-1">
 <button type="button" id="go_button" class="btn btn-success form-control"> Go </button>
 
-</div><!-- col-sm-1 Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="product-variations-div"><!-- product-variations-div Starts -->
+<div class="product-variations-div">
 
 
-</div><!-- product-variations-div Ends -->
+</div>
 
 <hr class="variation-hr">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <input type="submit" value="Save Product Variations" class="btn btn btn-success">
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form Ends -->
+</form>
 
 <div class="ajax-response-div"></div>
 
-</div><!-- product_variations tab-pane fade in Ends -->
+</div>
 
-</div><!-- tab-content Ends -->
+</div>
 
-</div><!--panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <input type="submit" name="update" value="Update Product" form="edit_product_form" class="btn btn-primary form-control">
 
-</div><!-- form-group Ends -->
+</div>
 
 <script>
 
 $(document).ready(function(){
 	
-//Product Stock Management Code Starts
+//Gestión de stock
 
 <?php if($enable_stock == "no"){ ?>
 
@@ -925,9 +921,9 @@ $("#stock-management-row").hide();
 	
 });
 
-//Product Stock Management Code Ends
+//Gestión de stock
 	
-//Change Product Type Function Code Starts
+//Cambiar tipo producto
 
 function change_product_type(){
 
@@ -985,7 +981,7 @@ $("#variable_product_options").show();
 	
 }
 
-//Change Product Type Function Code Ends
+//Cambiar tipo producto
 
 change_product_type();
  
@@ -995,7 +991,7 @@ change_product_type();
   
 });
 
-//Load Product Attributes Function Code Starts
+//Cargar atributos
 
 function load_product_attributes(){
 
@@ -1019,9 +1015,9 @@ $("table").removeClass("wait-loader");
 	
 }
 
-//Load Product Attributes Function Code Ends
+//Cargar atributos
 
-//Insert New Product Attribute Code Starts
+//Agregar atributo producto
 
 $("#insert_attribute_form").submit(function(event){
 	
@@ -1049,9 +1045,9 @@ load_product_attributes();
 
 });
 
-//Insert New Product Attribute Code Ends
+//Agregar atributo producto
 
-//Edit Product Attribute Code Starts
+//Editar atributo producto
 
 $(".input-edit").hide();
 
@@ -1077,9 +1073,9 @@ $(".save-product-attribute[data-attribute='" + attribute_id +"']").show();
 	
 });
 
-//Edit Product Attribute Code Ends
+//Editar atributo producto
 
-//Update Save Product Attribute Code Starts
+//Actualizar atributo
 
 $(".save-product-attribute").on('click', function(event){
 	
@@ -1117,9 +1113,9 @@ data: { random_id: random_id, attribute_id: attribute_id, attribute_name: attrib
 
 });
 
-//Update Save Product Attribute Code Ends
+//Actualizar atributo
 
-//Delete Product Attribute Code Starts
+//Borrar atributo
 	
 $(".delete-product-attribute").on('click', function(event){
 	
@@ -1143,9 +1139,9 @@ data: { random_id: random_id, attribute_id: attribute_id }
 
 });
 
-//Delete Product Attribute Code Ends
+//Borrar atributo
 
-//Load Product Variations Default Form Values Function Code Starts
+//Atributos default
 
 function load_variations_default_form_values(){
 
@@ -1167,9 +1163,9 @@ $("#default_form_values").html(data);
 	
 }
 
-//Load Product Variations Default Form Values Function Code Ends
+//Atributos default
 
-//Load Product Variations Function Code Starts
+//Cargar variables
 
 function load_product_variations(){
 
@@ -1193,9 +1189,9 @@ $(".product-variations-div").removeClass("wait-loader");
 	
 }
 
-//Load Product Variations Function Code Ends
+//Cargar variables
 
-//Click Product Variations Tab Code Starts
+//Tabla variables
 
 $("a[href='#product_variations']").click(function(){
 	
@@ -1207,9 +1203,9 @@ load_product_variations();
 
 });
 
-//Click Product Variations Tab Code Ends
+//Tabla variables
 
-//Save Update Product Variations Function Code Starts
+//Guardar variables
 
 function save_update_product_variations(){
 
@@ -1246,9 +1242,7 @@ $(".product-variations-div").removeClass("wait-loader");
 	
 }
 
-//Save Update Product Variations Function Code Ends
-
-//Product Variations Actions Go Button Code Starts
+//Boton de acción
 
 $("#go_button").click(function(){
 	
@@ -1344,9 +1338,9 @@ load_variations_default_form_values();
 
 });
 
-//Product Variations Actions Go Button Code Ends
+//Boton de acción
 
-//Save Update Submit From Of Product Variations Code Starts
+
 
 $("#product-variations-form").submit(function(event){
 
@@ -1360,7 +1354,7 @@ load_variations_default_form_values();
 	
 });
 
-//Save Update Submit From Of Product Variations Code Ends
+
  
 });
 

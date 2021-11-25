@@ -29,11 +29,11 @@ include("functions/functions.php");
 
 <body>
 
-<div id="top"><!-- top Starts -->
+<div id="top">
 
-<div class="container"><!-- container Starts -->
+<div class="container">
 
-<div class="col-md-6 offer"><!-- col-md-6 offer Starts -->
+<div class="col-md-6 offer">
 
 <a href="#" class="btn btn-success btn-sm" >
 <?php
@@ -57,10 +57,10 @@ echo "Bienvenid@ : " . $_SESSION['customer_email'] . "";
 Precio Total: <?php total_price(); ?>, Cantidad de Items: <?php items(); ?>
 </a>
 
-</div><!-- col-md-6 offer Ends -->
+</div>
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
-<ul class="menu"><!-- menu Starts -->
+<div class="col-md-6">
+<ul class="menu">
 
 <?php if(!isset($_SESSION['customer_email'])){ ?>
 
@@ -144,24 +144,23 @@ echo "<a href='logout.php'> Cerrar Sesión </a>";
 ?>
 </li>
 
-</ul><!-- menu Ends -->
+</ul>
 
-</div><!-- col-md-6 Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- top Ends -->
+</div>
+</div>
 
-<div class="navbar navbar-default" id="navbar"><!-- navbar navbar-default Starts -->
-<div class="container" ><!-- container Starts -->
+<div class="navbar navbar-default" id="navbar">
+<div class="container" >
+<div class="navbar-header">
 
-<div class="navbar-header"><!-- navbar-header Starts -->
-
-<a class="navbar-brand home" href="index.php" ><!--- navbar navbar-brand home Starts -->
+<a class="navbar-brand home" href="index.php" >
 
 <img src="images/ShoiStoree.png" alt="ShoiStore logo" class="hidden-xs" >
 <img src="images/ShoiStoree.png" alt="ShoiStore logo" class="visible-xs" >
 
-</a><!--- navbar navbar-brand home Ends -->
+</a>
 
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"  >
 
@@ -180,13 +179,12 @@ echo "<a href='logout.php'> Cerrar Sesión </a>";
 </button>
 
 
-</div><!-- navbar-header Ends -->
+</div>
 
-<div class="navbar-collapse collapse" id="navigation" ><!-- navbar-collapse collapse Starts -->
+<div class="navbar-collapse collapse" id="navigation" >
 
-<div class="padding-nav" ><!-- padding-nav Starts -->
-
-<ul class="nav navbar-nav navbar-left"><!-- nav navbar-nav navbar-left Starts -->
+<div class="padding-nav" >
+<ul class="nav navbar-nav navbar-left">
 
 <li>
 <a href="index.php"> Home </a>
@@ -232,19 +230,19 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 <a href="contact.php"> Contáctanos </a>
 </li>
 
-</ul><!-- nav navbar-nav navbar-left Ends -->
+</ul>
 
-</div><!-- padding-nav Ends -->
+</div>
 
-<a class="btn btn-primary navbar-btn right" href="cart.php"><!-- btn btn-primary navbar-btn right Starts -->
+<a class="btn btn-primary navbar-btn right" href="cart.php">
 
 <i class="fa fa-shopping-cart"></i>
 
 <span> <?php items(); ?> Artículos </span>
 
-</a><!-- btn btn-primary navbar-btn right Ends -->
+</a>
 
-<div class="navbar-collapse collapse right"><!-- navbar-collapse collapse right Starts -->
+<div class="navbar-collapse collapse right">
 
 <button class="btn navbar-btn btn-primary" type="button" data-toggle="collapse" data-target="#search">
 
@@ -254,17 +252,17 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</div><!-- navbar-collapse collapse right Ends -->
+</div>
 
-<div class="collapse clearfix" id="search"><!-- collapse clearfix Starts -->
+<div class="collapse clearfix" id="search">
 
-<form class="navbar-form" method="get" action="results.php"><!-- navbar-form Starts -->
+<form class="navbar-form" method="get" action="results.php">
 
-<div class="input-group"><!-- input-group Starts -->
+<div class="input-group">
 
 <input class="form-control" type="text" placeholder="Buscar" name="user_query" required>
 
-<span class="input-group-btn"><!-- input-group-btn Starts -->
+<span class="input-group-btn">
 
 <button type="submit" value="Search" name="search" class="btn btn-primary">
 
@@ -272,27 +270,27 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 </button>
 
-</span><!-- input-group-btn Ends -->
+</span>
 
-</div><!-- input-group Ends -->
+</div>
 
-</form><!-- navbar-form Ends -->
+</form>
 
-</div><!-- collapse clearfix Ends -->
+</div>
 
-</div><!-- navbar-collapse collapse Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- navbar navbar-default Ends -->
+</div>
+</div>
 
 
-<div id="content" ><!-- content Starts -->
+<div id="content" >
 
-<div class="container" ><!-- container Starts -->
+<div class="container" >
 
-<div class="col-md-12" ><!--- col-md-12 Starts -->
+<div class="col-md-12" >
 
-<ul class="breadcrumb" ><!-- breadcrumb Starts -->
+<ul class="breadcrumb" >
 
 <li>
 <a href="index.php">Home</a>
@@ -300,22 +298,21 @@ echo "<a href='customer/my_account.php?my_orders'>Mi Cuenta</a>";
 
 <li>Contáctanos</li>
 
-</ul><!-- breadcrumb Ends -->
+</ul>
+
+
+</div>
 
 
 
-</div><!--- col-md-12 Ends -->
 
+<div class="col-md-12" >
 
+<div class="box" >
 
+<div class="box-header" >
 
-<div class="col-md-12" ><!-- col-md-12 Starts -->
-
-<div class="box" ><!-- box Starts -->
-
-<div class="box-header" ><!-- box-header Starts -->
-
-<center><!-- center Starts -->
+<center>
 
 <?php
 
@@ -339,51 +336,51 @@ $contact_email = $row_conatct_us['contact_email'];
 <?php echo $contact_desc; ?>
 </p>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- box-header Ends -->
+</div>
 
-<form action="contact.php" method="post" ><!-- form Starts -->
+<form action="contact.php" method="post" >
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label>Nombre</label>
 
 <input type="text" class="form-control" name="name" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label>Email</label>
 
 <input type="text" class="form-control" name="email" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Asunto </label>
 
 <input type="text" class="form-control" name="subject" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Mensaje </label>
 
 <textarea class="form-control" name="message"> </textarea>
 
-</div><!-- form-group Ends -->
+</div>
 
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Seleccione el tipo de consulta </label>
 
 
-<select name="enquiry_type" class="form-control"><!-- select Starts -->
+<select name="enquiry_type" class="form-control">
 
 <option> Seleccione el tipo de consulta </option>
 
@@ -403,12 +400,12 @@ echo "<option> $enquiry_title </option>";
 
 ?>
 
-</select><!-- select Ends -->
+</select>
 
-</div><!-- form-group Ends -->
+</div>
 
 
-<div class="text-center"><!-- text-center Starts -->
+<div class="text-center">
 
 <button type="submit" name="submit" class="btn btn-primary">
 
@@ -416,15 +413,15 @@ echo "<option> $enquiry_title </option>";
 
 </button>
 
-</div><!-- text-center Ends -->
+</div>
 
-</form><!-- form Ends -->
+</form>
 
 <?php
 
 if(isset($_POST['submit'])){
 
-// Admin receives email through this code
+// Admin recibe consulta soporte
 
 $sender_name = $_POST['name'];
 
@@ -456,8 +453,6 @@ $headers .= "Content-type: text/html\r\n";
 
 mail($contact_email,$sender_subject,$new_message,$headers);
 
-// Send email to sender through this code
-
 $email = $_POST['email'];
 
 $subject = "Bienvenid@ a ShoiStore";
@@ -475,14 +470,14 @@ echo "<h2 align='center'>Tu mensaje ha sido enviado exitosamente</h2>";
 
 ?>
 
-</div><!-- box Ends -->
+</div>
 
-</div><!-- col-md-12 Ends -->
+</div>
 
 
 
-</div><!-- container Ends -->
-</div><!-- content Ends -->
+</div>
+</div>
 
 
 

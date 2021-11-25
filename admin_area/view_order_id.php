@@ -174,11 +174,10 @@ $commission_paid_date = date("F d, Y h:i:s", strtotime(" + $days_before_withdraw
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
+<div class="col-lg-12">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
-
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active lead" style="margin-bottom:0px;">
 
@@ -198,33 +197,33 @@ echo ucwords($order_status);
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-md-8"><!-- col-md-8 Starts -->
+<div class="col-md-8">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 Orden #<?php echo $invoice_no; ?> Detalles
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <h3>Detalles de orden</h3>
 
-<table class="table border-table"><!--- table border-table Starts --->
+<table class="table border-table">
 
 <thead>
 
@@ -459,9 +458,9 @@ if($count_vendor_orders > 1){
   
 </div>
 
-<table class="table border-table"><!--- table border-table Starts --->
+<table class="table border-table">
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -479,9 +478,9 @@ if($count_vendor_orders > 1){
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!--- tbody Starts --->
+<tbody>
 
 <?php
 
@@ -507,7 +506,7 @@ $i++;
 
 ?>
 
-<tr><!-- tr Starts -->
+<tr>
 
 <th><?php echo $i; ?></th>
 
@@ -589,19 +588,19 @@ Ver
 
 </td>
 
-</tr><!-- tr Ends -->
+</tr>
 
 <?php } ?>
 
-</tbody><!--- tbody Ends --->
+</tbody>
 
-</table><!--- table border-table Ends --->
+</table>
 
 <?php }} ?>
 
 <h3>Cliente Detalles</h3>
 
-<table class="table border-table"><!--- table border-table Starts --->
+<table class="table border-table">
 
 <tbody>
 
@@ -636,7 +635,7 @@ Ver
  
 </table> 
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
 <?php if($is_shipping_address == "yes"){ ?>
 
@@ -708,30 +707,29 @@ echo $country_name = $row_country['country_name'];
 
 <?php } ?>
 
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-md-8 Ends -->
+<div class="col-md-4">
 
-<div class="col-md-4"><!-- col-md-3 Starts -->
+<div class="panel panel-default">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel-heading">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
-
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 Acciones de Orden
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <h4 class="text-success">
 
@@ -755,7 +753,7 @@ echo ucwords($order_status);
 
 <form action="" method="post">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Cambiar el estado de la orden  </label>
 
@@ -775,15 +773,15 @@ echo ucwords($order_status);
 
 </select>
 
-</div><!-- form-group Ends -->
+</div>
 
 <form action="" method="post">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <input type="submit" name="update_status" value="Actualizar" class="form-control btn btn-primary">
 
-</div><!-- form-group Ends -->
+</div>
 
 </form>
 
@@ -885,23 +883,23 @@ echo "<script>window.open('index.php?view_order_id=$order_id&sub_order_id=$sub_o
 
 ?>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 Notas Orden
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <?php
 
@@ -983,9 +981,9 @@ $product_title = $row_product['product_title'];
 
 ?>
  
-<div class="order-note-well"><!-- order-note-well Starts -->
+<div class="order-note-well">
 
-<div class="note-content"><!-- note-content Starts -->
+<div class="note-content">
 
 <p>
 
@@ -1027,7 +1025,7 @@ echo rtrim($items_meta_result, ", ");
 
 </p>
 
-</div><!-- note-content Ends -->
+</div>
 
 <p class="note-meta">
 
@@ -1039,7 +1037,7 @@ Borrar nota
 
 </p>
 
-</div><!-- order-note-well Ends -->
+</div>
 
 <?php } } ?>
 
@@ -1047,21 +1045,21 @@ Borrar nota
 
 <form action="" method="post">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Agregar nueva nota </label>
 
 <textarea name="note_content" rows="3" placeholder="Notas privadas sobre su pedido, p. Ej. notas especiales para la entrega." class="form-control"></textarea>
 
-</div><!-- form-group Ends -->
+</div>
 
 <form action="" method="post">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <input type="submit" name="insert_note" value="Agregar" class="form-control btn btn-primary">
 
-</div><!-- form-group Ends -->
+</div>
 
 </form>
 
@@ -1109,12 +1107,12 @@ window.open('index.php?view_order_id=$order_id&sub_order_id=$sub_order_id','_sel
 
 ?>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-md-3 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
 <?php } ?>

@@ -10,12 +10,11 @@ else {
 
 ?>
 
-<nav class="navbar navbar-inverse navbar-fixed-top"><!-- navbar navbar-inverse navbar-fixed-top Starts -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
 
-<div class="navbar-header" ><!-- navbar-header Starts -->
+<div class="navbar-header" >
 
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" ><!-- navbar-ex1-collapse Starts -->
-
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" >
 
 <span class="sr-only" >Navegación</span>
 
@@ -26,29 +25,29 @@ else {
 <span class="icon-bar" ></span>
 
 
-</button><!-- navbar-ex1-collapse Ends -->
+</button>
 
 <a class="navbar-brand" href="index.php?dashboard" >Panel Administrador</a>
 
 
-</div><!-- navbar-header Ends -->
+</div>
 
-<ul class="nav navbar-right top-nav" ><!-- nav navbar-right top-nav Starts -->
+<ul class="nav navbar-right top-nav" >
 
-<li class="dropdown" ><!-- dropdown Starts -->
+<li class="dropdown" >
 
-<a href="#" class="dropdown-toggle" data-toggle="dropdown" ><!-- dropdown-toggle Starts -->
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
 
 <i class="fa fa-user" ></i>
 
 <?php echo $admin_name; ?> <b class="caret" ></b>
 
 
-</a><!-- dropdown-toggle Ends -->
+</a>
 
-<ul class="dropdown-menu" ><!-- dropdown-menu Starts -->
+<ul class="dropdown-menu" >
 
-<li><!-- li Starts -->
+<li>
 
 <a href="index.php?user_profile=<?php echo $admin_id; ?>" >
 
@@ -57,9 +56,9 @@ else {
 
 </a>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
 <a href="index.php?view_products" >
 
@@ -73,9 +72,9 @@ else {
 
 </a>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
 <a href="index.php?view_customers" >
 
@@ -86,9 +85,9 @@ else {
 
 </a>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
 <a href="index.php?view_p_cats" >
 
@@ -99,11 +98,11 @@ else {
 
 </a>
 
-</li><!-- li Ends -->
+</li>
 
 <li class="divider"></li>
 
-<li><!-- li Starts -->
+<li>
 
 <a href="logout.php">
 
@@ -111,23 +110,23 @@ else {
 
 </a>
 
-</li><!-- li Ends -->
+</li>
 
-</ul><!-- dropdown-menu Ends -->
-
-
+</ul>
 
 
-</li><!-- dropdown Ends -->
 
 
-</ul><!-- nav navbar-right top-nav Ends -->
+</li>
 
-<div class="collapse navbar-collapse navbar-ex1-collapse"><!-- collapse navbar-collapse navbar-ex1-collapse Starts -->
 
-<ul class="nav navbar-nav side-nav"><!-- nav navbar-nav side-nav Starts -->
+</ul>
 
-<li><!-- li Starts -->
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+
+<ul class="nav navbar-nav side-nav">
+
+<li>
 
 <a href="index.php?dashboard">
 
@@ -135,9 +134,9 @@ else {
 
 </a>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- Settings li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#settings">
 
@@ -169,9 +168,9 @@ else {
 
 </ul>
 
-</li><!-- Settings li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
 <a href="index.php?vendors_commissions">
 
@@ -195,9 +194,9 @@ if($count_vendor_commission != 0){
 
 </a>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- Products li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#products">
 
@@ -236,9 +235,8 @@ if($count_pending_products != 0){
 
 </ul>
 
-</li><!-- Products li Ends -->
-
-<li><!-- Bundles Li Starts --->
+</li>
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#bundles">
 
@@ -276,19 +274,18 @@ if($count_pending_products != 0){
 
 </ul>
 
-</li><!-- Bundles Li Ends --->
+</li>
 
-<li><!-- relations li Starts -->
+<li>
 
-<a href="#" data-toggle="collapse" data-target="#relations"><!-- anchor Starts -->
+<a href="#" data-toggle="collapse" data-target="#relations">
 
 <i class="fa fa-fw fa-retweet"></i> Asignar productos a relaciones de paquetes
 
 <i class="fa fa-fw fa-caret-down"></i>
 
-</a><!-- anchor Ends -->
-
-<ul id="relations" class="collapse"><!-- collapse Starts -->
+</a>
+<ul id="relations" class="collapse">
 
 <li>
 
@@ -303,13 +300,11 @@ if($count_pending_products != 0){
 
 </li>
 
-</ul><!-- collapse Ends -->
+</ul>
 
+</li>
 
-</li><!-- relations li Ends -->
-
-
-<li><!-- reviews li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#reviews">
 
@@ -331,10 +326,9 @@ if($count_pending_products != 0){
 
 </ul>
 
-</li><!-- reviews li Ends -->
+</li>
 
-
-<li><!-- Icons Li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#shipping_zones">
 
@@ -344,7 +338,7 @@ if($count_pending_products != 0){
 
 </a>
 
-<ul id="shipping_zones" class="collapse"><!-- Icons Ul Starts -->
+<ul id="shipping_zones" class="collapse">
 
 
 <li>
@@ -369,11 +363,11 @@ if($count_pending_products != 0){
 <a href="index.php?view_shipping_types"> Ver tipos de envío </a>
 </li>
 
-</ul><!-- Icons Ul Ends -->
+</ul>
 
-</li><!-- Icons Li Ends -->
+</li>
 
-<li><!-- Icons Li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#countries">
 
@@ -383,7 +377,7 @@ if($count_pending_products != 0){
 
 </a>
 
-<ul id="countries" class="collapse"><!-- Icons Ul Starts -->
+<ul id="countries" class="collapse">
 
 <li>
 <a href="index.php?insert_country"> Agregar Países</a>
@@ -393,12 +387,11 @@ if($count_pending_products != 0){
 <a href="index.php?view_countries"> Ver Países  </a>
 </li>
 
-</ul><!-- Icons Ul Ends -->
+</ul>
 
-</li><!-- Icons Li Ends -->
+</li>
 
-
-<li><!-- Icons Li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#icons">
 
@@ -408,7 +401,7 @@ if($count_pending_products != 0){
 
 </a>
 
-<ul id="icons" class="collapse"><!-- Icons Ul Starts -->
+<ul id="icons" class="collapse">
 
 <li>
 <a href="index.php?insert_icon"> Agregar icono </a>
@@ -418,23 +411,22 @@ if($count_pending_products != 0){
 <a href="index.php?view_icons"> Ver Iconos </a>
 </li>
 
-</ul><!-- Icons Ul Ends -->
+</ul>
 
-</li><!-- Icons Li Ends -->
+</li>
 
+<li>
 
-<li><!-- manufacturer li Starts -->
-
-<a href="#" data-toggle="collapse" data-target="#manufacturers"><!-- anchor Starts -->
+<a href="#" data-toggle="collapse" data-target="#manufacturers">
 
 <i class="fa fa-fw fa-briefcase"></i> Fabricantes
 
 <i class="fa fa-fw fa-caret-down"></i>
 
 
-</a><!-- anchor Ends -->
+</a>
 
-<ul id="manufacturers" class="collapse"><!-- ul collapse Starts -->
+<ul id="manufacturers" class="collapse">
 
 <li>
 <a href="index.php?insert_manufacturer"> Agregar fabricante </a>
@@ -444,20 +436,17 @@ if($count_pending_products != 0){
 <a href="index.php?view_manufacturers"> Ver fabricantes </a>
 </li>
 
-</ul><!-- ul collapse Ends -->
+</ul>
 
+</li>
 
-</li><!-- manufacturer li Ends -->
-
-
-<li><!-- li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#p_cat">
 
 <i class="fa fa-fw fa-pencil"></i> Categorías de producto
 
 <i class="fa fa-fw fa-caret-down"></i>
-
 
 </a>
 
@@ -471,13 +460,11 @@ if($count_pending_products != 0){
 <a href="index.php?view_p_cats"> Ver categoría de productos </a>
 </li>
 
-
 </ul>
 
-</li><!-- li Ends -->
+</li>
 
-
-<li><!-- li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#cat">
 
@@ -497,42 +484,40 @@ if($count_pending_products != 0){
 <a href="index.php?view_cats"> Ver Categorías </a>
 </li>
 
-
 </ul>
 
-</li><!-- li Ends -->
+</li>
 
+<li>
 
-<li><!-- boxes section li Starts -->
+<a href="#" data-toggle="collapse" data-target="#boxes">
 
-<a href="#" data-toggle="collapse" data-target="#boxes"><!-- anchor Starts -->
-
-<i class="fa fa-fw fa-arrows"></i> Sección de casillas
+<i class="fa fa-fw fa-arrows"></i> Sección de cajas
 
 <i class="fa fa-fw fa-caret-down"></i>
 
-</a><!-- anchor Ends -->
+</a>
 
 <ul id="boxes" class="collapse">
 
 <li>
 
-<a href="index.php?insert_box"> Agregar casilla </a>
+<a href="index.php?insert_box"> Agregar Cajas </a>
 
 </li>
 
 
 <li>
 
-<a href="index.php?view_boxes"> Ver Casillas </a>
+<a href="index.php?view_boxes"> Ver Cajas </a>
 
 </li>
 
 </ul>
 
-</li><!--boxes section li Ends -->
+</li>
 
-<li><!-- services section li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#services">
 
@@ -554,19 +539,18 @@ if($count_pending_products != 0){
 
 </ul>
 
-</li><!-- services section li Ends -->
+</li>
 
 
-<li><!-- contact us li Starts -->
+<li>
 
-<a href="#" data-toggle="collapse" data-target="#contact_us"><!-- anchor Starts -->
+<a href="#" data-toggle="collapse" data-target="#contact_us">
 
 <i class="fa fa-fw fa-pencil"> </i> Sección Contáctanos
 
 <i class="fa fa-fw fa-caret-down"></i>
 
-</a><!-- anchor Ends -->
-
+</a>
 <ul id="contact_us" class="collapse">
 
 <li>
@@ -589,9 +573,9 @@ if($count_pending_products != 0){
 
 </ul>
 
-</li><!-- contact us li Ends -->
+</li>
 
-<li><!-- about us li Starts -->
+<li>
 
 <a href="index.php?edit_about_us">
 
@@ -599,21 +583,19 @@ if($count_pending_products != 0){
 
 </a>
 
-</li><!-- about us li Ends -->
+</li>
 
+<li>
 
-<li><!-- Coupons Section li Starts -->
-
-<a href="#" data-toggle="collapse" data-target="#coupons"><!-- anchor Starts -->
+<a href="#" data-toggle="collapse" data-target="#coupons">
 
 <i class="fa fa-fw fa-arrows-v"></i> Cupones
 
 <i class="fa fa-fw fa-caret-down"></i>
 
-</a><!-- anchor Ends -->
+</a>
 
-<ul id="coupons" class="collapse"><!-- ul collapse Starts -->
-
+<ul id="coupons" class="collapse">
 <li>
 <a href="index.php?insert_coupon"> Agregar cupón </a>
 </li>
@@ -622,11 +604,10 @@ if($count_pending_products != 0){
 <a href="index.php?view_coupons"> Ver cupones </a>
 </li>
 
-</ul><!-- ul collapse Ends -->
+</ul>
+</li>
 
-</li><!-- Coupons Section li Ends -->
-
-<li><!-- slide li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#slides">
 
@@ -650,19 +631,17 @@ if($count_pending_products != 0){
 
 </ul>
 
-</li><!-- slide li Ends -->
+</li>
 
-<li><!-- terms li Starts -->
-
-<a href="#" data-toggle="collapse" data-target="#terms" ><!-- anchor Starts -->
-
+<li>
+<a href="#" data-toggle="collapse" data-target="#terms" >
 <i class="fa fa-fw fa-table"></i> Términos
 
 <i class="fa fa-fw fa-caret-down"></i>
 
-</a><!-- anchor Ends -->
+</a>
 
-<ul id="terms" class="collapse"><!-- ul collapse Starts -->
+<ul id="terms" class="collapse">
 
 <li>
 <a href="index.php?insert_term"> Ingresar término </a> 
@@ -672,12 +651,11 @@ if($count_pending_products != 0){
 <a href="index.php?view_terms"> Ver términos </a> 
 </li>
 
-</ul><!-- ul collapse Ends -->
+</ul>
 
 
-</li><!-- terms li Ends -->
-
-<li><!-- Edit Css li Starts -->
+</li>
+<li>
 
 <a href="index.php?edit_css">
 
@@ -685,7 +663,7 @@ if($count_pending_products != 0){
 
 </a>
 
-</li><!-- Edit Css li Ends -->
+</li>
 
 <li>
 
@@ -717,7 +695,7 @@ if($count_pending_products != 0){
 
 </li>
 
-<li><!-- li Starts -->
+<li>
 
 <a href="#" data-toggle="collapse" data-target="#users">
 
@@ -744,9 +722,9 @@ if($count_pending_products != 0){
 
 </ul>
 
-</li><!-- li Ends -->
+</li>
 
-<li><!-- li Starts -->
+<li>
 
 <a href="logout.php">
 
@@ -754,12 +732,12 @@ if($count_pending_products != 0){
 
 </a>
 
-</li><!-- li Ends -->
+</li>
 
-</ul><!-- nav navbar-nav side-nav Ends -->
+</ul>
 
-</div><!-- collapse navbar-collapse navbar-ex1-collapse Ends -->
+</div>
 
-</nav><!-- navbar navbar-inverse navbar-fixed-top Ends -->
+</nav>
 
 <?php } ?>

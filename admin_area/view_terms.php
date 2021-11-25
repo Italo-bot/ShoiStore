@@ -12,11 +12,11 @@ else {
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb" ><!-- breadcrumb Starts -->
+<ol class="breadcrumb" >
 
 <li class="active" >
 
@@ -24,19 +24,19 @@ else {
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
 <h3 class="panel-title">
 
@@ -44,9 +44,9 @@ else {
 
 </h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <?php
 
@@ -64,27 +64,27 @@ $term_desc = substr($row_terms['term_desc'],0,400);
 
 ?>
 
-<div class="col-lg-4 col-md-4"><!-- col-lg-4 col-md-4 Starts -->
+<div class="col-lg-4 col-md-4">
 
-<div class="panel panel-primary"><!-- panel panel-primary Starts -->
+<div class="panel panel-primary">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title" align="center"><!-- panel-title Starts -->
+<h3 class="panel-title" align="center">
 
 <?php echo $term_title; ?>
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <?php echo $term_desc; ?>
 
-</div><!-- panel-body Ends -->
+</div>
 
-<div class="panel-footer"><!-- panel-footer Starts -->
+<div class="panel-footer">
 
 <a href="index.php?delete_term=<?php echo $term_id; ?>" class="pull-left">
 
@@ -102,20 +102,20 @@ $term_desc = substr($row_terms['term_desc'],0,400);
 
 <div class="clearfix"> </div>
 
-</div><!-- panel-footer Ends -->
+</div>
 
-</div><!-- panel panel-primary Ends -->
+</div>
 
-</div><!-- col-lg-4 col-md-4 Ends -->
+</div>
 
 <?php } ?>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <?php } ?>

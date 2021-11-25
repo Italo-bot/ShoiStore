@@ -48,23 +48,22 @@ echo $count_vendor_orders = mysqli_num_rows($run_vendor_orders);
 
 ?>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Ver Ordenes
 
-</h3><!-- panel-title Ends -->
+</h3>
+</div>
 
-</div><!-- panel-heading Ends -->
-
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <a href="index.php?orders&order_status=all" class="link-separator <?php echo_active_class("all"); ?>">
 
@@ -122,9 +121,9 @@ Reintegrado (<?php get_orders_status_count("refunded"); ?>)
 
 <br><br>
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-bordered table-hover table-striped"><!-- table table-bordered table-hover table-striped Starts -->
+<table class="table table-bordered table-hover table-striped">
 
 <thead>
 
@@ -200,7 +199,7 @@ $i++;
 
 ?>
 
-<tr><!-- tr Starts -->
+<tr>
 
 <th><?php echo $i; ?></th>
 
@@ -310,21 +309,20 @@ echo $total . " artículos";
 
 </td>
 
-</tr><!-- tr Ends -->
+</tr>
 
 <?php } ?>
 
 
 </tbody>
 
-</table><!-- table table-bordered table-hover table-striped Ends -->
+</table>
+</div>
 
-</div><!-- table-responsive Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
-
-</div><!-- 2 row Ends -->
+</div>

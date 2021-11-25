@@ -31,7 +31,7 @@ if($product_type == "variable_product"){
 
 ?>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Seleccionar variación </label>
 
@@ -61,7 +61,7 @@ echo "<option value='$variation_id'>Variation #$variation_id</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <?php } ?>
 

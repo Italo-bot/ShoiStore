@@ -11,7 +11,7 @@ overflow-x: hidden;
 
 }
 
-/* Top Navbar Styles  */
+/* Barra Nav Styles  */
 
 #top {
 
@@ -91,7 +91,7 @@ color: #f7f7f7;
 
 }
 
-/* Header Styles */
+/* Cabecera Styles */
 
 .navbar {
 background:white;
@@ -220,7 +220,7 @@ z-index:2;
 }
 
 
-/* Products Styles  */
+/* Productos Styles  */
 
 #hot h2 {
 text-transform: uppercase;
@@ -358,7 +358,7 @@ width:15px;
 margin-bottom:5px;
 }
 
-/*  Products Reviews Styles Starts  */
+/*  Reseñas Styles  */
 
 .product-reviews .reviews-summary .avg-rating{
 	text-align:center;
@@ -531,7 +531,7 @@ line-height:20px;
 color:#999999;
 }
 
-/*  Products Reviews Styles Ends  */
+/*  Reseñas Styles */
 
 
 /*  Breadcrumb Styles  */
@@ -560,7 +560,7 @@ text-align:center;
 
 }
 
-/* products categories and categories styles */
+/* Produ Categorías / categorías Ge Styles */
 
 #content .panel.sidebar-menu {
 
@@ -585,7 +585,7 @@ margin: 0;
 }
 
 
-/* Shop Products Styles */
+/* Tienda Styles */
 
 @media (max-width: 768px) {
 
@@ -622,10 +622,6 @@ font-weight: 300;
 text-align: center;
 }
 
-/* #content #productMain .form-horizontal{ */
-    /* margin-right:10%; */
-/* } */
-
 #content #mainImage {
 box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
@@ -640,7 +636,7 @@ border : solid 2px transparent;
 height: 350px;
 }
 
-/* Cart page Styles */
+/* Carro Styles */
 
 .cart-product-meta{
 	margin-top:6px;
@@ -836,7 +832,7 @@ margin: 0;
 }
 
 
-/** Filter Styles **/
+/** Filtro Styles **/
 
 .nav.category-menu{
 margin-top:-21px;
@@ -925,7 +921,7 @@ color: #fff;
 
 
 
-/* Label Styles  */
+/* Etiquetas Styles  */
 
 
 .label {
@@ -985,7 +981,7 @@ top: 0;
 
 }
 
-/* tick and cross icons styles */
+/* Iconos styles */
 
 
 .tick1{
@@ -1008,7 +1004,7 @@ font-size:18px !important;
 color:red;
 }
 
-/* Password Strength Checker Styles */
+/* Check Constraseña Styles */
 
 #meter_wrapper{
 border:1px solid grey;
@@ -1038,7 +1034,7 @@ margin-bottom:10%;
 color:grey;
 }
 
-/* Services Styles  */
+/* Servicios Styles  */
 
 .services .col-md-4 {
 
@@ -1072,7 +1068,7 @@ width:90%;
 }
 
 
-/* Vendor Store Styles  */
+/* Tienda Vendedor Styles  */
 
 .vendor-profile-box{
 background: #fff;

@@ -1504,8 +1504,6 @@ $(document).ready(function(){
 
 var _0x7acd=["\x68\x69\x64\x65","\x2E\x74\x65\x78\x74\x2D\x63\x65\x6E\x74\x65\x72\x2E\x62\x75\x74\x74\x6F\x6E\x73"];$(_0x7acd[1])[_0x7acd[0]](0)
 
-//$(".text-center.buttons").hide(0);//
-
 <?php 
 
 if($pro_type == "variable_product" and $count_product_variations != 0 and !$all_attributes_selected){
@@ -1519,8 +1517,6 @@ if($stock_manage == "show" and ($stock_status == "instock" or $stock_status == "
 ?>
 
 var _0x29d5=["\x73\x68\x6F\x77","\x2E\x74\x65\x78\x74\x2D\x63\x65\x6E\x74\x65\x72\x2E\x62\x75\x74\x74\x6F\x6E\x73"];$(_0x29d5[1])[_0x29d5[0]](0)
-
-//$(".text-center.buttons").show(0);//
 
 <?php } ?>
 

@@ -30,34 +30,34 @@ $customer_image = $row_customer['customer_image'];
 
 <h1 align="center" > Editar tu cuenta </h1>
 
-<form action="" method="post" enctype="multipart/form-data" ><!--- form Starts -->
+<form action="" method="post" enctype="multipart/form-data" >
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Nombre Cliente: </label>
 
 <input type="text" name="c_name" class="form-control" required value="<?php echo $customer_name; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Cliente Email: </label>
 
 <input type="email" name="c_email" class="form-control" required value="<?php echo $customer_email; ?>">
 
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Cliente Contacto: </label>
 
 <input type="text" name="c_contact" class="form-control" required value="<?php echo $customer_contact; ?>">
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label> Imagen CLiente: </label>
 
@@ -65,9 +65,9 @@ $customer_image = $row_customer['customer_image'];
 
 <img src="customer_images/<?php echo $customer_image; ?>" width="100" height="100" class="img-responsive" >
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="text-center" ><!-- text-center Starts -->
+<div class="text-center" >
 
 <button name="update" class="btn btn-primary" >
 
@@ -76,10 +76,10 @@ $customer_image = $row_customer['customer_image'];
 </button>
 
 
-</div><!-- text-center Ends -->
+</div>
 
 
-</form><!--- form Ends -->
+</form>
 
 <?php
 

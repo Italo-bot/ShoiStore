@@ -69,23 +69,23 @@ echo $count_reviews = mysqli_num_rows($run_reviews);
 
 ?>
 
-<div class="row" ><!-- 2 row Starts -->
+<div class="row" >
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
+<div class="col-lg-12" >
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Ver Reseñas
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <a href="index.php?reviews&review_status=all" class="link-separator <?php echo_active_class("all"); ?>">
 
@@ -119,11 +119,11 @@ Spam (<?php get_reviews_status_count("spam"); ?>)
 
 <br><br>
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-bordered table-hover table-striped"><!-- table table-bordered table-hover table-striped Starts -->
+<table class="table table-bordered table-hover table-striped"><
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -139,10 +139,9 @@ Spam (<?php get_reviews_status_count("spam"); ?>)
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!-- tbody Starts -->
-
+<tbody>
 <?php
 
 $products_ids = array();
@@ -283,7 +282,7 @@ Por <span class="text-muted"><?php echo $review_customer_name; ?> </span>
 
 <td>
 
-<div class="dropdown"><!-- dropdown Starts -->
+<div class="dropdown">
 
 <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
 
@@ -357,7 +356,7 @@ Por <span class="text-muted"><?php echo $review_customer_name; ?> </span>
 				
 </ul>
   
-</div><!-- dropdown Ends -->
+</div>
 
 </td>
 
@@ -365,16 +364,16 @@ Por <span class="text-muted"><?php echo $review_customer_name; ?> </span>
 
 <?php } ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table table-bordered table-hover table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>

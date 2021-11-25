@@ -13,45 +13,44 @@ echo "<script>window.open('../checkout.php','_self')</script>";
 
 <h1 align="center">Cambiar Contraseña</h1>
 
-<form action="" method="post"><!-- form Starts -->
+<form action="" method="post">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label>Introduce tu contraseña actual</label>
 
 <input type="text" name="old_pass" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label>Introduzca su nueva contraseña</label>
 
 <input type="text" name="new_pass" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label>Confirme su nueva contraseña </label>
 
 <input type="text" name="new_pass_again" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="text-center"><!-- text-center Starts -->
-
+<div class="text-center">
 <button type="submit" name="submit" class="btn btn-primary">
 
 <i class="fa fa-user-md"> </i> Cambiar Contraseña
 
 </button>
 
-</div><!-- text-center Ends -->
+</div>
 
-</form><!-- form Ends -->
+</form>
 <?php
 
 if(isset($_POST['submit'])){

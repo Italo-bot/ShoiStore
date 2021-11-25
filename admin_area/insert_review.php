@@ -12,11 +12,11 @@ else {
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -24,34 +24,34 @@ else {
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i  class="fa fa-money fa-fw"></i> Agregar Reseña
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<form class="form-horizontal" action="" method="post"><!-- form-horizontal Starts -->
+<form class="form-horizontal" action="" method="post">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Seleccionar Cliente: </label>
 
@@ -83,9 +83,9 @@ echo "<option value='$customer_id'>$customer_name</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Seleccione un producto / paquete: </label>
 
@@ -143,13 +143,12 @@ echo "<option value='$product_id'>$product_title</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
+<div id="review-variations-div">
 
-<div id="review-variations-div"><!-- review-variations-div Starts -->
+</div>
 
-</div><!-- review-variations-div Ends -->
-
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Reseña:  </label>
 
@@ -159,9 +158,9 @@ echo "<option value='$product_id'>$product_title</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Puntos de reseña:  </label>
 
@@ -177,7 +176,7 @@ $("#rating").rating({
 
 step: 1,
 
-starCaptions: {1: 'lo odio', 2: 'no me gustó', 3: 'Está bien', 4: 'Me gustó', 5: 'Es perfecto!'},
+starCaptions: {1: 'lo odio', 2: 'malo', 3: 'bien', 4: 'Me gustó', 5: 'perfecto!'},
 
 starCaptionClasses: {1: 'btn btn-danger', 2: 'btn btn-warning', 3: 'btn btn-info', 4: 'btn btn-primary', 5: 'btn btn-success'},
 
@@ -191,9 +190,9 @@ clearCaptionClass:"btn btn-default"
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Revisar contenido / comentario: </label>
 
@@ -203,9 +202,9 @@ clearCaptionClass:"btn btn-default"
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> </label>
 
@@ -215,17 +214,17 @@ clearCaptionClass:"btn btn-default"
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <script>
 

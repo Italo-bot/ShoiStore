@@ -1,6 +1,6 @@
 
 
-/* Global Styles */
+/* General Styles */
 
 body {
 
@@ -47,7 +47,7 @@ padding:10px;
 
 }
 
-/* Top Navigation */
+/* Barra navegación */
 
 .top-nav{
 
@@ -121,7 +121,7 @@ color:#fff;
 }
 
 
-/* Custom Color Panels Styles */
+/* Panel Styles */
 
 
 .huge {
@@ -157,7 +157,7 @@ background-color:#f0ad4e;
 color:#f0ad4e;
 }
 
-/* Admin Profile Styles */
+/* Admin Perfil Styles */
 
 .panel-body {
 border-radius:5px;

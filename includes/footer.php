@@ -13,17 +13,16 @@ $store_back_url = "";
 
 ?>
 
-<div id="footer"><!-- footer Starts -->
+<div id="footer">
 
-<div class="container"><!-- container Starts -->
+<div class="container">
 
-<div class="row" ><!-- row Starts -->
+<div class="row" >
 
-<div class="col-md-3 col-sm-6" ><!-- col-md-3 col-sm-6 Starts -->
-
+<div class="col-md-3 col-sm-6" >
 <h4>Secciones</h4>
 
-<ul><!-- ul Starts -->
+<ul>
 
 <li><a href="<?php echo $store_back_url; ?>cart.php">Carrito de Compras</a></li>
 
@@ -77,13 +76,13 @@ if($customer_role == "vendor"){
 
 <?php } } ?>
 
-</ul><!-- ul Ends -->
+</ul>
 
 <hr>
 
 <h4>Sección Usuario</h4>
 
-<ul><!-- ul Starts -->
+<ul>
 
 <?php 
 
@@ -137,17 +136,17 @@ echo "<a href='$store_back_url" . "customer/my_account.php?my_orders'>Mi Cuenta<
 
 
 
-</ul><!-- ul Ends -->
+</ul>
 
 <hr class="hidden-md hidden-lg hidden-sm" >
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
 <h4> Categorías de Productos </h4>
 
-<ul><!-- ul Starts -->
+<ul>
 
 <?php
 
@@ -167,18 +166,18 @@ echo "<li> <a href='$store_back_url" . "shop.php?p_cat=$p_cat_id'> $p_cat_title 
 
 ?>
 
-</ul><!-- ul Ends -->
+</ul>
 
 <hr class="hidden-md hidden-lg">
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
 <h4>Información</h4>
 
-<p><!-- p Starts -->
+<p>
 <strong>ShoiStore</strong>
 <br>Santiago
 <br>Chile
@@ -187,44 +186,42 @@ echo "<li> <a href='$store_back_url" . "shop.php?p_cat=$p_cat_id'> $p_cat_title 
 <br>
 
 
-</p><!-- p Ends -->
+</p>
 
 <a href="<?php echo $store_back_url; ?>contact.php">Contáctanos</a>
 
 <hr class="hidden-md hidden-lg">
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
 
 <h4> Redes Sociales </h4>
 
-<p class="social"><!-- social Starts --->
+<p class="social">
 
 <a href="#"><i class="fa fa-facebook"></i></a>
 <a href="#"><i class="fa fa-twitter"></i></a>
 <a href="#"><i class="fa fa-instagram"></i></a>
 
-</p><!-- social Ends --->
+</p>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</div><!-- container Ends -->
-</div><!-- footer Ends -->
+</div>
+</div>
+<div id="copyright">
 
-<div id="copyright"><!-- copyright Starts -->
+<div class="container" >
 
-<div class="container" ><!-- container Starts -->
+<div class="col-md-6" >
+<p class="pull-left"> &copy; 2021 ShoiStore, Todos los derechos reservados. </p>
 
-<div class="col-md-6" ><!-- col-md-6 Starts -->
+</div>
 
-<p class="pull-left"> &copy; 2021 ShoiStore </p>
+</div>
 
-</div><!-- col-md-6 Ends -->
-
-</div><!-- container Ends -->
-
-</div><!-- copyright Ends -->
+</div>

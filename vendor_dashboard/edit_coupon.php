@@ -44,28 +44,26 @@ $p_id = $row_edit['product_id'];
 
 ?>
 
-<div class="row"><!-- 2 row Starts --->
+<div class="row">
+<div class="col-lg-12">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="panel panel-default">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel-heading">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
-
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"> </i> Editar Cupón
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!--panel-body Starts -->
+<div class="panel-body">
 
-<form class="form-horizontal" method="post"><!-- form-horizontal Starts -->
+<form class="form-horizontal" method="post">
 
-<div class="form-group" ><!-- form-group Starts -->
-
+<div class="form-group" >
 <label class="col-md-3 control-label"> Nombre cupón </label>
 
 <div class="col-md-6">
@@ -74,9 +72,9 @@ $p_id = $row_edit['product_id'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label class="col-md-3 control-label"> Precio cupón </label>
 
@@ -86,9 +84,9 @@ $p_id = $row_edit['product_id'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label class="col-md-3 control-label"> Código cupón </label>
 
@@ -98,9 +96,9 @@ $p_id = $row_edit['product_id'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label class="col-md-3 control-label"> Limite cupón </label>
 
@@ -110,9 +108,9 @@ $p_id = $row_edit['product_id'];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label class="col-md-3 control-label"> Seleccionar cupón para producto o paquete </label>
 
@@ -184,9 +182,9 @@ echo "<option value='$product_id'>$product_title</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group" ><!-- form-group Starts -->
+<div class="form-group" >
 
 <label class="col-md-3 control-label"> </label>
 
@@ -196,17 +194,17 @@ echo "<option value='$product_id'>$product_title</option>";
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!--panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends --->
+</div>
 
 <?php
 

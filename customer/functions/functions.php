@@ -2,7 +2,7 @@
 
 $db = mysqli_connect("localhost","root","","shoistore");
 
-/// IP address code starts /////
+/// Dirección IP ///
 function getRealUserIp(){
     switch(true){
       case (!empty($_SERVER['HTTP_X_REAL_IP'])) : return $_SERVER['HTTP_X_REAL_IP'];
@@ -11,9 +11,9 @@ function getRealUserIp(){
       default : return $_SERVER['REMOTE_ADDR'];
     }
  }
-/// IP address code Ends /////
+/// Dirección IP ///
 
-// items function Starts ///
+// Artículos //
 
 function items(){
 
@@ -31,10 +31,9 @@ echo $count_items;
 
 }
 
+// Artículos //
 
-// items function Ends ///
-
-// total_price function Starts //
+// Precio total //
 
 function total_price(){
 
@@ -82,8 +81,7 @@ echo "$" . $total;
 
 
 
-// total_price function Ends //
-
+// Precio total //
 
 function getPro(){
 

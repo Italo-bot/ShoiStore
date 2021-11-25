@@ -106,11 +106,11 @@ echo "active-link";
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -118,29 +118,29 @@ echo "active-link";
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <h3 style="margin-top:0px;"> Filtrar reseñas </h3>
 
-<form method="post" action="index.php?view_reviews=1"><!--- form Starts --->
+<form method="post" action="index.php?view_reviews=1">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label> Seleccionar un cliente : </label>
 
@@ -176,13 +176,13 @@ echo "<option value='$customer_id'>$customer_name</option>";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label> Seleccionar producto/paquete: </label>
 
@@ -244,13 +244,13 @@ echo "<option value='$product_id'>$product_title</option>";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label> Seleccione una calificación: </label>
 
@@ -270,9 +270,9 @@ echo "<option value='$product_id'>$product_title</option>";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
 <?php if(isset($_REQUEST["review_status"])){ ?>
 
@@ -280,43 +280,43 @@ echo "<option value='$product_id'>$product_title</option>";
 
 <?php } ?>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
 <label></label>
 
 <button type="submit" class="btn btn-success form-control"> Filtrar reseñas </button>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</form><!--- form Ends --->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i  class="fa fa-money fa-fw"></i> Ver Reseñas
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <a href="index.php?view_reviews=1&review_status=all<?php echo $filter_url; ?>" class="link-separator <?php echo_active_class("all"); ?>">
 
@@ -358,11 +358,11 @@ Basura (<?php get_reviews_status_count("trash"); ?>)
 
 <br><br>
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-bordered table-hover table-striped" ><!-- table-bordered table-hover table-striped Starts -->
+<table class="table table-bordered table-hover table-striped" >
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -380,9 +380,9 @@ Basura (<?php get_reviews_status_count("trash"); ?>)
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!-- tbody Starts -->
+<tbody>
 
 <?php 
 
@@ -398,10 +398,7 @@ $page = 1;
 	
 }
 
-// Page will start from 0 and Multiple by Per Page
 $start_from = ($page-1) * $per_page;
-
-//Selecting the data from table but with limit
 
 if(
 
@@ -689,7 +686,7 @@ Por <span class="text-muted"><?php echo $review_customer_name; ?></span>
 				
 </ul>
   
-</div><!-- dropdown Ends -->
+</div>
 
 </td>
 
@@ -697,15 +694,15 @@ Por <span class="text-muted"><?php echo $review_customer_name; ?></span>
 
 <?php } ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table-bordered table-hover table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>
 
-<center><!-- center Starts -->
+<center>
 
-<ul class="pagination"><!-- pagination Starts -->
+<ul class="pagination">
 
 <?php
 
@@ -745,15 +742,10 @@ $select_reviews = "select * from reviews order by 1 desc";
 
 $run_reviews = mysqli_query($con, $select_reviews);
 
-// Count the total records
-
 $count_reviews = mysqli_num_rows($run_reviews);
 
-//Using ceil function to divide the total records on per page
 
 $total_pages = ceil($count_reviews / $per_page);
-
-//Going to first page
 
 echo "
 
@@ -796,9 +788,6 @@ $i
 ";	
 	
 }
-
-// Going to last page
-
 echo "
 
 <li class='page-item'>
@@ -815,17 +804,19 @@ echo "
 
 ?>
 
-</ul><!-- pagination Ends -->
+</ul>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
+</div>
 
-</div><!-- 2 row Ends -->
+
+
 
 
 <?php } ?>

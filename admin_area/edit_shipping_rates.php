@@ -56,11 +56,11 @@ $country_name = $row_country['country_name'];
 
 <script src="js/jquery-ui.min.js"></script>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -68,29 +68,29 @@ $country_name = $row_country['country_name'];
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"> </i> Editar tarifas de envío
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <?php if(isset($_GET["zone_id"])){ ?>
 
@@ -104,47 +104,46 @@ $country_name = $row_country['country_name'];
 
 <h3>Agregar tarifa de envío </h3>
 
-<form action="" method="post"><!-- form Starts -->
+<form action="" method="post">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
 <div class="col-sm-4">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Peso hasta: </label>
 
 <input type="text" name="shipping_weight" class="form-control" required>
 
-</div><!-- form-group Ends -->
-
+</div>
 </div>
 
 <div class="col-sm-4">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Costo: </label>
 
 <input type="text" name="shipping_cost" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <input type="submit" name="submit" value="Agregar" class="btn btn btn-primary">
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form Ends -->
+</form>
 
-<table class="table table-hover table-bordered table-striped"><!-- table table-hover table-bordered table-striped Starts -->
+<table class="table table-hover table-bordered table-striped">
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -155,9 +154,9 @@ $country_name = $row_country['country_name'];
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody id="table-tbody"><!-- tbody Starts -->
+<tbody id="table-tbody">
 
 <?php
 
@@ -279,17 +278,17 @@ data: { delete_id: <?php echo $shipping_id; ?>, type_id: <?php echo $type_id; ?>
 
 <?php } ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table table-hover table-bordered table-striped Ends -->
+</table>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <script>
 

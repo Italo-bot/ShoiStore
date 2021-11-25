@@ -18,23 +18,23 @@ $customer_id = $row_customer['customer_id'];
 
 ?>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Ver tipos de envío
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <p class="lead"> 
 
@@ -48,7 +48,7 @@ Agregar tipo de envío
 
 </p>
 
-<table class="table table-hover table-bordered table-striped local-types"><!-- table table-hover table-bordered table-striped local-types Starts -->
+<table class="table table-hover table-bordered table-striped local-types">
 
 <thead>
 
@@ -135,7 +135,7 @@ $zone_name
 
 <td>
 
-<div class="dropdown"><!-- dropdown Starts -->
+<div class="dropdown">
 
 <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
 
@@ -167,8 +167,7 @@ $zone_name
 
 </ul>
 
-</div><!-- dropdown Ends -->
-
+</div>
 </td>
 
 </tr>
@@ -177,7 +176,7 @@ $zone_name
 
 </tbody>
 
-</table><!-- table table-hover table-bordered table-striped local-types Ends -->
+</table>
 
 <p class="lead"> 
 
@@ -191,7 +190,7 @@ Agregar tipo de envío
 
 </p>
 
-<table class="table table-hover table-bordered table-striped international-types"><!-- table table-hover table-bordered table-striped international-types Starts -->
+<table class="table table-hover table-bordered table-striped international-types">
 
 <thead>
 
@@ -279,7 +278,7 @@ $country_name
 
 <td>
 
-<div class="dropdown"><!-- dropdown Starts -->
+<div class="dropdown">
 
 <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
 
@@ -311,8 +310,7 @@ $country_name
 
 </ul>
 
-</div><!-- dropdown Ends -->
-
+</div>
 </td>
 
 </tr>
@@ -321,15 +319,15 @@ $country_name
 
 </tbody>
 
-</table><!-- table table-hover table-bordered table-striped international-types Ends -->
+</table>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 
 <script>

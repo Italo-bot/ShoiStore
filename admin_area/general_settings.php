@@ -32,11 +32,11 @@ $order_status_change = $row_general_settings["order_status_change"];
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -44,33 +44,33 @@ $order_status_change = $row_general_settings["order_status_change"];
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"> </i>  Configuración General
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div><
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<form class="form-horizontal" method="post"><!-- form-horizontal Starts -->
+<form class="form-horizontal" method="post">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Sitio Nombre : </label>
 
@@ -80,9 +80,9 @@ $order_status_change = $row_general_settings["order_status_change"];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Autor(s) : </label>
 
@@ -92,9 +92,9 @@ $order_status_change = $row_general_settings["order_status_change"];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Descripción : </label>
 
@@ -104,9 +104,9 @@ $order_status_change = $row_general_settings["order_status_change"];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Keywords : </label>
 
@@ -116,9 +116,9 @@ $order_status_change = $row_general_settings["order_status_change"];
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Habilitar el registro de vendedores: </label>
 
@@ -144,21 +144,21 @@ Esta opción significa que si los vendedores pueden registrarse en su sitio web.
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Estado del nuevo producto : </label>
 
 <div class="col-md-7">
 
-<select class="form-control" name="new_product_status"><!-- select manufacturer Starts -->
+<select class="form-control" name="new_product_status">
 
 <option value="active" <?php if($new_product_status == "active"){ echo "selected"; } ?>> (Activo) Publicado </option>
 
 <option value="pending" <?php if($new_product_status == "pending"){ echo "selected"; } ?>> (Pendiente) Pendiente de aprobación </option>
 
-</select><!-- select manufacturer Ends -->
+</select>
 
 <span id="helpBlock" class="help-block">
 
@@ -168,9 +168,9 @@ Estado del producto cuando un vendedor crea un producto.
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Estado del producto editado : </label>
 
@@ -186,9 +186,9 @@ Establecer el estado del producto como aprobación pendiente cuando un vendedor 
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Cambio de estado del pedido : </label>
 
@@ -202,9 +202,9 @@ Establecer el estado del producto como aprobación pendiente cuando un vendedor 
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> </label>
 
@@ -214,17 +214,17 @@ Establecer el estado del producto como aprobación pendiente cuando un vendedor 
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <?php
 

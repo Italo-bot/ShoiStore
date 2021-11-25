@@ -11,11 +11,10 @@ else {
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
+<div class="col-lg-12">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
-
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -23,29 +22,28 @@ else {
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"> </i> Ver zonas de envío
 
-</h3><!-- panel-title Ends -->
+</h3>
+</div>
 
-</div><!-- panel-heading Ends -->
-
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <p class="lead"> Zonas de envío <a href="index.php?insert_shipping_zone" class="btn btn-default"> Agregar zona de envío </a> </p>
 
@@ -53,11 +51,11 @@ Una zona de envío es una región geográfica donde se ofrece un determinado con
 
 <br><br>
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-hover table-bordered table-striped"><!-- table table-hover table-bordered table-striped Starts -->
+<table class="table table-hover table-bordered table-striped">
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -68,9 +66,9 @@ Una zona de envío es una región geográfica donde se ofrece un determinado con
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!-- tbody Starts -->
+<tbody>
 
 <?php
 
@@ -170,19 +168,19 @@ echo rtrim($result,", ");
 
 <?php } ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table table-hover table-bordered table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <script>
 

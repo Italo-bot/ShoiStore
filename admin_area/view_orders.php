@@ -98,11 +98,11 @@ echo "active-link";
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts  --->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -110,29 +110,29 @@ echo "active-link";
 
 </li>
 
-</ol><!-- breadcrumb Ends  --->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <h3 style="margin-top:0px;"> Filtrar ordenes </h3>
 
-<form method="post" action="index.php?view_orders=1"><!--- form Starts --->
+<form method="post" action="index.php?view_orders=1">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-md-3 col-sm-6"><!-- col-md-4 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label> Filtrar por cliente: </label>
 
@@ -168,13 +168,13 @@ echo "<option value='$customer_id'> $customer_name </option>";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label> Filtrar por vendedor : </label>
 
@@ -210,9 +210,9 @@ echo "<option value='$customer_id'> $customer_name </option>";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
 <?php if(isset($_REQUEST["order_status"])){ ?>
 
@@ -220,43 +220,43 @@ echo "<option value='$customer_id'> $customer_name </option>";
 
 <?php } ?>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
 <label></label>
 
 <button type="submit" class="btn btn-success form-control"> FIltrar ordenes </button>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</form><!--- form Ends --->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Ver Ordenes
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <a href="index.php?view_orders=1&order_status=all<?php echo $filter_url; ?>" class="link-separator <?php echo_active_class("all"); ?>">
 
@@ -314,11 +314,11 @@ Reintegrado (<?php get_orders_status_count("refunded"); ?>)
 
 <br><br>
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-bordered table-hover table-striped"><!-- table table-bordered table-hover table-striped Starts -->
+<table class="table table-bordered table-hover table-striped">
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -340,9 +340,9 @@ Reintegrado (<?php get_orders_status_count("refunded"); ?>)
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!-- tbody Starts -->
+<tbody>
 
 <?php
 
@@ -358,10 +358,7 @@ $page = 1;
 	
 }
 
-// Page will start from 0 and Multiple by Per Page
 $start_from = ($page-1) * $per_page;
-
-//Selecting the data from table but with limit
 	
 if((isset($_REQUEST["customer_id"]) and isset($_REQUEST["vendor_id"])) or isset($_REQUEST["order_status"])){
 
@@ -394,8 +391,6 @@ $select_filter_where = "";
 $select_filter_where = "where $filter_where";
 
 }
-
-// if(empty($filter_where)){
 	
 if(empty($vendor_id)){
 
@@ -490,8 +485,6 @@ $billing_country = $row_addresses["billing_country"];
 $billing_state = $row_addresses["billing_state"];
 
 $is_shipping_address = $row_addresses["is_shipping_address"];
-
-// Shopping Details Starts
 
 $shipping_first_name = $row_addresses["shipping_first_name"];
 
@@ -660,15 +653,15 @@ echo ucwords($order_status);
 
 ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table table-bordered table-hover table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>
 
-<center><!-- center Starts -->
+<center>
 
-<ul class="pagination"><!-- pagination Starts -->
+<ul class="pagination">
 
 <?php
 
@@ -703,19 +696,11 @@ $select_orders = "select * from orders";
 	
 }
 
-//Now select all from table
-
 $run_orders = mysqli_query($con, $select_orders);
-
-// Count the total records
 
 $count_orders = mysqli_num_rows($run_orders);
 
-//Using ceil function to divide the total records on per page
-
 $total_pages = ceil($count_orders / $per_page);
-
-//Going to first page
 
 echo "
 
@@ -759,8 +744,6 @@ $i
 	
 }
 
-// Going to last page
-
 echo "
 
 <li class='page-item'>
@@ -777,17 +760,17 @@ echo "
 
 ?>
 
-</ul><!-- pagination Ends -->
+</ul>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 
 <?php } ?>

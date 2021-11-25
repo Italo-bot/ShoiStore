@@ -111,11 +111,11 @@ echo "selected";
 ?>
 
 
-<div class="row"><!--  1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
+<div class="col-lg-12" >
 
-<ol class="breadcrumb" ><!-- breadcrumb Starts -->
+<ol class="breadcrumb" >
 
 <li class="active" >
 
@@ -123,29 +123,28 @@ echo "selected";
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!--  1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <h3 style="margin-top:0px;"> Filtro paquetes </h3>
 
-<form method="post" action="index.php?view_bundles=1"><!--- form Starts --->
+<form method="post" action="index.php?view_bundles=1">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-md-3 col-sm-6"><!-- col-md-4 col-sm-6 Starts -->
-
-<div class="form-group"><!--- form-group Starts --->
+<div class="col-md-3 col-sm-6">
+<div class="form-group">
 
 <label> Filtrar por tipo de paquete : </label>
 
@@ -159,14 +158,13 @@ echo "selected";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-<div class="form-group"><!--- form-group Starts --->
-
+<div class="form-group">
 <label> Filtrar por fabricante: </label>
 
 <select name="vendor_id" class="form-control">
@@ -223,13 +221,13 @@ echo "<option value='$vendor_id'> $vendor_name </option>";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label> Filtrar por estado de stock: </label>
 
@@ -245,9 +243,9 @@ echo "<option value='$vendor_id'> $vendor_name </option>";
 
 </select>
 
-</div><!--- form-group Ends --->
+</div>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
 <?php if(isset($_REQUEST["product_status"])){ ?>
 
@@ -255,44 +253,44 @@ echo "<option value='$vendor_id'> $vendor_name </option>";
 
 <?php } ?>
 
-<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+<div class="col-md-3 col-sm-6">
 
 <label></label>
 
 <button type="submit" class="btn btn-success form-control"> Filtro paquetes </button>
 
-</div><!-- col-md-3 col-sm-6 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-</form><!--- form Ends --->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
-<div class="row" ><!-- 2 row Starts -->
+<div class="row" >
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
+<div class="col-lg-12" >
 
-<div class="panel panel-default" ><!-- panel panel-default Starts -->
+<div class="panel panel-default" >
 
-<div class="panel-heading" ><!-- panel-heading Starts -->
+<div class="panel-heading" >
 
-<h3 class="panel-title" ><!-- panel-title Starts -->
+<h3 class="panel-title" >
 
 <i class="fa fa-money fa-fw"></i> Ver Paquetes
 
-</h3><!-- panel-title Ends -->
+</h3>
 
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <a href="index.php?view_bundles=1&product_status=all<?php echo $filter_url; ?>" class="link-separator <?php echo_active_class("all"); ?> pull-left">
 
@@ -334,9 +332,9 @@ Barusa (<?php get_products_status_count("trash"); ?>)
 
 <br><br><br>
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
-<table class="table table-bordered table-hover table-striped" ><!-- table table-bordered table-hover table-striped Starts -->
+<table class="table table-bordered table-hover table-striped" >
 
 <thead>
 
@@ -375,11 +373,7 @@ $page = $_GET["view_bundles"];
 $page = 1;	
 	
 }
-
-// Page will start from 0 and Multiple by Per Page
 $start_from = ($page-1) * $per_page;
-
-//Selecting the data from table but with limit
 
 if((isset($_REQUEST["product_type"]) and isset($_REQUEST["stock_status"]) and isset($_REQUEST["vendor_id"])) or isset($_REQUEST["product_status"])){
 	
@@ -698,7 +692,7 @@ echo $order_sold;
 
 <td>
 
-<div class="dropdown"><!-- dropdown Starts -->
+<div class="dropdown">
 
 <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
 
@@ -804,7 +798,7 @@ echo $order_sold;
 				
 </ul>
   
-</div><!-- dropdown Ends -->
+</div>
 
 </td>
 
@@ -814,13 +808,13 @@ echo $order_sold;
 
 </tbody>
 
-</table><!-- table table-bordered table-hover table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>
 
-<center><!-- center Starts -->
+<center>
 
-<ul class="pagination"><!-- pagination Starts -->
+<ul class="pagination">
 
 <?php
 
@@ -858,19 +852,11 @@ $select_products = "select * from products where status='bundle'";
 	
 }
 
-//Now select all from table
-
 $run_products = mysqli_query($con, $select_products);
-
-// Count the total records
 
 $count_products = mysqli_num_rows($run_products);
 
-//Using ceil function to divide the total records on per page
-
 $total_pages = ceil($count_products / $per_page);
-
-//Going to first page
 
 echo "
 
@@ -914,8 +900,6 @@ $i
 	
 }
 
-// Going to last page
-
 echo "
 
 <li class='page-item'>
@@ -932,19 +916,16 @@ Last Page
 
 ?>
 
-</ul><!-- pagination Ends -->
+</ul>
 
-</center><!-- center Ends -->
+</center>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
-
-
-
+</div>
 
 <?php } ?>

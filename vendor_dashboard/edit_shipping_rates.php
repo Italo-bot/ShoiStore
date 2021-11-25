@@ -58,23 +58,22 @@ $country_name = $row_country['country_name'];
 
 ?>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
+<div class="panel panel-default">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel-heading">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
-
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Editar tarifas de envío
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
 <h4>
 
@@ -100,46 +99,45 @@ echo $country_name;
 
 <h3> Insertar tarifa de envío </h3>
 
-<form method="post"><!-- form Starts -->
+<form method="post">
 
-<div class="row"><!-- row Starts -->
+<div class="row">
 
-<div class="col-sm-4"><!-- col-sm-4 Starts -->
+<div class="col-sm-4">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Peso hasta: </label>
 
 <input type="text" name="shipping_weight" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-4 Ends -->
+</div>
 
-<div class="col-sm-4"><!-- col-sm-4 Starts -->
+<div class="col-sm-4">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Cost:  </label>
 
 <input type="text" name="shipping_cost" class="form-control" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-</div><!-- col-sm-4 Ends -->
+</div>
 
-</div><!-- row Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <input type="submit" name="submit" value="Insertar tarifa de envío" class="btn btn-primary" >
 
-</div><!-- form-group Ends -->
+</div>
 
-</form><!-- form Ends -->
+</form>
 
-<table class="table table-hover table-bordered table-striped"><!-- table table-hover table-bordered table-striped Starts -->
-
+<table class="table table-hover table-bordered table-striped">
 <thead>
 
 <tr>
@@ -266,16 +264,16 @@ $("#tr_<?php echo $shipping_id; ?>").remove();
 
 </tbody>
 
-</table><!-- table table-hover table-bordered table-striped Ends -->
+</table>
 
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <script>
 

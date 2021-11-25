@@ -96,7 +96,7 @@ $attribute_values = $row_product_attributes["attribute_values"];
 
 $(document).ready(function(){
 
-//Edit Product Attribute Code Starts
+//Editar atributo
 
 $(".input-edit").hide();
 
@@ -122,9 +122,9 @@ $(".save-product-attribute[data-attribute='" + attribute_id +"']").show();
 	
 });
 
-//Edit Product Attribute Code Ends
+//Editar atributo
 
-//Update Save Product Attribute Code Starts
+//Guardar atributo
 
 $(".save-product-attribute").on('click', function(event){
 	
@@ -162,10 +162,10 @@ data: { random_id: random_id, attribute_id: attribute_id, attribute_name: attrib
 
 });
 
-//Update Save Product Attribute Code Ends
+//Guardar atributo
 
-//Delete Product Attribute Code Starts
-	
+//Borrar atributo	
+
 $(".delete-product-attribute").on('click', function(event){
 	
 event.preventDefault();
@@ -188,7 +188,7 @@ data: { random_id: random_id, attribute_id: attribute_id }
 
 });
 
-//Delete Product Attribute Code Ends
+//Borrar atributo	
 
 });
 

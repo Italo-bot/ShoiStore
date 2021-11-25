@@ -8,11 +8,11 @@ echo "<script>window.open('login.php','_self')</script>";
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -20,37 +20,36 @@ echo "<script>window.open('login.php','_self')</script>";
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"> </i> Ver tipos de envío
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<div class="table-responsive"><!-- table-responsive Starts -->
+<div class="table-responsive">
 
 <p class="lead">Tipo de envíos locales</p>
 
-<table class="table table-hover table-bordered table-striped local-types"><!-- table table-hover table-bordered table-striped Starts -->
-
-<thead><!-- thead Starts -->
+<table class="table table-hover table-bordered table-striped local-types">
+<thead>
 
 <tr>
 
@@ -62,9 +61,9 @@ echo "<script>window.open('login.php','_self')</script>";
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!-- tbody Starts -->
+<tbody>
 
 <?php
 
@@ -164,15 +163,15 @@ $zone_name
 
 <?php } ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table table-hover table-bordered table-striped Ends -->
+</table>
 
 <p class="lead">Tipos de envío internacional</p>
 
-<table class="table table-hover table-bordered table-striped international-types"><!-- table table-hover table-bordered table-striped Starts -->
+<table class="table table-hover table-bordered table-striped international-types">
 
-<thead><!-- thead Starts -->
+<thead>
 
 <tr>
 
@@ -184,9 +183,9 @@ $zone_name
 
 </tr>
 
-</thead><!-- thead Ends -->
+</thead>
 
-<tbody><!-- tbody Starts -->
+<tbody>
 
 <?php
 
@@ -286,19 +285,19 @@ $country_name
 
 <?php } ?>
 
-</tbody><!-- tbody Ends -->
+</tbody>
 
-</table><!-- table table-hover table-bordered table-striped Ends -->
+</table>
 
-</div><!-- table-responsive Ends -->
+</div>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends -->
+</div>
 
 <script>
 

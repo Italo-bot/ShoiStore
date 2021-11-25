@@ -42,11 +42,11 @@ $stripe_currency_code = $row_payment_settings['stripe_currency_code'];
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -54,33 +54,31 @@ $stripe_currency_code = $row_payment_settings['stripe_currency_code'];
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
-<div class="row"><!-- 2 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
+<div class="panel-heading">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
-
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Actualizar configuración de pago
 
-</h3><!-- panel-title Ends -->
+</h3>
 
-</div><!-- panel-heading Ends -->
+</div>
 
-<div class="panel-body"><!-- panel-body Starts -->
+<div class="panel-body">
 
-<form class="form-horizontal payment-settings" method="post"><!-- form-horizontal Starts -->
-
-<div class="form-group"><!-- form-group Starts -->
+<form class="form-horizontal payment-settings" method="post">
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Porcentaje de comisión admin: </label>
 
@@ -96,9 +94,9 @@ Porcentaje de comisión Cantidad que obtiene de las ventas de socios.
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Límite mínimo de retiro : </label>
 
@@ -114,9 +112,9 @@ Saldo mínimo requerido para realizar una solicitud de retiro. Valor 0 para no e
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Días antes disponible para retiro: </label>
 
@@ -134,13 +132,13 @@ NÚMERO DE DÍAS ANTES de que la comisión del proveedor de los pedidos pueda es
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <hr>
 <h3>PayPal</h3>
 <hr>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Habilitar Paypal : </label>
 
@@ -162,9 +160,9 @@ Permitir a los usuarios pagar con PayPal
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Paypal Email : </label>
 
@@ -180,9 +178,9 @@ Ingrese el Email comercial de Paypal para recibir pagos de Paypal y enviar ganan
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Paypal Sandbox : </label>
 
@@ -202,9 +200,9 @@ Ingrese el Email comercial de Paypal para recibir pagos de Paypal y enviar ganan
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Paypal Código de moneda : </label>
 
@@ -220,39 +218,39 @@ Moneda utlizada para pagos PayPal <a href="https://developer.paypal.com/docs/cla
 
 </div>
 
-</div><!--- form-group Ends --->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Paypal Pagar : </label>
 
 <div class="col-md-7">
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Paypal App Cliente ID: </label>
 
 <input type="text" name="paypal_app_client_id" class="form-control" value="<?php echo $paypal_app_client_id; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label> Paypal App Cliente Secreto: </label>
 
 <input type="text" name="paypal_app_client_secret" class="form-control" value="<?php echo $paypal_app_client_secret; ?>" required>
 
-</div><!-- form-group Ends -->
+</div>
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
 <hr>
 <h3>Stripe</h3>
 <hr>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Habilitar Stripe : </label>
 
@@ -274,9 +272,9 @@ Permitir que los clientes paguen con Stripe
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Stripe Key Secreta : </label>
 
@@ -286,9 +284,9 @@ Permitir que los clientes paguen con Stripe
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!-- form-group Starts -->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Stripe Key publicable : </label>
 
@@ -298,9 +296,9 @@ Permitir que los clientes paguen con Stripe
 
 </div>
 
-</div><!-- form-group Ends -->
+</div>
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label class="col-md-3 control-label"> Stripe Código de moneda : </label>
 
@@ -316,9 +314,9 @@ Monedas utilizadas para pago con Stripe <a href="https://stripe.com/docs/currenc
 
 </div>
 
-</div><!--- form-group Ends --->
+</div>
 
-<div class="form-group"><!--- form-group Starts --->
+<div class="form-group">
 
 <label class="col-md-3 control-label"></label>
 
@@ -328,17 +326,17 @@ Monedas utilizadas para pago con Stripe <a href="https://stripe.com/docs/currenc
 
 </div>
 
-</div><!--- form-group Ends --->
+</div>
 
-</form><!-- form-horizontal Ends -->
+</form>
 
-</div><!-- panel-body Ends -->
+</div>
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 4 row Ends -->
+</div>
 
 <?php
 

@@ -12,11 +12,11 @@ else {
 
 ?>
 
-<div class="row"><!-- 1 row Starts -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<ol class="breadcrumb"><!-- breadcrumb Starts -->
+<ol class="breadcrumb">
 
 <li class="active">
 
@@ -24,30 +24,29 @@ else {
 
 </li>
 
-</ol><!-- breadcrumb Ends -->
+</ol>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 1 row Ends -->
+</div>
 
 
-<div class="row"><!-- 2 row Starts  -->
+<div class="row">
 
-<div class="col-lg-12"><!-- col-lg-12 Starts -->
+<div class="col-lg-12">
 
-<div class="panel panel-default"><!-- panel panel-default Starts -->
+<div class="panel panel-default">
 
-<div class="panel-heading"><!-- panel-heading Starts -->
+<div class="panel-heading">
 
-<h3 class="panel-title"><!-- panel-title Starts -->
+<h3 class="panel-title">
 
 <i class="fa fa-money fa-fw"></i> Ver Slides
 
-</h3><!-- panel-title Ends -->
+</h3>
+</div>
 
-</div><!-- panel-heading Ends -->
-
-<div class="panel-body" ><!-- panel-body Starts -->
+<div class="panel-body" >
 
 <?php
 
@@ -67,11 +66,11 @@ $slide_image = $row_slides['slide_image'];
 
 ?>
 
-<div class="col-lg-3 col-md-3" ><!-- col-lg-3 col-md-3 Starts -->
+<div class="col-lg-3 col-md-3" >
 
-<div class="panel panel-primary" ><!-- panel panel-primary Starts --->
+<div class="panel panel-primary" >
 
-<div class="panel-heading" ><!-- panel-heading Starts -->
+<div class="panel-heading" >
 
 <h3 class="panel-title" align="center" >
 
@@ -80,17 +79,16 @@ $slide_image = $row_slides['slide_image'];
 
 </h3>
 
-</div><!-- panel-heading Ends -->
-
-<div class="panel-body" ><!-- panel-body Starts -->
+</div>
+<div class="panel-body" >
 
 <img src="slides_images/<?php echo $slide_image; ?>" class="img-responsive" >
 
-</div><!-- panel-body Ends -->
+</div>
 
-<div class="panel-footer" ><!-- panel-footer Starts -->
+<div class="panel-footer" >
 
-<center><!-- center Starts -->
+<center>
 
 <a href="index.php?delete_slide=<?php echo $slide_id; ?>" class="pull-left" >
 
@@ -110,28 +108,28 @@ $slide_image = $row_slides['slide_image'];
 
 
 
-</center><!-- center Ends -->
+</center>
 
 
-</div><!-- panel-footer Ends -->
+</div>
 
 
-</div><!-- panel panel-primary Ends --->
+</div>
 
 
-</div><!-- col-lg-3 col-md-3 Ends -->
+</div>
 
 
 <?php } ?>
 
 
-</div><!-- panel-body Ends -->
+</div>
 
 
-</div><!-- panel panel-default Ends -->
+</div>
 
-</div><!-- col-lg-12 Ends -->
+</div>
 
-</div><!-- 2 row Ends  -->
+</div>
 
 <?php } ?>

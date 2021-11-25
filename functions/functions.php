@@ -1,10 +1,8 @@
 <?php
 
-//session_start();
-
 $db = mysqli_connect("localhost","root","","shoistore");
 
-/// IP address code starts /////
+/// Dirección IP ///
 function getRealUserIp(){
     switch(true){
       case (!empty($_SERVER['HTTP_X_REAL_IP'])) : return $_SERVER['HTTP_X_REAL_IP'];
@@ -13,7 +11,7 @@ function getRealUserIp(){
       default : return $_SERVER['REMOTE_ADDR'];
     }
  }
-/// IP address code Ends /////
+/// Dirección IP ///
 
 if(isset($_SESSION['customer_email'])){
 
@@ -33,7 +31,7 @@ $customer_id = 0;
 	
 }
 
-// items function Starts ///
+// Artículos //
 
 function items(){
 
@@ -59,10 +57,9 @@ echo $count_items;
 
 }
 
+// Artículos //
 
-// items function Ends ///
-
-// total_price function Starts //
+// Precio total //
 
 function total_price(){
 
@@ -102,9 +99,9 @@ echo "$" . $total;
 
 
 
-// total_price function Ends //
+// Precio total //
 
-// getPro function Starts //
+// Obtener productos (getPro) //
 
 function getPro(){
 
@@ -113,8 +110,6 @@ global $db;
 global $customer_id;
 
 $ip_address = getRealUserIp();
-
-//$viewed_products = array();
 
 $relevent_products = array();
 
@@ -150,19 +145,13 @@ array_push($relevent_products["p_cat_ids"], $p_cat_id);
 
 array_push($relevent_products["cat_ids"], $cat_id);
 
-//array_push($viewed_products, $product_id);
-
 }
-
-//$product_ids = implode(",", $viewed_products);
 
 if(!empty($relevent_products)){
 	
 $p_cat_ids = implode(",", $relevent_products["p_cat_ids"]);
 
 $cat_ids = implode(",", $relevent_products["cat_ids"]);
-
-// $order_by = " order by product_id IN ($product_ids) DESC,product_id DESC LIMIT 0,8";
 
 $order_by = " order by p_cat_id IN ($p_cat_ids) DESC,cat_id IN ($cat_ids) DESC,product_id DESC LIMIT 0,8";
 
@@ -410,15 +399,13 @@ $product_label
 
 }
 
-// getPro function Ends //
 
 
 
-/// getPaginator Function Starts ///
+
+/// Páginas numeradas ///
 
 function getPaginator($vendor_id){
-
-/// getPaginator Function Code Starts ///
 
 $per_page = 6;
 
@@ -428,7 +415,7 @@ $aWhere = array();
 
 $aPath = '';
 
-/// Manufacturers Code Starts ///
+/// Fabricantes ///
 
 if(isset($_REQUEST['man'])&&is_array($_REQUEST['man'])){
 
@@ -446,9 +433,9 @@ $aPath .= 'man[]='.(int)$sVal.'&';
 
 }
 
-/// Manufacturers Code Ends ///
+/// Fabricantes ///
 
-/// Products Categories Code Starts ///
+/// Categorías de productos ///
 
 if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
@@ -466,9 +453,9 @@ $aPath .= 'p_cat[]='.(int)$sVal.'&';
 
 }
 
-/// Products Categories Code Ends ///
+/// Categorías de productos ///
 
-/// Categories Code Starts ///
+/// Categorías generales ///
 
 if(isset($_REQUEST['cat'])&&is_array($_REQUEST['cat'])){
 
@@ -486,7 +473,7 @@ $aPath .= 'cat[]='.(int)$sVal.'&';
 
 }
 
-/// Categories Code Ends ///
+/// Categorías generales ///
 
 $sWhere = (count($aWhere)>0?' and (' . implode(' or ',$aWhere) . ')' :'');
 
@@ -556,24 +543,15 @@ if(!empty($aPath)){ echo "&".$aPath; }
 
 echo "' >".'Última'."</a></li>";
 
-/// getPaginator Function Code Ends ///
-
 }
 
-/// getPaginator Function Ends ///
-
-
-/// getProducts Function Starts ///
-
 function getProducts($vendor_id){
-
-/// getProducts function Code Starts ///
 
 global $db;
 
 $aWhere = array();
 
-/// Manufacturers Code Starts ///
+/// Fabricantes ///
 
 if(isset($_REQUEST['man'])&&is_array($_REQUEST['man'])){
 
@@ -589,9 +567,9 @@ $aWhere[] = 'manufacturer_id='.(int)$sVal;
 
 }
 
-/// Manufacturers Code Ends ///
+/// Fabricantes ///
 
-/// Products Categories Code Starts ///
+/// Categorías de productos ///
 
 if(isset($_REQUEST['p_cat'])&&is_array($_REQUEST['p_cat'])){
 
@@ -607,9 +585,9 @@ $aWhere[] = 'p_cat_id='.(int)$sVal;
 
 }
 
-/// Products Categories Code Ends ///
+/// Categorías de productos ///
 
-/// Categories Code Starts ///
+/// Categorias generales ///
 
 if(isset($_REQUEST['cat'])&&is_array($_REQUEST['cat'])){
 
@@ -625,7 +603,7 @@ $aWhere[] = 'cat_id='.(int)$sVal;
 
 }
 
-/// Categories Code Ends ///
+/// Categorias generales ///
 
 $per_page=6;
 
@@ -644,8 +622,6 @@ $start_from = ($page-1) * $per_page ;
 global $customer_id;
 
 $ip_address = getRealUserIp();
-
-//$viewed_products = array();
 
 $relevent_products = array();
 
@@ -681,19 +657,13 @@ array_push($relevent_products["p_cat_ids"], $p_cat_id);
 
 array_push($relevent_products["cat_ids"], $cat_id);
 
-//array_push($viewed_products, $product_id);
-
 }
-
-//$product_ids = implode(",", $viewed_products);
 
 if(!empty($relevent_products)){
 	
 $p_cat_ids = implode(",", $relevent_products["p_cat_ids"]);
 
 $cat_ids = implode(",", $relevent_products["cat_ids"]);
-
-// $sLimit = " order by product_id IN ($product_ids) DESC,product_id DESC LIMIT $start_from,$per_page";
 
 $sLimit = " order by p_cat_id IN ($p_cat_ids) DESC,cat_id IN ($cat_ids) DESC,product_id DESC LIMIT $start_from,$per_page";
 
@@ -961,12 +931,7 @@ $product_label
 ";
 
 }
-/// getProducts function Code Ends ///
 
 }
-
-
-/// getProducts Function Ends ///
-
  
 ?>
