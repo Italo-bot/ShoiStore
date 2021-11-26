@@ -27,7 +27,7 @@ $customer_id = $row_customer['customer_id'];
 
 <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
 
-<input type="hidden" name="business" value="saady@gmail.com">
+<input type="hidden" name="business" value="italobv98@gmail.com">
 
 <input type="hidden" name="cmd" value="_cart">
 
@@ -106,6 +106,7 @@ require_once('stripe_config.php');
 	 width="500" height="230" src="images/stripe.png"
      class="stripe-submit" 
 	 data-name="ShoiStore.com"
+     value="Pagar con Stripe"
 	 data-description="Pagar con tarjeta de crédito"
 	 data-image="images/stripe-logo.png"
      data-key="<?php echo $stripe['publishable_key']; ?>" 
